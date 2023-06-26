@@ -174,8 +174,8 @@
         ],
         "settings": {
           "topbar_enabled": true,
-          "product_url": "omnilux-clear",
           "topbar_text": "IT'S ACNE AWARENESS MONTH! GET $45 OFF OMNILUX CLEAR W\/CODE: <b> CLEAR<\/b>",
+          "product_url": "omnilux-clear",
           "topbar_link_title": "",
           "topbar_link": "",
           "topbar_bg_color": "#000000",
@@ -1090,6 +1090,12 @@
       },
       "17327048248777170309": {
         "type": "shopify:\/\/apps\/all-in-1-discount-on-cart\/blocks\/instant-load\/f428e1ae-8a34-4767-8189-f8339f3ab12b",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "5792010825272225357": {
+        "type": "shopify:\/\/apps\/dual-price-display-pro\/blocks\/app-block\/fbd96439-f105-44a6-b4c5-51766faddec4",
         "disabled": false,
         "settings": {
         }

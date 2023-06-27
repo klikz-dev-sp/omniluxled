@@ -228,7 +228,7 @@
             {% endif %}
         </div>
     </div>
-    <div class="col-12 cart-total mt-auto border-top position-sticky bottom-0 {% unless cart.item_count > 0 %}d-none{% endunless %}" data-checkoutBtns style="background-image: url('https://cdn.shopify.com/s/files/1/0482/6736/2466/files/total-bg.jpg?v=1671701148');background-size: 100% 100%;padding:20px;z-index: 4;background-color: #fff;">
+    <div class="col-12 cart-total mt-auto border-top position-sticky bottom-0 {% unless cart.item_count > 0 %}d-none{% endunless %}" data-checkoutBtns style="background-image: url('https://cdn.shopify.com/s/files/1/0482/6736/2466/files/total-bg.jpg?v=1671701148');background-size: 100% 100%;padding:8px 20px;z-index: 4;background-color: #fff;">
             <div class="row no-gutters">
                 <div class="col">
                     <h5 class="text-capitalize font-size-lg-20 my-0 fw-semibold hideabtest">{{ 'templates.cart.total' | t }}:</h5>
@@ -253,7 +253,7 @@
             {% endif %}
 
             <a href="/checkout" class="btn btn-primary btn-block mt-3 hideabtest">{{ 'templates.cart.checkout' | t }}</a>
-     <a href="/checkout" class="btn btn-primary btn-block mt-3 showabtest">PROCEED TO CHECKOUT →</a>
+     <a href="/checkout" class="btn btn-primary btn-block mt-2 showabtest">PROCEED TO CHECKOUT →</a>
 
             {% if additional_checkout_buttons %}
                 <span class="additional-checkout-buttons additional-checkout-buttons d-flex flex-column hideabtest">

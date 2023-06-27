@@ -5,7 +5,6 @@
       "blocks": {
         "7d18d199-22fa-4cda-9de3-136a4a0007e8": {
           "type": "video-slide",
-          "disabled": true,
           "settings": {
             "muted": true,
             "controls": false,
@@ -46,6 +45,7 @@
         },
         "490f5378-28a7-40c6-a12e-0400f0529048": {
           "type": "image",
+          "disabled": true,
           "settings": {
             "image": "shopify:\/\/shop_images\/website_31.png",
             "image_mobile": "shopify:\/\/shop_images\/website_34.png",

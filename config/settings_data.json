@@ -174,8 +174,8 @@
         ],
         "settings": {
           "topbar_enabled": true,
-          "product_url": "omnilux-clear",
-          "topbar_text": "IT'S ACNE AWARENESS MONTH! GET $45 OFF OMNILUX CLEAR W\/CODE: <b> CLEAR<\/b>",
+          "topbar_text": "Free shipping on orders $100+",
+          "product_url": "",
           "topbar_link_title": "",
           "topbar_link": "",
           "topbar_bg_color": "#000000",

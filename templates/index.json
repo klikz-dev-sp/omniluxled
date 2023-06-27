@@ -2,7 +2,6 @@
   "sections": {
     "4650e625-58c1-458d-8bb0-ff104d2e5c72": {
       "type": "global-image_hero",
-      "disabled": true,
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/OMNI03_Topicals_28854.jpg",
         "image_mobile": "shopify:\/\/shop_images\/OMNI03_Topicals_1385.jpg",
@@ -16,8 +15,9 @@
     },
     "b001f34c-2df8-4b58-af50-b86bb7012553": {
       "type": "global-image_hero",
+      "disabled": true,
       "custom_css": [
-        ".overlay {opacity: .2 !important;}"
+        ".overlay {opacity: 0.2 !important;}"
       ],
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/website_29.png",

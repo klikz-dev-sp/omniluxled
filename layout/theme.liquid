@@ -8,8 +8,7 @@
 {% render 'site-speed' %}
   <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KT8DKGH"></script>
 
-<!-- begin Convert Experiences code--><script type="text/javascript" src="//cdn-4.convertexperiments.com/js/10041339-10041590.js"></script><!-- end Convert Experiences code -->
-    
+<!-- begin Convert Experiences code--><script type="text/javascript" src="//cdn-4.convertexperiments.com/js/1004940-1004874.js"></script><!-- end Convert Experiences code -->
 
 {% comment %} {% render 'pagefly-head' %} {% endcomment %}
     <meta charset="utf-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content=""> <link rel="canonical" href="{{ canonical_url }}">
@@ -95,6 +94,7 @@
 
   <body class="template-{{ template.name }} {{ page.handle }} {{ collection.handle }} {{ product.handle }} {% if product.tags contains 'men_product' %}product-men{% endif %}"
     data-money-format="{{ shop.money_format }}" data-shop-url="{{ shop.url }}">
+    <img src="https://trkn.us/pixel/conv/ppt=22138;g=sitewide;gid=51408;ord={{ 'now' | date: '%s' }}" height="0" width="0" border="0" />
 
     <script>window.KlarnaThemeGlobals={};{%case template.name%} {%when"product"%} {% if product.first_available_variant.price %}window.KlarnaThemeGlobals.data_purchase_amount = {{ product.first_available_variant.price }};{% endif %}window.KlarnaThemeGlobals.productVariants={{product.variants|json}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%when"cart"%} window.KlarnaThemeGlobals.data_purchase_amount={{cart.total_price}};window.KlarnaThemeGlobals.documentCopy=document.cloneNode(true);{%endcase%}</script>
 

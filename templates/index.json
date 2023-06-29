@@ -420,10 +420,10 @@
             "icon_img": "shopify:\/\/shop_images\/Get_the_Gloss_Wellness_Awards_2023_Silverre.png"
           }
         },
-        "b6d222dd-da7e-4dd4-a6fe-c434828074e6": {
+        "9291ac24-4153-4ca4-a61b-5341833d9b05": {
           "type": "content",
           "settings": {
-            "icon_img": "shopify:\/\/shop_images\/wh-skincareawards_1.png"
+            "icon_img": "shopify:\/\/shop_images\/WHSA.0025_2023_badges_winner.png"
           }
         },
         "c386a58c-88b3-4795-bf9f-df18ab77ba9e": {
@@ -436,6 +436,12 @@
           "type": "content",
           "settings": {
             "icon_img": "shopify:\/\/shop_images\/MCSK.0011_2022_winner_badges_winner_1.png"
+          }
+        },
+        "b6d222dd-da7e-4dd4-a6fe-c434828074e6": {
+          "type": "content",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/wh-skincareawards_1.png"
           }
         },
         "04c3d875-1879-4037-8b26-4c620295586a": {
@@ -455,25 +461,19 @@
           "settings": {
             "icon_img": "shopify:\/\/shop_images\/Untitled_design_39.png"
           }
-        },
-        "9291ac24-4153-4ca4-a61b-5341833d9b05": {
-          "type": "content",
-          "settings": {
-            "icon_img": "shopify:\/\/shop_images\/BSL_-_Commended_2023-01resized.png"
-          }
         }
       },
       "block_order": [
         "template--16029767729314__483972b6-05da-4d1a-964a-d5598ce78682-166974779644c81bd5-0",
         "6cd1848c-f7bf-4d4b-b49a-87fafc1bf5a1",
         "d07b85e1-d45c-4b0d-92b4-9bb639c58aa3",
-        "b6d222dd-da7e-4dd4-a6fe-c434828074e6",
+        "9291ac24-4153-4ca4-a61b-5341833d9b05",
         "c386a58c-88b3-4795-bf9f-df18ab77ba9e",
         "f5903697-c569-4c64-af15-7ea0e970746b",
+        "b6d222dd-da7e-4dd4-a6fe-c434828074e6",
         "04c3d875-1879-4037-8b26-4c620295586a",
         "0bfd51a6-46c3-4eb7-9fd4-90acfefc95d0",
-        "4cc6a7ae-c58d-4385-b414-0a362c07e8b7",
-        "9291ac24-4153-4ca4-a61b-5341833d9b05"
+        "4cc6a7ae-c58d-4385-b414-0a362c07e8b7"
       ],
       "custom_css": [
         "@media (max-width: 768px) {.col-6 {width: 33%; }}"

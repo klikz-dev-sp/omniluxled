@@ -567,6 +567,39 @@ customElements.define("site-overlay", siteOverlay);
       }
     });
 
+    if (sliderElement.classList.contains('pdp-carousel')) {
+      const tabs = document.querySelectorAll(".images__tab");
+      tabs?.forEach(tab => {
+        tab.addEventListener("click", () => {
+          tabs.forEach(tab => tab.classList.remove("active"));
+          tab.classList.add("active");
+          const tabId = tab.id;
+          // Find the first image that have an alt tag containing "tabId"
+          const image = Array.from(document.images).find(img => img.alt.includes(tabId));
+          console.log("image", image)
+          // If an image was found...
+          if (image) {
+            const swiperSlide = image.closest('.swiper-slide');
+            if (swiperSlide) {
+              const index = Array.from(swiperSlide.parentNode.children).indexOf(swiperSlide);
+              slider.slideTo(index, 200, true)
+            }
+          }
+        })
+      })
+        
+      slider.on('slideChangeTransitionEnd', (event) => {
+        const tabs = document.querySelectorAll('.images__tab');
+        const activeSlide = this.querySelector(".swiper-slide-active");
+        const altTag = activeSlide.querySelector("img, video").getAttribute("alt");
+        const tab = document.querySelector(`#${altTag}`);
+        if (tab) {
+          tabs.forEach(tab => tab.classList.remove("active"));
+          tab.classList.add("active");
+        }
+      });
+    }
+
     if(sliderElement.classList.contains('pdp-carousel')){
       productSlider = slider;
     }else if(sliderElement.classList.contains('quickshop-slider')){

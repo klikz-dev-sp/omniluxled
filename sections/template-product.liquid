@@ -1,4 +1,9 @@
 <link rel="stylesheet" href="{{ 'lead-board-experts-slider.css' | asset_url }}" media="print" onload="this.media='all'">
+
+{% if section.settings.product_grid %}
+  {{ 'component-image-tabs.css' | asset_url | stylesheet_tag }}
+  {{ 'component-product-images.css' | asset_url | stylesheet_tag }}
+{% endif %}
 {% comment %} TODO Remove later {% endcomment %}
 <style>
   #reviews-slider {
@@ -55,7 +60,7 @@
     <div class="{% if fluid_layout %}container-fluid{% else %}container{% endif %} mt-lg-0 mt-n1">
         <div class="row">
             <div class="col-lg-7">
-                <div data-type="slider" class="product-images-wrapper pr-lg-4 text-center">
+                <div data-type="slider" class="product-images-wrapper pr-lg-4 text-center {% if section.settings.product_grid %}product-images--slider{% endif %}">
                     <div class="row pdp-img-row {% if product.images.size == 1 %}pdp-one-img{% endif %}">
                     {% if featured_image != blank %}
                         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
@@ -100,17 +105,25 @@
                                         </div>
                                       {% elsif media.media_type == 'external_video' or media.media_type == 'video' %}
                                         <div class="swiper-slide carousel-cell d-flex align-items-center product--media" data-mediaID="{{ media.id }}" role="treeitem">
-                                            {%- render 'media', media: media -%}
+                                            {%- render 'media', media: media, grid: section.settings.product_grid -%}
                                         </div>
                                       {% endif %}
                                     {% endfor %}
                                 </div>
-                                {% if product.images.size > 1 %}
+                                {% if section.settings.product_grid %}
+                                  {% if product.images.size > 1 %}
+                                    <div class="images__tabs">
+                                      <div class="images__tab active" id="product">Product</div>
+                                      <div class="images__tab" id="before-afters">Before & Afters</div>
+                                    </div>                              
+                                  {% endif %}
+                                {% endif %}
+                              </div>
+                              {% if product.images.size > 1 %}
                                 <div class="swiper-pagination swiper-pagination-{{ section.id }} bottom-0 w-100 text-center position-relative d-flex justify-content-center flex-wrap d-lg-none" style="margin-top: 10px;"></div>
                                 <div class="swiper-button-next swiper-button-next-{{ section.id }} d-lg-none ox-arrow-right" {% if product.images.size <= 1 %}style="display: none !important;"{% endif %}></div>
                                 <div class="swiper-button-prev swiper-button-prev-{{ section.id }} d-lg-none ox-arrow-left" {% if product.images.size <= 1 %}style="display: none !important;"{% endif %}></div>
-                                {% endif %}
-                            </div>
+                              {% endif %}
                         </slider-element>
 
                         <!-- Nav Slider functionality is not available directly. Custom Set up for Nav -->
@@ -190,8 +203,52 @@
                     {% endif %}
                     </div>
                 </div>
-            </div>
+                {% if section.settings.product_grid %}
+                  <div class="product-images--desktop">
+                    {% if product.image.size == 1 %}
+                      <div class="product-images__single">
+                          {{ product.featured_image | image_url: width: master | image_tag: alt: product.featured_image.alt, class: 'product-images__image' }}
+                      </div>
+                    {% else %}
+                      <div class="product-images__grid">
+                          {% for image in product.images limit:10 %}
+                          <div class="product-images__cell">
+                              {{ image | image_url: width: master | image_tag: alt: image.alt, class: 'product-images__image' }}
+                          </div>
+                          {% endfor %}
+                          {% if product.images.size > 10 %}
+                            {% for image in product.images offset:10 %}
+                              <div class="product-images__cell more-image" style="display: none;">
+                                  {{ image | image_url: width: master | image_tag: alt: image.alt, class: 'product-images__image' }}
+                              </div>
+                            {% endfor %}
+                          {% endif %}
+                        </div>
+                      <button class="show-more-button btn btn-outline-primary " onclick="showMoreImages()" data-show="true">Show More</button>
+                    {% endif %}
+                  </div>
+                  <script>
+                    function showMoreImages() {
+                      var moreImages = document.querySelectorAll('.more-image');
+                      var showMoreButton = document.querySelector('.show-more-button');
 
+                      if (showMoreButton.dataset.show == "true") {
+                        moreImages.forEach(img => {
+                          img.style.display = "none";
+                        })
+                        showMoreButton.dataset.show = false;
+                        showMoreButton.innerHTML = "Show More";
+                      } else {
+                        moreImages.forEach(img => {
+                          img.style.display = "block";
+                        })
+                        showMoreButton.dataset.show = true;
+                        showMoreButton.innerHTML = "Show Less";
+                      }
+                    }
+                  </script>
+                {% endif %}
+            </div>
             <div class="col-lg-5 ps-xl-6" id="ProductInfo-{{ section.id }}">
                 <div class="product-details-wrapper mt-2 pt-1 mt-lg-0 pt-lg-0 d-flex flex-column" data-slider_type="{{ section.settings.slider_type }}">
                   {%- for block in section.blocks -%}
@@ -661,6 +718,11 @@
     {
       "type": "header",
       "content": "Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "product_grid",
+      "label": "Product Grid Layout & Slider Tabs"
     },
     {
       "type": "checkbox",

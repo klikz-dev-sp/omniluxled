@@ -65,6 +65,10 @@
     flex-wrap: wrap;
 }
 
+.product-images-wrapper {
+    position: relative;
+}
+
 .product-thumbnails {
     /* min-height: 100%; */
     max-height: 550px;

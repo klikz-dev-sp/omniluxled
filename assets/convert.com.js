@@ -1,7 +1,9 @@
 function activateAddToCartGoal() {
+  window.runExperiment = 1;
+
   window._conv_q = window._conv_q || [];
+  window._conv_q.push(['triggerConversion', '10046163']);
   _conv_q.push(['triggerConversion', '10046163']);
-  console.log(_conv_q);
 }
 
 const targetEl = document.getElementById('cart-drawer');

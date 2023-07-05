@@ -2,6 +2,7 @@
   "sections": {
     "4650e625-58c1-458d-8bb0-ff104d2e5c72": {
       "type": "global-image_hero",
+      "disabled": true,
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/OMNI03_Topicals_28854.jpg",
         "image_mobile": "shopify:\/\/shop_images\/OMNI03_Topicals_1385.jpg",
@@ -15,17 +16,16 @@
     },
     "b001f34c-2df8-4b58-af50-b86bb7012553": {
       "type": "global-image_hero",
-      "disabled": true,
       "custom_css": [
         ".overlay {opacity: 0.2 !important;}"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/website_29.png",
-        "image_mobile": "shopify:\/\/shop_images\/website_30.png",
-        "title": "Mask on,<br> acne <em class=\"fw-light\">gone. <\/em>",
-        "subtitle": "Save $45 USD on Omnilux Clear for Acne Awareness Month!",
+        "image_desktop": "shopify:\/\/shop_images\/website_35.png",
+        "image_mobile": "shopify:\/\/shop_images\/website_38.png",
+        "title": "Mask on,<br> wrinkles <em class=\"fw-light\">gone. <\/em>",
+        "subtitle": "Noninvasive LED treatments <br>delivering age-defying results.",
         "btn_text": "Shop Now",
-        "btn_link": "shopify:\/\/products\/omnilux-clear",
+        "btn_link": "shopify:\/\/collections\/all",
         "content_position": "2",
         "custom_class": ""
       }
@@ -595,6 +595,8 @@
             "btn_variant": "primary",
             "btn_size": "",
             "btn_txt_watch": "",
+            "watch_video_id": "",
+            "watch_mobile_video_id": "",
             "btn_type_watch": "",
             "btn_variant_watch": "primary",
             "btn_size_watch": "",
@@ -623,6 +625,8 @@
             "btn_variant": "primary",
             "btn_size": "",
             "btn_txt_watch": "",
+            "watch_video_id": "",
+            "watch_mobile_video_id": "",
             "btn_type_watch": "",
             "btn_variant_watch": "primary",
             "btn_size_watch": "",

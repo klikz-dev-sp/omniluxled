@@ -6,58 +6,58 @@
         "e38ac31d-5bd6-47c0-9bc0-dd866e282641": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-07-12_at_5.38.00_PM.jpg",
+            "image": "shopify://shop_images/Screen_Shot_2023-07-12_at_5.38.00_PM.jpg",
             "label": "Lizeth’s Story",
-            "video": "shopify:\/\/files\/videos\/lizethstory.mp4"
+            "video": "shopify://files/videos/lizethstory.mp4"
           }
         },
         "e6acb30c-fb23-47bd-9aca-c1da92e3dcfc": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-21_at_5.09.51_PM.jpg",
+            "image": "shopify://shop_images/Screen_Shot_2023-03-21_at_5.09.51_PM.jpg",
             "label": "Deborah's Story",
-            "video": "shopify:\/\/files\/videos\/test2.mov"
+            "video": "shopify://files/videos/test2.mov"
           }
         },
         "97612f92-d4dc-4b9a-8da8-18305aa85257": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-21_at_8.29.07_AM.png",
+            "image": "shopify://shop_images/Screen_Shot_2023-03-21_at_8.29.07_AM.png",
             "label": "Anna's Story",
-            "video": "shopify:\/\/files\/videos\/Video 3 - IG Scroller.mp4"
+            "video": "shopify://files/videos/Video 3 - IG Scroller.mp4"
           }
         },
         "392cd7d4-bfcd-45f2-a584-98c96d8332d9": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-21_at_8.28.15_AM.png",
+            "image": "shopify://shop_images/Screen_Shot_2023-03-21_at_8.28.15_AM.png",
             "label": "Tanya's Story",
-            "video": "shopify:\/\/files\/videos\/Video 2 - IG Scroller.mp4"
+            "video": "shopify://files/videos/Video 2 - IG Scroller.mp4"
           }
         },
         "cd5a9719-eda6-4ad9-9b9d-c3c66cf96667": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-21_at_12.48.02_PM.png",
+            "image": "shopify://shop_images/Screen_Shot_2023-03-21_at_12.48.02_PM.png",
             "label": "Lina's Story",
-            "video": "shopify:\/\/files\/videos\/Testimonial 6.mp4"
+            "video": "shopify://files/videos/Testimonial 6.mp4"
           }
         },
         "80e3c423-00bf-498e-8e0d-1145a60fef24": {
           "type": "circle-link",
           "disabled": true,
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-21_at_12.51.49_PM.png",
+            "image": "shopify://shop_images/Screen_Shot_2023-03-21_at_12.51.49_PM.png",
             "label": "Deanna's Story",
-            "video": "shopify:\/\/files\/videos\/Testimonial 7.mp4"
+            "video": "shopify://files/videos/Testimonial 7.mp4"
           }
         },
         "46b73a84-50cf-4aab-8f9e-de39a54a1613": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-21_at_12.56.02_PM.png",
+            "image": "shopify://shop_images/Screen_Shot_2023-03-21_at_12.56.02_PM.png",
             "label": "Sarah's Story",
-            "video": "shopify:\/\/files\/videos\/Omnilux Contour LED Mask Review.mp4"
+            "video": "shopify://files/videos/Omnilux Contour LED Mask Review.mp4"
           }
         }
       },
@@ -82,33 +82,33 @@
         "6ce22c15-9550-44cf-b290-22e0d69efb10": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-04-07_at_2.21.22_PM.jpg",
+            "image": "shopify://shop_images/Screen_Shot_2023-04-07_at_2.21.22_PM.jpg",
             "label": "Ariana's Story",
-            "video": "shopify:\/\/files\/videos\/OmniLux CLEAR_ Ariana's Story.mp4"
+            "video": "shopify://files/videos/OmniLux CLEAR_ Ariana's Story.mp4"
           }
         },
         "f5ead3a0-d024-4492-80ff-131f79ca714d": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-03-19_at_9.40.29_PM.jpg",
+            "image": "shopify://shop_images/Screen_Shot_2023-03-19_at_9.40.29_PM.jpg",
             "label": "Jess's Story",
-            "video": "shopify:\/\/files\/videos\/Omnilux CLEAR_ Jess' Story.mp4"
+            "video": "shopify://files/videos/Omnilux CLEAR_ Jess' Story.mp4"
           }
         },
         "90ccee30-cb0b-4eff-b493-24753f4bc1fd": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-04-07_at_2.26.19_PM.jpg",
+            "image": "shopify://shop_images/Screen_Shot_2023-04-07_at_2.26.19_PM.jpg",
             "label": "Sophie's Story",
-            "video": "shopify:\/\/files\/videos\/OmniLux CLEAR_ Sophie's Story.mp4"
+            "video": "shopify://files/videos/OmniLux CLEAR_ Sophie's Story.mp4"
           }
         },
         "f6c1532d-2a8e-4c7d-901d-cf816d9d28f9": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/alana.jpg",
+            "image": "shopify://shop_images/alana.jpg",
             "label": "Alana's Story",
-            "video": "shopify:\/\/files\/videos\/Omnilux CLEAR_ Alana's Story.mp4"
+            "video": "shopify://files/videos/Omnilux CLEAR_ Alana's Story.mp4"
           }
         }
       },
@@ -129,17 +129,16 @@
       "blocks": {
         "91e63a47-3793-4c06-8bc0-6262e9601d1d": {
           "type": "name",
-          "settings": {
-          }
+          "settings": {}
         },
         "34759ff9-557c-4b32-b07e-3887a3ebc44c": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "type": "shopify://apps/okendo-product-reviews-ugc/blocks/star-rating/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}"
           }
         },
         "116091eb-d594-4e03-9c58-063d82ddd3c5": {
-          "type": "shopify:\/\/apps\/stamped-product-reviews-ugc\/blocks\/star-rating-badge\/a103faaf-2125-4b0e-89fa-de5149736723",
+          "type": "shopify://apps/stamped-product-reviews-ugc/blocks/star-rating-badge/a103faaf-2125-4b0e-89fa-de5149736723",
           "disabled": true,
           "settings": {
             "use_metafields": true,
@@ -150,8 +149,7 @@
         },
         "3b316236-d91e-4dd0-953a-173c1f40bfcf": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "8e1316df-f2b1-417b-9d0e-96f8b25e8b7c": {
           "type": "description",
@@ -163,28 +161,25 @@
           "type": "subtitle",
           "disabled": true,
           "settings": {
-            "subtitle": "<div id=\"mobile-warranty\">{{ product.metafields['custom']['warranty'] }}<\/div>"
+            "subtitle": "<div id=\"mobile-warranty\">{{ product.metafields['custom']['warranty'] }}</div>"
           }
         },
         "b253ffff-d04d-43a0-9d68-fabdd77b595a": {
           "type": "product_form",
-          "settings": {
-          }
+          "settings": {}
         },
         "3ec0cedf-fb32-4e6f-b392-8ad9d16f7103": {
-          "type": "shopify:\/\/apps\/sellup-upsell-add-ons\/blocks\/onpage_offers\/001ec440-29ea-4cbf-9265-4963fa825261",
-          "settings": {
-          }
+          "type": "shopify://apps/sellup-upsell-add-ons/blocks/onpage_offers/001ec440-29ea-4cbf-9265-4963fa825261",
+          "settings": {}
         },
         "8a51062c-4d9c-422e-b490-fae013f03593": {
-          "type": "shopify:\/\/apps\/sellup-upsell-add-ons\/blocks\/onpage_offers\/001ec440-29ea-4cbf-9265-4963fa825261",
-          "settings": {
-          }
+          "type": "shopify://apps/sellup-upsell-add-ons/blocks/onpage_offers/001ec440-29ea-4cbf-9265-4963fa825261",
+          "settings": {}
         },
         "ca347699-3f52-4af0-801c-1e7f4098829d": {
           "type": "subscription-info",
           "settings": {
-            "info": "<ul><li>Auto-shipped every 4, 6, or 8 weeks so you never run out<\/li><li>15% off every subscription order<\/li><li>Free shipping on every subscription order<\/li><li>First access to new product offerings<\/li><li>Flexible subscription plan options<\/li><\/ul>"
+            "info": "<ul><li>Auto-shipped every 4, 6, or 8 weeks so you never run out</li><li>15% off every subscription order</li><li>Free shipping on every subscription order</li><li>First access to new product offerings</li><li>Flexible subscription plan options</li></ul>"
           }
         },
         "847ff075-3bf5-4b88-bff7-4982bbafd833": {
@@ -262,9 +257,7 @@
         "5ff57fbd-bd1b-4246-8fda-fbffa899311f",
         "b28e74b9-4684-423e-8193-201bae66e281"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
         "product_grid": false,
         "product_tabs_mobile": true,
@@ -353,43 +346,43 @@
         "f6a0c3c4-ae37-4254-a29d-2ffb434f8994": {
           "type": "review",
           "settings": {
-            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_copy_1d055af3-5189-4df9-b9fc-b5a22244e5a7.jpg",
-            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_image": "shopify://shop_images/Frame_1000003047_copy_1d055af3-5189-4df9-b9fc-b5a22244e5a7.jpg",
+            "review_country": "shopify://shop_images/usa.svg",
             "review_percentage": "95%",
-            "percentage_text": "<p><strong>Firmer and Smoother<\/strong> facial skin<\/p>",
+            "percentage_text": "<p><strong>Firmer and Smoother</strong> facial skin</p>",
             "review_title": "Firmer & Plumper Skin",
-            "review_description": "<ul><li>Witnessed a considerable improvement in skin firmness and fullness.<\/li><li>Noticed skin appearing plumper and more vibrant after just 4 weeks.<\/li><\/ul>",
+            "review_description": "<ul><li>Witnessed a considerable improvement in skin firmness and fullness.</li><li>Noticed skin appearing plumper and more vibrant after just 4 weeks.</li></ul>",
             "review_author": "Cynthia",
             "review_verified_text": "Verified buyer",
-            "footer_text": "<p><strong>23 out of 25 participants<\/strong> reported their skin felt firmer after 3 treatments per week for 4 weeks<\/p>"
+            "footer_text": "<p><strong>23 out of 25 participants</strong> reported their skin felt firmer after 3 treatments per week for 4 weeks</p>"
           }
         },
         "290dd027-7a41-4ffe-ad02-5c84e59de005": {
           "type": "review",
           "settings": {
-            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_e73a18ba-99e0-4c52-b514-2442578d3b8b.jpg",
-            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_image": "shopify://shop_images/Frame_1000003047_e73a18ba-99e0-4c52-b514-2442578d3b8b.jpg",
+            "review_country": "shopify://shop_images/usa.svg",
             "review_percentage": "96%",
-            "percentage_text": "<p><strong>Smoother<\/strong> facial wrinkle and fine lines<\/p>",
+            "percentage_text": "<p><strong>Smoother</strong> facial wrinkle and fine lines</p>",
             "review_title": "Reduced Fine Lines",
-            "review_description": "<ul><li>Experienced brighter, more vibrant skin after just 4 weeks.<\/li><li>Felt complexion improved, achieving a more youthful, radiant glow.<\/li><\/ul>",
+            "review_description": "<ul><li>Experienced brighter, more vibrant skin after just 4 weeks.</li><li>Felt complexion improved, achieving a more youthful, radiant glow.</li></ul>",
             "review_author": "Caitlin",
             "review_verified_text": "Verified buyer",
-            "footer_text": "<p><strong>24 out of 25 participants<\/strong> reported that their skin felt softer and smoother after 3 treatments per week for 4 weeks<\/p>"
+            "footer_text": "<p><strong>24 out of 25 participants</strong> reported that their skin felt softer and smoother after 3 treatments per week for 4 weeks</p>"
           }
         },
         "cb5608c2-b1a2-44d9-a405-e8723930350e": {
           "type": "review",
           "settings": {
-            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_copy_2_d6de62b5-0101-4a0f-aab0-ebc607dc06d8.jpg",
-            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_image": "shopify://shop_images/Frame_1000003047_copy_2_d6de62b5-0101-4a0f-aab0-ebc607dc06d8.jpg",
+            "review_country": "shopify://shop_images/usa.svg",
             "review_percentage": "98%",
-            "percentage_text": "<p><strong>Brighter and plumper<\/strong> facial skin<\/p>",
+            "percentage_text": "<p><strong>Brighter and plumper</strong> facial skin</p>",
             "review_title": "Reduced Redness",
-            "review_description": "<ul><li>Calms redness and promotes a healthy, glowing complexion.<\/li><li>Experienced the soothing, anti-inflammatory benefits of Omnilux light therapy.<\/li><\/ul>",
+            "review_description": "<ul><li>Calms redness and promotes a healthy, glowing complexion.</li><li>Experienced the soothing, anti-inflammatory benefits of Omnilux light therapy.</li></ul>",
             "review_author": "Emma",
             "review_verified_text": "Verified buyer",
-            "footer_text": "<p><strong>25 out of 25 participants<\/strong> reported that their skin felt plumper, brighter, and more hydrated after 3 treatments per week for 4 weeks<\/p>"
+            "footer_text": "<p><strong>25 out of 25 participants</strong> reported that their skin felt plumper, brighter, and more hydrated after 3 treatments per week for 4 weeks</p>"
           }
         }
       },
@@ -411,46 +404,46 @@
         "cb3770a8-91d8-45ce-8248-2b62a8864c6e": {
           "type": "review",
           "settings": {
-            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_copy_2_d6de62b5-0101-4a0f-aab0-ebc607dc06d8.jpg",
-            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_image": "shopify://shop_images/Frame_1000003047_copy_2_d6de62b5-0101-4a0f-aab0-ebc607dc06d8.jpg",
+            "review_country": "shopify://shop_images/usa.svg",
             "review_percentage": "98%",
-            "percentage_text": "<p><strong>Brighter and plumper<\/strong> facial skin<\/p>",
+            "percentage_text": "<p><strong>Brighter and plumper</strong> facial skin</p>",
             "review_title": "In clinical studies, users experienced:",
-            "review_description": "<ul><li>Calms redness and promotes a healthy, glowing complexion.<\/li><li>Experienced the soothing, anti-inflammatory benefits of Omnilux light therapy.<\/li><\/ul>",
+            "review_description": "<ul><li>Calms redness and promotes a healthy, glowing complexion.</li><li>Experienced the soothing, anti-inflammatory benefits of Omnilux light therapy.</li></ul>",
             "review_author": "Emma",
             "author_quote": "",
             "review_verified_text": "Verified buyer",
-            "footer_text": "<p><strong>25 out of 25 participants<\/strong> reported that their skin felt plumper, brighter, and more hydrated after 3 treatments per week for 4 weeks<\/p>"
+            "footer_text": "<p><strong>25 out of 25 participants</strong> reported that their skin felt plumper, brighter, and more hydrated after 3 treatments per week for 4 weeks</p>"
           }
         },
         "2bcaf647-14b0-4037-8ae3-cd56658f49b4": {
           "type": "review",
           "settings": {
-            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_copy_1d055af3-5189-4df9-b9fc-b5a22244e5a7.jpg",
-            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_image": "shopify://shop_images/Frame_1000003047_copy_1d055af3-5189-4df9-b9fc-b5a22244e5a7.jpg",
+            "review_country": "shopify://shop_images/usa.svg",
             "review_percentage": "95%",
-            "percentage_text": "<p><strong>Firmer and Smoother<\/strong> facial skin<\/p>",
+            "percentage_text": "<p><strong>Firmer and Smoother</strong> facial skin</p>",
             "review_title": "In clinical studies, users experienced:",
-            "review_description": "<ul><li>Witnessed a considerable improvement in skin firmness and fullness.<\/li><li>Noticed skin appearing plumper and more vibrant after just 4 weeks.<\/li><\/ul>",
+            "review_description": "<ul><li>Witnessed a considerable improvement in skin firmness and fullness.</li><li>Noticed skin appearing plumper and more vibrant after just 4 weeks.</li></ul>",
             "review_author": "Cynthia",
             "author_quote": "",
             "review_verified_text": "Verified buyer",
-            "footer_text": "<p><strong>23 out of 25 participants<\/strong> reported their skin felt firmer after 3 treatments per week for 4 weeks.<\/p>"
+            "footer_text": "<p><strong>23 out of 25 participants</strong> reported their skin felt firmer after 3 treatments per week for 4 weeks.</p>"
           }
         },
         "7979fdba-e6ce-4ff0-91c2-f0c569c9fffd": {
           "type": "review",
           "settings": {
-            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_e73a18ba-99e0-4c52-b514-2442578d3b8b.jpg",
-            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_image": "shopify://shop_images/Frame_1000003047_e73a18ba-99e0-4c52-b514-2442578d3b8b.jpg",
+            "review_country": "shopify://shop_images/usa.svg",
             "review_percentage": "96%",
-            "percentage_text": "<p><strong>Smoother<\/strong> facial wrinkle and fine lines<\/p>",
+            "percentage_text": "<p><strong>Smoother</strong> facial wrinkle and fine lines</p>",
             "review_title": "In clinical studies, users experienced:",
-            "review_description": "<ul><li>Experienced brighter, more vibrant skin after just 4 weeks.<\/li><li>Felt complexion improved, achieving a more youthful, radiant glow.<\/li><\/ul>",
+            "review_description": "<ul><li>Experienced brighter, more vibrant skin after just 4 weeks.</li><li>Felt complexion improved, achieving a more youthful, radiant glow.</li></ul>",
             "review_author": "Caitlin",
             "author_quote": "",
             "review_verified_text": "Verified buyer",
-            "footer_text": "<p><strong>24 out of 25 participants<\/strong> reported that their skin felt softer and smoother after 3 treatments per week for 4 weeks<\/p>"
+            "footer_text": "<p><strong>24 out of 25 participants</strong> reported that their skin felt softer and smoother after 3 treatments per week for 4 weeks</p>"
           }
         }
       },
@@ -468,7 +461,7 @@
     "4f5f33ca-10a4-41a3-b40c-038b76049541": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\"><div data-oke-reviews-product-listing-rating>{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews<\/span>\n<\/div><\/div><\/div>\n<p>We've helped 125,000+ customers achieve their skin goals.<\/p>\n<\/div>\n\n<div class=\"clearpdp\">\n<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\"><div data-oke-star-rating data-oke-reviews-product-id=\"shopify-6760463892642\">{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews<\/span>\n<\/div><\/div><\/div>\n<p>We've helped 125,000+ customers achieve their skin goals.<\/p>\n<\/div><\/div>"
+        "custom_liquid": "<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux</h2>\n<div class=\"starreviews\"><div data-oke-reviews-product-listing-rating>{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews</span>\n</div></div></div>\n<p>We've helped 125,000+ customers achieve their skin goals.</p>\n</div>\n\n<div class=\"clearpdp\">\n<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux</h2>\n<div class=\"starreviews\"><div data-oke-star-rating data-oke-reviews-product-id=\"shopify-6760463892642\">{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews</span>\n</div></div></div>\n<p>We've helped 125,000+ customers achieve their skin goals.</p>\n</div></div>"
       }
     },
     "1598637a-3252-49e4-bfcc-d63e53d9c6b6": {
@@ -477,46 +470,46 @@
         "10e6e883-2fc2-43bf-a56f-3ce24c0149cf": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Video_Testimonial.png",
+            "image": "shopify://shop_images/Video_Testimonial.png",
             "label": "Lizeth’s Story",
             "excerpt": "",
-            "video": "shopify:\/\/files\/videos\/lizethstory.mp4"
+            "video": "shopify://files/videos/lizethstory.mp4"
           }
         },
         "c422a032-1e24-42cd-adec-7c9a126fafc4": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy.png",
+            "image": "shopify://shop_images/Video_Testimonial_copy.png",
             "label": "Deborah's Story",
             "excerpt": "",
-            "video": "shopify:\/\/files\/videos\/test2.mov"
+            "video": "shopify://files/videos/test2.mov"
           }
         },
         "19dec470-df8b-4c9f-9194-2029fc26965f": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy_2.png",
+            "image": "shopify://shop_images/Video_Testimonial_copy_2.png",
             "label": "Anna's Story",
             "excerpt": "",
-            "video": "shopify:\/\/files\/videos\/Video 3 - IG Scroller.mp4"
+            "video": "shopify://files/videos/Video 3 - IG Scroller.mp4"
           }
         },
         "93b0c54c-0a98-4ab9-964a-07d92c83d255": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy_4.png",
+            "image": "shopify://shop_images/Video_Testimonial_copy_4.png",
             "label": "Tanya's Story",
             "excerpt": "",
-            "video": "shopify:\/\/files\/videos\/Video 2 - IG Scroller.mp4"
+            "video": "shopify://files/videos/Video 2 - IG Scroller.mp4"
           }
         },
         "e828c705-b186-4d23-a4ac-48e83bd77a68": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy_3.png",
+            "image": "shopify://shop_images/Video_Testimonial_copy_3.png",
             "label": "Lina's Story",
             "excerpt": "",
-            "video": "shopify:\/\/files\/videos\/Testimonial 6.mp4"
+            "video": "shopify://files/videos/Testimonial 6.mp4"
           }
         }
       },
@@ -539,37 +532,37 @@
         "5e3b736c-3b1c-4c18-b1d0-61ead0e0b5f0": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/ariana.png",
+            "image": "shopify://shop_images/ariana.png",
             "label": "Ariana's Story",
             "excerpt": "",
-            "video": "shopify:\/\/files\/videos\/OmniLux CLEAR_ Ariana's Story.mp4"
+            "video": "shopify://files/videos/OmniLux CLEAR_ Ariana's Story.mp4"
           }
         },
         "c7297638-eac3-4d36-9152-471ba21228db": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/jess.png",
+            "image": "shopify://shop_images/jess.png",
             "label": "Jess's Story",
             "excerpt": "",
-            "video": "shopify:\/\/files\/videos\/Omnilux CLEAR_ Jess' Story.mp4"
+            "video": "shopify://files/videos/Omnilux CLEAR_ Jess' Story.mp4"
           }
         },
         "c258c722-53d6-454c-9fda-07f5b7e0f916": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Video_Testimonial_0ade517f-a55c-4c60-b8ab-a3a81fe10ba2.png",
+            "image": "shopify://shop_images/Video_Testimonial_0ade517f-a55c-4c60-b8ab-a3a81fe10ba2.png",
             "label": "Sophie's Story",
             "excerpt": "",
-            "video": "shopify:\/\/files\/videos\/OmniLux CLEAR_ Sophie's Story.mp4"
+            "video": "shopify://files/videos/OmniLux CLEAR_ Sophie's Story.mp4"
           }
         },
         "1861f051-aea6-4057-b328-f041be4f2c58": {
           "type": "circle-link",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy_b6bc44ea-a3d5-4fa7-84bd-6e0883900c6f.png",
+            "image": "shopify://shop_images/Video_Testimonial_copy_b6bc44ea-a3d5-4fa7-84bd-6e0883900c6f.png",
             "label": "Alana's Story",
             "excerpt": "",
-            "video": "shopify:\/\/files\/videos\/Omnilux CLEAR_ Alana's Story.mp4"
+            "video": "shopify://files/videos/Omnilux CLEAR_ Alana's Story.mp4"
           }
         }
       },
@@ -588,7 +581,7 @@
     "5fc33cbe-b23b-43d7-b393-0425cd94b49e": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"seereviewsbtn\">\n<div class=\"seeallreviews\"><div class=\"container is-flex is-justify-center\"><span id=\"scrollToReviews\">SEE MORE REVIEWS AND RESULTS<\/a><\/div><\/div><\/div>"
+        "custom_liquid": "<div class=\"seereviewsbtn\">\n<div class=\"seeallreviews\"><div class=\"container is-flex is-justify-center\"><span id=\"scrollToReviews\">SEE MORE REVIEWS AND RESULTS</a></div></div></div>"
       }
     },
     "8d4dfa60-174c-4b28-9812-ab31ef599696": {
@@ -597,19 +590,19 @@
         "b4cbdc09-0aa5-488f-9877-fb7f9789d4bc": {
           "type": "logowidthtext",
           "settings": {
-            "watch_video_id": "https:\/\/www.youtube.com\/embed\/EmKJfqoLXgk"
+            "watch_video_id": "https://www.youtube.com/embed/EmKJfqoLXgk"
           }
         },
         "0fb9a067-2046-4361-9075-78ba613a0a94": {
           "type": "logowidthtext",
           "settings": {
-            "watch_video_id": "https:\/\/www.youtube.com\/embed\/BcT9M0Ye6Is"
+            "watch_video_id": "https://www.youtube.com/embed/BcT9M0Ye6Is"
           }
         },
         "76e7d130-868f-4603-9228-3ce3e820fb17": {
           "type": "logowidthtext",
           "settings": {
-            "watch_video_id": "https:\/\/www.youtube.com\/embed\/fdYkRP4jUwo"
+            "watch_video_id": "https://www.youtube.com/embed/fdYkRP4jUwo"
           }
         }
       },
@@ -646,7 +639,7 @@
       "type": "product-banner-text",
       "custom_css": [
         "section > div > div > div.col-12.col-md-6.col-lg-5.mt-4.ms-auto.mt-md-0.pt-lg-0.pt-1.order-md-1 > div > div.m-lg-n3.m-n2.my-n2.d-flex.flex-wrap.pt-lg-0 > div:nth-child(2) {display: none;}",
-        ".btn-primary {width: 100%;}"
+        ".pt-1 {padding-bottom: 1rem !important;}"
       ],
       "settings": {
         "display_for_this_product": "{{product.metafields.custom.image_text_enable}}",
@@ -671,7 +664,7 @@
         "video_watch_mobile_id": "{{ product.metafields.custom.custom.image_text_watch_video_id }}",
         "btn_type_watch": "outline",
         "btn_variant_watch": "primary",
-        "btn_size_watch": "",
+        "btn_size_watch": "btn-lg",
         "btn_txt": "{{product.metafields.custom.image_text_watch_review}}",
         "video_review_id": "{{ product.metafields['custom']['image_text_review_video_id'] }}",
         "video_review_mobile_id": "",
@@ -764,18 +757,18 @@
       "settings": {
         "title": "The beauty of clinical results from home - minus the ‘clinical’ costs",
         "subtitle": "A daily 10 minute session is like going to the beauty clinic five times a week. Minus the on-going costs, the time commitment, the overpromises, the upselling.",
-        "image_left": "shopify:\/\/shop_images\/Omnilux_Contour_Face.png",
+        "image_left": "shopify://shop_images/Omnilux_Contour_Face.png",
         "price_left": "$395",
         "name_left": "Omnilux Contour Face",
         "highlight_left": "One-time cost Investment",
         "description_left": "Daily  treatments give you clinical results that are equivalent to regular clinical sessions - for a fraction of the usual cost. Your money is made back after you’ve skipped three visits to the clinic.",
-        "icon_left": "shopify:\/\/shop_images\/Yes.svg",
-        "image_right": "shopify:\/\/shop_images\/In-Clinic_Dermatologist.png",
+        "icon_left": "shopify://shop_images/Yes.svg",
+        "image_right": "shopify://shop_images/In-Clinic_Dermatologist.png",
         "price_right": "$300 -$900",
-        "name_right": "In-Clinic\/ Dermatologist",
+        "name_right": "In-Clinic/ Dermatologist",
         "highlight_right": "Per 6 session treatment cost",
         "description_right": "Professional treatments are effective, but multiple, regular sessions are requires to see long term results - these are expensive and time consuming.",
-        "icon_right": "shopify:\/\/shop_images\/No.svg"
+        "icon_right": "shopify://shop_images/No.svg"
       }
     },
     "ee32d731-64d8-43e4-a200-3aad66c37be5": {
@@ -903,10 +896,10 @@
         "fluid_layout": false,
         "gradient_tone": false,
         "heading_txt": "In clinical studies, Omnilux Contour users agreed:",
-        "img_text1": "<p>After 3 treatments per week for 4 weeks<\/p>",
+        "img_text1": "<p>After 3 treatments per week for 4 weeks</p>",
         "img_text2": "",
         "max_width": 700,
-        "image": "shopify:\/\/shop_images\/smilebkdesktop-1660850033672.jpg",
+        "image": "shopify://shop_images/smilebkdesktop-1660850033672.jpg",
         "alignment": "text-left",
         "image_alignment": "right",
         "pt": 80,
@@ -1269,16 +1262,14 @@
       "type": "apps",
       "blocks": {
         "db62bf7d-43d4-4e5f-9fbc-bad80cc7e15f": {
-          "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/reviews-widget\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
+          "type": "shopify://apps/okendo-product-reviews-ugc/blocks/reviews-widget/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
           "settings": {
             "product": "{{product}}",
             "widget_type": "combined_widget"
           }
         }
       },
-      "block_order": [
-        "db62bf7d-43d4-4e5f-9fbc-bad80cc7e15f"
-      ],
+      "block_order": ["db62bf7d-43d4-4e5f-9fbc-bad80cc7e15f"],
       "custom_css": [
         ".okeReviews.oke-w {align-items: center; display: flex; justify-content: center;}",
         ".js-oke-widgetSize.oke-is-large {max-width: 1200px;}"
@@ -1291,7 +1282,7 @@
       "type": "info-text",
       "settings": {
         "fluid_layout": false,
-        "img_text1": "<p>*Applies to Ground shipping rates only. Excludes Hawaii, Alaska, New Zealand, Bosnia & Herzegovina, Iceland, Latvia, Lithuania, and Northern Ireland<\/p>",
+        "img_text1": "<p>*Applies to Ground shipping rates only. Excludes Hawaii, Alaska, New Zealand, Bosnia & Herzegovina, Iceland, Latvia, Lithuania, and Northern Ireland</p>",
         "pt": 0,
         "pb": 5,
         "pts": 0,

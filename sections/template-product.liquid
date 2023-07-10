@@ -50,7 +50,40 @@
     endcapture
   -%}
  
-
+{% assign freeGiftTagFlag = false %}
+  {% if settings.enable_gift_tag == true %}
+    {% if settings.is_gwpc_enabled == true %}
+      {% assign gwpcCollection1 = collections[settings.gwp_collection1] %}
+      {% assign gwpcCollection2 = collections[settings.gwp_collection2] %}
+      {% assign gwpcCollection3 = collections[settings.gwp_collection3] %}
+      {% if gwpcCollection1 != blank or gwpcCollection2 != blank or gwpcCollection3 != blank %}
+          {% for itemCollection in product.collections %}
+              {% if gwpcCollection1.handle == itemCollection.handle or gwpcCollection2.handle == itemCollection.handle or gwpcCollection3.handle == itemCollection.handle %}
+                  {% assign freeGiftTagFlag = true %}
+                  {% break %}
+              {% endif %}
+          {% endfor %}
+      {% endif %}
+    {% endif %}
+    {% if settings.is_gwpp_enabled == true and freeGiftTagFlag != true %}
+      {% assign gwppQualifierProductColl = settings.gwpp_product %}
+      {% if gwppQualifierProductColl != blank %}
+          {% if product.handle == all_products[gwppQualifierProductColl].handle %}
+            {% assign freeGiftTagFlag = true %}
+          {% endif %} 
+      {% endif %}
+    {% endif %}
+    {% if settings.is_gwp_tier1_enabled_qtybased == true and freeGiftTagFlag != true %}
+      {% assign gwp_tier1_target_productsColl = settings.gwp_tier1_products_qty | split: ',' %}
+      {% for gwpProduct in gwp_tier1_target_productsColl %}
+          {% assign productSplit = gwpProduct | split: ':' %}
+          {% assign getProductHandle = productSplit[0] %}
+          {% if getProductHandle == product.handle %}
+            {% assign freeGiftTagFlag = true %}
+          {% endif %}
+      {% endfor %}
+    {% endif %}
+  {% endif %}
 
   <section class="section-content border-top pt-lg-6 pt-4 pb-0 {% if section.settings.enable_background_tone %}position-relative background-tone{% endif %}" data-product-container>
       {% if section.settings.enable_background_tone %}
@@ -61,8 +94,15 @@
     <div class="{% if fluid_layout %}container-fluid{% else %}container{% endif %} mt-lg-0 mt-n1">
         <div class="row">
             <div class="col-lg-7">
-                <div data-type="slider" class="product-images-wrapper pr-lg-4 text-center {% if section.settings.product_tabs_mobile %}product-images--slider{% endif %}">
-                    <div class="row pdp-img-row {% if product.images.size == 1 %}pdp-one-img{% endif %}">
+                <div data-type="slider" class="product-images-wrapper pr-lg-4 text-center {% if section.settings.product_grid %}product-images--slider{% endif %}">
+                  {% if freeGiftTagFlag == true %}
+                    <span class="badges free-gift-badge-sec free-gift-badge-sec-product-page">
+                      <span class="badge free-gift-badge text-white bg-black" >
+                          {{ settings.gift_tag_text }}
+                      </span>
+                    </span>
+                  {% endif %}  
+                  <div class="row pdp-img-row {% if product.images.size == 1 %}pdp-one-img{% endif %}">
                     {% if featured_image != blank %}
                         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
                           {{ "accessibility.skip_to_product_info" | t }}

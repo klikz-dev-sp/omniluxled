@@ -12,6 +12,10 @@
             "logo_image__": "",
             "title": "Omnilux Contour",
             "subtitle": "<p>FDA-cleared, dermatologist-recommended red<\/p><p> light therapy devices clinically proven to <\/p><p>rejuvenate aging skin.<\/p>",
+            "heading__size": false,
+            "heading__lg": 60,
+            "heading__md": 55,
+            "heading__sm": 50,
             "play_icon": false,
             "play_btn": false,
             "btn_txt_watch": "",
@@ -49,6 +53,10 @@
             "logo_image__": "",
             "title": "Omnilux Contour",
             "subtitle": "<p>FDA-cleared, dermatologist-recommended red<\/p><p> light therapy devices clinically proven to <\/p><p>rejuvenate aging skin.<\/p>",
+            "heading__size": false,
+            "heading__lg": 60,
+            "heading__md": 55,
+            "heading__sm": 50,
             "play_icon": false,
             "play_btn": false,
             "btn_txt_watch": "",
@@ -87,6 +95,10 @@
             "logo_image__": "",
             "title": "Omnilux Contour",
             "subtitle": "<p>FDA-cleared, dermatologist-recommended red<\/p><p> light therapy devices clinically proven to <\/p><p>rejuvenate aging skin.<\/p>",
+            "heading__size": false,
+            "heading__lg": 60,
+            "heading__md": 55,
+            "heading__sm": 50,
             "play_icon": false,
             "play_btn": false,
             "btn_txt_watch": "",
@@ -127,7 +139,8 @@
         "nav_arrows": false,
         "nav_dots": true,
         "nav_dots_right": true,
-        "height": "tallheight"
+        "height": "tallheight",
+        "top_padding_zero": true
       }
     },
     "395e59c7-ebb9-444c-979a-1170f628c99d": {
@@ -183,6 +196,7 @@
       ],
       "settings": {
         "fluid_layout": false,
+        "gradient_tone": true,
         "icon_layout": false,
         "grid_size": "2",
         "heading_txt": "",
@@ -193,7 +207,8 @@
         "pts": 40,
         "pbs": 40,
         "border-top": false,
-        "border-bottom": false
+        "border-bottom": false,
+        "css_class": ""
       }
     },
     "f371fe0d-7eee-4fed-abc8-0a544ef9495a": {
@@ -217,6 +232,8 @@
             "btn_variant": "primary",
             "btn_size": "",
             "btn_txt_watch": "",
+            "watch_video_id": "",
+            "watch_mobile_video_id": "",
             "btn_type_watch": "",
             "btn_variant_watch": "primary",
             "btn_size_watch": "",
@@ -245,6 +262,8 @@
             "btn_variant": "primary",
             "btn_size": "",
             "btn_txt_watch": "",
+            "watch_video_id": "",
+            "watch_mobile_video_id": "",
             "btn_type_watch": "",
             "btn_variant_watch": "primary",
             "btn_size_watch": "",
@@ -565,6 +584,7 @@
       ],
       "settings": {
         "fluid_layout": false,
+        "gradient_tone": true,
         "icon_layout": true,
         "grid_size": "6",
         "heading_txt": "",
@@ -575,7 +595,8 @@
         "pts": 40,
         "pbs": 32,
         "border-top": true,
-        "border-bottom": false
+        "border-bottom": false,
+        "css_class": ""
       }
     },
     "305a9c02-a67c-4448-b931-6947cdb1d7dd": {
@@ -644,6 +665,8 @@
             "btn_variant": "primary",
             "btn_size": "",
             "btn_txt_watch": "",
+            "watch_video_id": "",
+            "watch_mobile_video_id": "",
             "btn_type_watch": "",
             "btn_variant_watch": "primary",
             "btn_size_watch": "",
@@ -672,6 +695,8 @@
             "btn_variant": "primary",
             "btn_size": "",
             "btn_txt_watch": "",
+            "watch_video_id": "",
+            "watch_mobile_video_id": "",
             "btn_type_watch": "",
             "btn_variant_watch": "primary",
             "btn_size_watch": "",

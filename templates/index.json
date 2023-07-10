@@ -17,13 +17,13 @@
     "b001f34c-2df8-4b58-af50-b86bb7012553": {
       "type": "global-image_hero",
       "custom_css": [
-        ".overlay {opacity: 0.2 !important;}"
+        ".overlay {opacity: 0.175 !important;}"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/website_35.png",
-        "image_mobile": "shopify:\/\/shop_images\/website_38.png",
-        "title": "Mask on,<br> wrinkles <em class=\"fw-light\">gone. <\/em>",
-        "subtitle": "Noninvasive LED treatments <br>delivering age-defying results.",
+        "image_desktop": "shopify:\/\/shop_images\/Untitled-13.png",
+        "image_mobile": "shopify:\/\/shop_images\/Untitled-23.png",
+        "title": "<em class=\"fw-light\">Free<\/em> gift <br> with LED",
+        "subtitle": "Enjoy a free Enzyme Powder Cleanser with any LED purchase.",
         "btn_text": "Shop Now",
         "btn_link": "shopify:\/\/collections\/all",
         "content_position": "2",

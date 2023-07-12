@@ -57,6 +57,9 @@
       {% assign gwpcCollection3 = collections[settings.gwp_collection3] %}
       {% if gwpcCollection1 != blank or gwpcCollection2 != blank or gwpcCollection3 != blank %}
           {% for itemCollection in product.collections %}
+              {%- comment %}<locksmith:5eb3>{% endcomment -%}
+                {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: itemCollection, subject_parent: product, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+              {%- comment %}</locksmith:5eb3>{% endcomment -%}
               {% if gwpcCollection1.handle == itemCollection.handle or gwpcCollection2.handle == itemCollection.handle or gwpcCollection3.handle == itemCollection.handle %}
                   {% assign freeGiftTagFlag = true %}
                   {% break %}
@@ -75,6 +78,9 @@
     {% if settings.is_gwp_tier1_enabled_qtybased == true and freeGiftTagFlag != true %}
       {% assign gwp_tier1_target_productsColl = settings.gwp_tier1_products_qty | split: ',' %}
       {% for gwpProduct in gwp_tier1_target_productsColl %}
+          {%- comment %}<locksmith:38ea>{% endcomment -%}
+            {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: gwpProduct, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+          {%- comment %}</locksmith:38ea>{% endcomment -%}
           {% assign productSplit = gwpProduct | split: ':' %}
           {% assign getProductHandle = productSplit[0] %}
           {% if getProductHandle == product.handle %}

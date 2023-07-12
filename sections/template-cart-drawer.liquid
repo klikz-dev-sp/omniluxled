@@ -72,6 +72,9 @@
 
                                 {% if settings.is_gwp_tier1_enabled_global_qtybased == true and settings.gwp_tier1_global_products_qty != blank %}
                                     {% for prod in gwp_tier1_global_products %}
+                                        {%- comment %}<locksmith:69ba>{% endcomment -%}
+                                          {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: prod, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                                        {%- comment %}</locksmith:69ba>{% endcomment -%}
                                         {% if prod == item.product.handle %}
                                             {% if globalProQty == null %}
                                                 {% assign globalProQty = item.quantity %}
@@ -101,7 +104,13 @@
                             {% endif %}
                             {% if settings.is_gwp_tier1_enabled_qtybased == true %}
                                 {% assign handleMatchCount = 0 %}
+                                {%- comment %}<locksmith:79bf>{% endcomment -%}
+                                  {%- assign locksmith_d24b_forloop__size = 0 %}{% for product in gwp_tier1_target_products %}{% capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, variable: 'transparent' %}{% endcapture %}{% if var == 'true' %}{% assign locksmith_d24b_forloop__size = locksmith_d24b_forloop__size | plus: 1 %}{% endif %}{% endfor %}{% assign locksmith_d24b_forloop__index = nil -%}
+                                {%- comment %}</locksmith:79bf>{% endcomment -%}
                                 {% for product in gwp_tier1_target_products %}
+                                    {%- comment %}<locksmith:15f9>{% endcomment -%}
+                                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: product, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% if locksmith_d24b_forloop__index == nil %}{% assign locksmith_d24b_forloop__index = 1 %}{% assign locksmith_d24b_forloop__index0 = 0 %}{% else %}{% assign locksmith_d24b_forloop__index = locksmith_d24b_forloop__index | plus: 1 %}{% assign locksmith_d24b_forloop__index0 = locksmith_d24b_forloop__index0 | plus: 1 %}{% endif %}{% if locksmith_d24b_forloop__index == 1 %}{% assign locksmith_d24b_forloop__first = true %}{% else %}{% assign locksmith_d24b_forloop__first = false %}{% endif %}{% if locksmith_d24b_forloop__index == locksmith_d24b_forloop__size %}{% assign locksmith_d24b_forloop__last = true %}{% else %}{% assign locksmith_d24b_forloop__last = false %}{% endif %}{% assign locksmith_d24b_forloop__rindex = locksmith_d24b_forloop__size | minus: locksmith_d24b_forloop__index | minus: 1 %}{% assign locksmith_d24b_forloop__rindex0 = locksmith_d24b_forloop__size | minus: locksmith_d24b_forloop__index0 | minus: 1 %}{% else %}{% continue %}{% endif -%}
+                                    {%- comment %}</locksmith:15f9>{% endcomment -%}
                                     {% assign productSplit = product | split: ':' %}
                                     {% assign getProductHandle = productSplit[0] %}
                                     {% assign getProductQty = productSplit[1] | plus: 0 %}
@@ -112,7 +121,7 @@
                                             {% endif %}
                                         {% endif %}
                                     {% endfor %}
-                                    {% if forloop.last %}
+                                    {% if locksmith_d24b_forloop__last %}
                                         {% if gwp_tier1_target_products.size == handleMatchCount %}
                                             {% assign gwp_tier1_productBased = true %}
                                         {% else %}
@@ -193,6 +202,9 @@
                                     {% if gwpCollectionFlag == true %}
                                         {% if gwpCollection1 != blank or gwpCollection2 != blank or gwpCollection3 != blank %}
                                             {% for itemCollection in item.product.collections %}
+                                                {%- comment %}<locksmith:0c0c>{% endcomment -%}
+                                                  {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: itemCollection, subject_parent: item.product, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                                                {%- comment %}</locksmith:0c0c>{% endcomment -%}
                                                 {% if gwpCollection1.handle == itemCollection.handle or gwpCollection2.handle == itemCollection.handle or gwpCollection3.handle == itemCollection.handle %}
                                                     {% assign gwpcProductFlag = true %}
                                                     {% break %}
@@ -480,6 +492,9 @@
                             }'>
                                 <div class="swiper-wrapper">
                                     {% for products in gwp_tier1_products %}
+                                    {%- comment %}<locksmith:dbfc>{% endcomment -%}
+                                      {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: products, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+                                    {%- comment %}</locksmith:dbfc>{% endcomment -%}
                                     {% assign product = all_products[products] %}
                                         {% if product.handle contains "docapp-free-gift-" %}{% continue %}{% endif %}
                                         {% unless product.tags contains productExcludeTag %}

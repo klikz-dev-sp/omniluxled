@@ -9,68 +9,102 @@
             <h4 class="mb-3">{{ section.settings.heading_txt }}</h4>
             {% endif %}
           </div>
-          <form method="post" action="">
-            <div class="form-group form-floating">
-              <input type="text" id="firstName" name="first_name" aria-label="first name" class="form-control " placeholder="First name" required="" data-required="">
-              <label id="firstName">First name</label>
-            </div>
-            <div class="form-group form-floating">
-              <input type="text" id="lastName" name="last_name" aria-label="last name" class="form-control " placeholder="Last name" required="" data-required="">
-              <label id="lastName">Last name</label>
-            </div>
-            <div class="form-group form-floating">
-              <input type="email" id="email" name="email" aria-label="email" class="form-control " placeholder="Email" required="" data-required="">
-              <label id="email">Email</label>
-            </div>
-            <div class="form-group form-floating">
-              <input type="date" id="purchaseDate" name="purchaseDate" aria-label="purchaseDate" class="form-control " placeholder="Email" required="" data-required="">
-              <label id="email">Purchase Date</label>
-            </div>
-            <div class="mb-4">
-              <p>Did you purchase directly?</p>
-              <span class="form-check mb-4">
-              <label class="form-check-label" for="purchaseDirectly" title="Yes#">
-                <input type="radio" id="purchaseDirectly" name="purchaseDirectlyNo" aria-label="Did you purchase directly?" class="form-check-input" value="Yes" required="" data-required="" data-gtm-form-interact-field-id="4" checked>
-                <span class="small">Yes</span>
-              </label>
-              </span>
-              <span class="form-check">
-                <label class="form-check-label" for="purchaseDirectlyNo" title="No#">
-                  <input type="radio" id="purchaseDirectlyNo" name="purchaseDirectlyNo" aria-label="Did you purchase directly?" class="form-check-input" value="No" required="" data-required="" data-gtm-form-interact-field-id="5">
-                  <span class="small">No</span>
-                </label>
-              </span>
-            </div>
-            <div id="orderNumberInput" class="form-group form-floating" >
-              <input type="text" id="orderNumber" name="orderNumber" aria-label="orderNumber" class="form-control " placeholder="Order Number" required="" data-required="">
-              <label id="email">Order Number</label>
-            </div>
-            <div id="businessNameInput" class="form-group form-floating d-none">
-              <input type="text" id="businessName" name="businessName" aria-label="businessName" class="form-control " placeholder="Business Name" required="" data-required="">
-              <label id="email">Business Name</label>
-            </div>
-            <label for="images" class="drop-container">
-              <span class="drop-title">Attach image file here</span>
-              <input type="file" id="images" accept="image/png, image/gif, image/jpeg" required>
-            </label>
-            <div class="form-group mt-4">
-              <label for="products" class="mb-2">Products</label>
-              <select required="" data-required="" class="form-select " id="products" name="products">
-                {% for product in collections['all'].products %}
-                    <option value="{{product.title}}">{{product.title}}</option>
+          {%- assign formId = 'ContactForm' -%}
+          {% form 'contact', id: formId %}
+            {% if form.posted_successfully? %}
+              <p><strong>Thanks for contacting us. We'll get back to you as soon as possible.</strong></p>
+            {% else %}
+              {% if form.errors %}
+                <ul class="errors">
+                  {% for field in form.errors %}
+                    <li>{{ field | replace: 'body','Message' | capitalize }} - {{ form.errors.messages[field] }}</li>
                   {% endfor %}
-              </select>
-            </div>
-            <div class="form-group form-floating">
-              <input type="text" id="serialNumber" name="serialNumber" aria-label="serialNumber" class="form-control" placeholder="Product Serial Number" required="" data-required="">
-              <label id="serialNumber">Product Serial Number</label>
-            </div>
-            <div class="form-group form-floating">
-              <textarea id="description" name="description" class="form-control" rows="10" placeholder="Description"></textarea>                      
-              <label id="description">Description</label>
-            </div>
-            <input type="submit" class="btn btn-primary btn-block" value="Submit">      
-          </form>        
+                </ul>
+              {% endif %}
+              <div class="my-4">
+                <p>Will you return or replace?</p>
+                <span class="form-check form-check-inline">
+                <label class="form-check-label" for="{{ formId }}-return-method" title="Yes#">
+                  <input type="radio" id="{{ formId }}-return-method" name="contact[return_replace_method]" class="form-check-input" value="Yes" checked>
+                  <span class="small">Return</span>
+                </label>
+                </span>
+                <span class="form-check form-check-inline">
+                  <label class="form-check-label" for="{{ formId }}-replace-method" title="No#">
+                    <input type="radio" id="{{ formId }}-replace-method" name="contact[return_replace_method]" class="form-check-input" value="No">
+                    <span class="small">Replace</span>
+                  </label>
+                </span>
+              </div>
+              <div class="form-group form-floating">
+                <input type="text" id="{{ formId }}-first-name" name="contact[first_name]" class="form-control " placeholder="First name" required>
+                <label for="{{ formId }}-first-name">First name</label>
+              </div>
+              <div class="form-group form-floating">
+                <input type="text" id="{{ formId }}-last-name" name="contact[last_name]" class="form-control " placeholder="Last name" required>
+                <label for="{{ formId }}-last-name">Last name</label>
+              </div>
+              <div class="form-group form-floating">
+                <input type="email" id="{{ formId }}-email" name="contact[email]" class="form-control " placeholder="Email" required>
+                <label for="{{ formId }}-email">Email</label>
+              </div>
+              <div class="form-group form-floating">
+                <input 
+                  type="date" 
+                  id="{{ formId }}-purchase-date" 
+                  name="contact[purchase_date]" 
+                  class="form-control " 
+                  placeholder="Purchase Date" 
+                  required
+                >
+                <label for="{{ formId }}purchase-date">Purchase Date</label>
+              </div>
+              <div class="mb-4">
+                <p>Did you purchase directly?</p>
+                <span class="form-check form-check-inline">
+                <label class="form-check-label" for="{{ formId }}-purchase-method-direct" title="Yes#">
+                  <input type="radio" id="{{ formId }}-purchase-method-direct" name="contact[purchase_method]" class="form-check-input" value="Yes" checked>
+                  <span class="small">Yes</span>
+                </label>
+                </span>
+                <span class="form-check form-check-inline">
+                  <label class="form-check-label" for="{{ formId }}-purchase-method-nodirect" title="No#">
+                    <input type="radio" id="{{ formId }}-purchase-method-nodirect" name="contact[purchase_method]" class="form-check-input" value="No">
+                    <span class="small">No</span>
+                  </label>
+                </span>
+              </div>
+              <div id="orderNumberInput" class="form-group form-floating" >
+                <input type="text" id="{{ formId }}-order-number" name="contact[order_number]" class="form-control " placeholder="Order Number">
+                <label for="{{ formId }}-order-number">Order Number</label>
+              </div>
+              <div id="businessNameInput" class="form-group form-floating d-none">
+                <input type="text" id="{{ formId }}-business-name" name="contact[business_name]" class="form-control " placeholder="Business Name">
+                <label for="{{ formId }}-business-name">Business Name</label>
+              </div>
+              <label for="{{ formId }}-attach-image" class="drop-container">
+                <span class="drop-title">Attach image file here</span>
+                <input type="file" id="{{ formId }}-attach-image" name="contact[attach_image]" accept="image/png, image/gif, image/jpeg">
+              </label>
+              <div class="form-group mt-4">
+                <label for="{{ formId }}-product" class="mb-2">Products</label>
+                <select class="form-select" id="{{ formId }}-product" name="contact[product]">
+                  {% for product in collections['all'].products %}
+                      <option value="{{product.title}}">{{product.title}}</option>
+                    {% endfor %}
+                </select>
+              </div>
+              <div class="form-group form-floating">
+                <input type="text" id="{{ formId }}-serial-number" name="contact[serial_number]" class="form-control" placeholder="Product Serial Number" required>
+                <label for="{{ formId }}-serial-number">Product Serial Number</label>
+              </div>
+              <div class="form-group form-floating">
+                <textarea id="{{ formId }}-message" name="contact[body]" class="form-control" rows="10" placeholder="Description"></textarea>                      
+                <label for="{{ formId }}-message">Description</label>
+              </div>
+              <input type="submit" class="btn btn-primary btn-block" value="Submit">
+            {% endif %}
+          {% endform %}
         </div>
       </div>
     </div>

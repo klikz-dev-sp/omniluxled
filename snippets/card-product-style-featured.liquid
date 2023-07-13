@@ -1,45 +1,4 @@
 {% assign current_variant = product.selected_or_first_available_variant %}
-{% assign freeGiftTagFlag = false %}
-{% if settings.enable_gift_tag == true %}
-  {% if settings.is_gwpc_enabled == true %}
-    {% assign gwpcCollection1 = collections[settings.gwp_collection1] %}
-    {% assign gwpcCollection2 = collections[settings.gwp_collection2] %}
-    {% assign gwpcCollection3 = collections[settings.gwp_collection3] %}
-    {% if gwpcCollection1 != blank or gwpcCollection2 != blank or gwpcCollection3 != blank %}
-        {% for itemCollection in product.collections %}
-            {%- comment %}<locksmith:f92b>{% endcomment -%}
-              {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: itemCollection, subject_parent: product, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-            {%- comment %}</locksmith:f92b>{% endcomment -%}
-            {% if gwpcCollection1.handle == itemCollection.handle or gwpcCollection2.handle == itemCollection.handle or gwpcCollection3.handle == itemCollection.handle %}
-                {% assign freeGiftTagFlag = true %}
-                {% break %}
-            {% endif %}
-        {% endfor %}
-    {% endif %}
-  {% endif %}
-  {% if settings.is_gwpp_enabled == true and freeGiftTagFlag != true %}
-    {% assign gwppQualifierProductColl = settings.gwpp_product %}
-    {% if gwppQualifierProductColl != blank %}
-        {% if product.handle == all_products[gwppQualifierProductColl].handle %}
-          {% assign freeGiftTagFlag = true %}
-        {% endif %} 
-    {% endif %}
-  {% endif %}
-  {% if settings.is_gwp_tier1_enabled_qtybased == true and freeGiftTagFlag != true %}
-    {% assign gwp_tier1_target_productsColl = settings.gwp_tier1_products_qty | split: ',' %}
-    {% for gwpProduct in gwp_tier1_target_productsColl %}
-        {%- comment %}<locksmith:5609>{% endcomment -%}
-          {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: gwpProduct, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
-        {%- comment %}</locksmith:5609>{% endcomment -%}
-        {% assign productSplit = gwpProduct | split: ':' %}
-        {% assign getProductHandle = productSplit[0] %}
-        {% if getProductHandle == product.handle %}
-          {% assign freeGiftTagFlag = true %}
-        {% endif %}
-    {% endfor %}
-  {% endif %}
-{% endif %}
-{% assign current_variant = product.selected_or_first_available_variant %}
 <div class="card card-product card-product-style-1 text-start rounded-0 border-0" data-product-grid>
   <span class="badges">
     {%- liquid
@@ -78,15 +37,7 @@
       </span>
     {% endif %}
   </span>
-  {% if freeGiftTagFlag == true %}
-    <span class="badges free-gift-badge-sec">
-      <span class="badge free-gift-badge text-white bg-black" >
-          {{ settings.gift_tag_text }}
-      </span>
-    </span>
-  {% endif %}
-  
-  
+
   <div class="card-img text-center {% if product.featured_image.size == 0 %}bg-gray-300{% endif %}" >
     {% capture current %}{% cycle 1, 2, 3, 4, 5, 6 %}{% endcapture %}
 

@@ -386,8 +386,7 @@
     "9521727a-fc34-433d-b725-458ff43ba5f3": {
       "type": "product-banner-text",
       "custom_css": [
-        "section > div > div > div.col-12.col-md-6.col-lg-5.mt-4.ms-auto.mt-md-0.pt-lg-0.pt-1.order-md-1 > div > div.m-lg-n3.m-n2.my-n2.d-flex.flex-wrap.pt-lg-0 > div:nth-child(2) {display: none;}",
-        ".pt-1 {padding-bottom: 1rem !important;}"
+        "section > div > div > div.col-12.col-md-6.col-lg-5.mt-4.ms-auto.mt-md-0.pt-lg-0.pt-1.order-md-1 > div > div.m-lg-n3.m-n2.my-n2.d-flex.flex-wrap.pt-lg-0 > div:nth-child(2) {display: none;}"
       ],
       "settings": {
         "display_for_this_product": "{{product.metafields.custom.image_text_enable}}",
@@ -412,7 +411,7 @@
         "video_watch_mobile_id": "{{ product.metafields.custom.custom.image_text_watch_video_id }}",
         "btn_type_watch": "outline",
         "btn_variant_watch": "primary",
-        "btn_size_watch": "btn-lg",
+        "btn_size_watch": "",
         "btn_txt": "{{product.metafields.custom.image_text_watch_review}}",
         "video_review_id": "{{ product.metafields['custom']['image_text_review_video_id'] }}",
         "video_review_mobile_id": "",

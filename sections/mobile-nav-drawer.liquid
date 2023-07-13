@@ -133,11 +133,6 @@
                                                   <a href="{{ current_product.url | within: collection }}">
                                                     <div class="row">
                                                       <div class="col-12 mega_menu_image_container">
-                                                          {% if current_product.title == 'Omnilux Men' or  current_product.title == 'Omnilux Contour Face' or  current_product.title == 'Omnilux Clear' or  current_product.title == 'Omnilux Contour Neck & Décolleté' or  current_product.title == 'Omnilux Contour Glove' %}
-                                                             <span class="badge-3 text-white bg-black" >
-                                                               {{ settings.gift_tag_text }}
-                                                             </span>
-                                                          {% endif %}
                                                           <img src="{{current_product.featured_image | image_url: width: 850 }}"/>    
                                                       </div>
                                                       <div class="col-12">
@@ -336,34 +331,7 @@
     font-size: 12px !important;
   }
 </style>
-<style>
-  .mega_menu_image_container {
-    position: relative;
-  }
 
-  .badge-3 {
-    display: inline-block;
-    padding: 9px 15px;
-    font-size: 12px;
-    font-weight: 700;
-    line-height: 1;
-    letter-spacing: 0.05em;
-    color: #fff;
-    text-align: center;
-    white-space: nowrap;
-    vertical-align: top;
-    vertical-align: baseline;
-    position: absolute;
-    z-index: 1;
-    left: 15px;
-  }
-
-  .mega_menu_image_container img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-</style>
 {% schema %}
 {
   "name": "Mobile Drawer",

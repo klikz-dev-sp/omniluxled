@@ -63,9 +63,11 @@
                         {% endif %}
 <div id="twocolbtns" class="mt-lg-3 mt-2">
   {% if block.settings.btn_txt != blank %}
+    
                             <a {% if block.settings.btn_link %} href="{{ block.settings.btn_link }}" {% endif %}class="btn btn{% if block.settings.btn_type == 'outline' %}-{% endif %}{{ block.settings.btn_type }}-{{ block.settings.btn_variant }} {{ block.settings.btn_size }}">{{ block.settings.btn_txt }}</a>
                         {% endif %}
                         {% if block.settings.btn_txt_watch != blank %}
+                         
                         <div class="pt-1 w-100 w-sm-auto">
                             <div class="custom-video-container ">
                                 <span data-trigger-videobtn class="cursor-pointer btn w-100 w-sm-auto {% if block.settings.btn_type_watch == "border-0" %}border-0{% endif %} btn{% if block.settings.btn_type_watch == 'outline' %}-{% endif %}{% if block.settings.btn_type_watch != "border-0" %}{{ block.settings.btn_type_watch }}{% endif %}-{{ block.settings.btn_variant_watch }} {{ block.settings.btn_size_watch }}" title="{{ block.settings.btn_txt_watch }}">
@@ -88,11 +90,13 @@
                                         </button>
                                     </div>
                                 </custom-video>
-
+                                
                             </div>
+                           
 
                             
                         </div>
+                           
                         {% endif %}
                         
                         {% if block.settings.link_txt != blank %}

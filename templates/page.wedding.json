@@ -29,7 +29,7 @@
             "btn_variant_watch": "primary",
             "btn_size_watch": "",
             "btn_txt": "Explore the line",
-            "btn_link": "https:\/\/omniluxled.com\/collections\/skin-care",
+            "btn_link": "#exploreline",
             "btn_type": "",
             "btn_variant": "white",
             "btn_size": "",
@@ -274,6 +274,9 @@
         "59a2a5b7-b6f5-4566-8ff2-3c5e06fec563",
         "0771fb05-3ea9-446b-b6e9-deb71688b602"
       ],
+      "custom_css": [
+        ".border-bottom {border-bottom: 0 !important;}"
+      ],
       "settings": {
         "fluid_layout": false,
         "anchorid": "exploreline",
@@ -291,7 +294,8 @@
       "custom_css": [
         ".h3,.justify-content-lg-between {display: block !important;}",
         ".h3.pe-3 {font-size: 18px !important; padding-right: 0 !important; line-height: 24px !important; margin-bottom: 10px !important;}",
-        "@media (max-width: 600px) {.mb-4.mb-lg-3 {margin-bottom: 0 !important; } .pt-4 {padding-top: 0 !important; margin-bottom: 3.5rem !important; }}"
+        "@media (max-width: 600px) {.mb-4.mb-lg-3 {margin-bottom: 0 !important; } .pt-4 {padding-top: 0 !important; margin-bottom: 3.5rem !important; }}",
+        ".border-top {border-top: 0px !important;}"
       ],
       "settings": {
         "fluid_layout": false,
@@ -320,15 +324,13 @@
             "steps_captions": "98% agreed their skin felt <em>firmer<\/em>.\n96% agreed their fine lines appeared <em>less visible<\/em>.\n95% agreed their skin was <em>brighter<\/em> and <em>plumper<\/em>.",
             "steps_captions_2": "<p><em>* After 3 treatments per week for 4 weeks<\/em><\/p>",
             "btn_txt": "SHOP THE LINE",
-            "btn_link": "https:\/\/omniluxled.com\/collections\/skin-care",
+            "btn_link": "#exploreline",
             "triggerbtn_txt": "",
             "triggerto": "",
             "btn_type": "",
             "btn_variant": "primary",
             "btn_size": "",
             "btn_txt_watch": "",
-            "watch_video_id": "",
-            "watch_mobile_video_id": "",
             "btn_type_watch": "",
             "btn_variant_watch": "primary",
             "btn_size_watch": "",

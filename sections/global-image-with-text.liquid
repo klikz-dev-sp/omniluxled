@@ -68,11 +68,34 @@
                         </div>
                         {% endif %}
                         {% if block.settings.btn_txt_watch != blank %}
-                        <div class="mt-lg-3 mt-2 pt-1 w-100 w-sm-auto">
-                            <span data-trigger-videobtn  class="cursor-pointer btn w-100 w-sm-auto {% if block.settings.btn_type_watch == "border-0" %}border-0{% endif %} btn{% if block.settings.btn_type_watch == 'outline' %}-{% endif %}{% if block.settings.btn_type_watch != "border-0" %}{{ block.settings.btn_type_watch }}{% endif %}-{{ block.settings.btn_variant_watch }} {{ block.settings.btn_size_watch }}" title="{{ block.settings.btn_txt_watch }}">
-                                {{ block.settings.btn_txt_watch }}
-                                <i class="ox-play ms-2" style="font-size:11px;"></i>
-                            </span>
+                        <div class="pt-1 w-100 w-sm-auto">
+                            <div class="custom-video-container ">
+                                <span data-trigger-videobtn class="cursor-pointer btn w-100 w-sm-auto {% if block.settings.btn_type_watch == "border-0" %}border-0{% endif %} btn{% if block.settings.btn_type_watch == 'outline' %}-{% endif %}{% if block.settings.btn_type_watch != "border-0" %}{{ block.settings.btn_type_watch }}{% endif %}-{{ block.settings.btn_variant_watch }} {{ block.settings.btn_size_watch }}" title="{{ block.settings.btn_txt_watch }}">
+                                    {{ block.settings.btn_txt_watch }}
+                                    <i class="ox-play ms-2" style="font-size:11px;"></i>
+                                </span>
+                                
+                             
+                                <custom-video class="video-with--text position-relative d-block placement--popup"
+                                    data-loop="true" data-autoplay="true" data-controls="true" data-muted="false"
+                                    data-video-type="local"  data-placement="popup"
+                                    {% if section.settings.watch_mobile_video_id != blank %}data-mobileVideo="{{ block.settings.watch_mobile_video_id }}"{% endif %} 
+                                    data-video-id="{{ block.settings.watch_video_id }}">
+                                    
+                                    <div class="cta-btn d-none">
+                                        <button class="play__button btn btn-primary" data-trigger-video aria-label="{{ 'sections.video-with-text.play_video' | t }}">
+                                            <span class="icon-play"></span>
+                                        </button>
+                                        <button class="bg-transparent border-2 border-white btn btn-primary p-3 pause__button rounded-pill d-none" data-pause-video aria-label="{{ 'sections.video-with-text.paused_video' | t }}">
+                                            <span class="ox-play" style="position: relative;right: -2px;"></span>
+                                        </button>
+                                    </div>
+                                    
+                                </custom-video>
+
+                            </div>
+
+                            
                         </div>
                         {% endif %}
                         {% if block.settings.btn_txt != blank %}
@@ -289,6 +312,16 @@
           "type": "text",
           "id": "btn_txt_watch",
           "label": "Watch Button Text"
+        },
+        {
+          "type": "liquid",
+          "id": "watch_video_id",
+          "label": "Video Id"
+        },
+        {
+          "type": "liquid",
+          "id": "watch_mobile_video_id",
+          "label": "Mobile Video Id"
         },
         {
           "type": "select",

@@ -85,7 +85,8 @@
         "nav_arrows": true,
         "nav_dots": false,
         "nav_dots_right": true,
-        "height": "tallheight"
+        "height": "tallheight",
+        "top_padding_zero": true
       }
     },
     "8f8db248-c389-4867-aa55-f99789a04ceb": {
@@ -141,6 +142,7 @@
       ],
       "settings": {
         "fluid_layout": false,
+        "gradient_tone": true,
         "icon_layout": false,
         "grid_size": "2",
         "heading_txt": "",
@@ -176,6 +178,8 @@
             "btn_variant": "primary",
             "btn_size": "",
             "btn_txt_watch": "",
+            "watch_video_id": "",
+            "watch_mobile_video_id": "",
             "btn_type_watch": "",
             "btn_variant_watch": "primary",
             "btn_size_watch": "",
@@ -196,15 +200,17 @@
             "step_heading": "",
             "steps_captions": "Triggers a more robust cellular response during LED treatment\nReduces fine lines & wrinkles, redness, irritation, dark circles and under-eye bags for a smoother, more even-toned complexion",
             "steps_captions_2": "",
-            "btn_txt": "READ FAQS",
-            "btn_link": "shopify:\/\/pages\/help-center",
+            "btn_txt": "",
+            "btn_link": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9464d3162eb14de7b68d2622ac642ec9.mp4",
             "triggerbtn_txt": "",
             "triggerto": "",
             "btn_type": "outline",
             "btn_variant": "primary",
             "btn_size": "",
-            "btn_txt_watch": "",
-            "btn_type_watch": "",
+            "btn_txt_watch": "How It Works",
+            "watch_video_id": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9464d3162eb14de7b68d2622ac642ec9.mp4",
+            "watch_mobile_video_id": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9464d3162eb14de7b68d2622ac642ec9.mp4",
+            "btn_type_watch": "outline",
             "btn_variant_watch": "primary",
             "btn_size_watch": "",
             "link_txt": "",

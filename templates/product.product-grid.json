@@ -3,14 +3,6 @@
     "d70430d9-8de9-4f06-8108-95d6601a15ab": {
       "type": "circle-video-menu",
       "blocks": {
-        "e38ac31d-5bd6-47c0-9bc0-dd866e282641": {
-          "type": "circle-link",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Screen_Shot_2023-07-12_at_5.38.00_PM.jpg",
-            "label": "Lizeth’s Story",
-            "video": "shopify:\/\/files\/videos\/lizethstory.mp4"
-          }
-        },
         "e6acb30c-fb23-47bd-9aca-c1da92e3dcfc": {
           "type": "circle-link",
           "settings": {
@@ -62,7 +54,6 @@
         }
       },
       "block_order": [
-        "e38ac31d-5bd6-47c0-9bc0-dd866e282641",
         "e6acb30c-fb23-47bd-9aca-c1da92e3dcfc",
         "97612f92-d4dc-4b9a-8da8-18305aa85257",
         "392cd7d4-bfcd-45f2-a584-98c96d8332d9",
@@ -252,7 +243,7 @@
 
       ],
       "settings": {
-        "product_grid": false,
+        "product_grid": true,
         "fluid_layout": false,
         "enable_background_tone": false,
         "show_vendor": true,
@@ -406,9 +397,9 @@
         "border-bottom": false,
         "play_icon": false,
         "play_btn": true,
-        "btn_txt_watch": "{% if product.metafields.custom.image_text_watch_video_id %}How it works{% endif %}",
-        "video_watch_id": "{{ product.metafields.custom.image_text_watch_video_id }}",
-        "video_watch_mobile_id": "{{ product.metafields.custom.custom.image_text_watch_video_id }}",
+        "btn_txt_watch": "How it works",
+        "video_watch_id": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9464d3162eb14de7b68d2622ac642ec9.mp4",
+        "video_watch_mobile_id": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/9464d3162eb14de7b68d2622ac642ec9.mp4",
         "btn_type_watch": "outline",
         "btn_variant_watch": "primary",
         "btn_size_watch": "",

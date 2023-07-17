@@ -90,7 +90,7 @@
                 <label for="{{ formId }}-product" class="mb-2">Products</label>
                 <select class="form-select" id="{{ formId }}-product" name="contact[product]">
                   {% for product in collections['all'].products %}
-                      <option value="{{product.tags}}">{{product.title}}</option>
+                      <option value='{{product.tags | join: "|"}}'>{{product.title}}</option>
                     {% endfor %}
                 </select>
               </div>

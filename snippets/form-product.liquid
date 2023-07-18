@@ -132,7 +132,7 @@
     </div>
     <div class="col-auto d-flex" style="width:calc(100% - 134px);padding-left: 10px;">
         {% assign prefixes = "us,uk,ca,au,eu,nz" | split: "," %}
-        {% unless product.id == 7991999987874 %}<button class="data-submit-btn btn btn-primary flex-grow-1 px-2 product-add-cart {% if product.tags contains 'providers' %}disabled{% endif %}"
+        {% unless product.id == 7991999987874 %}<button class="addtocartbtn data-submit-btn btn btn-primary flex-grow-1 px-2 product-add-cart {% if product.tags contains 'providers' %}disabled{% endif %}"
             type="submit"
             name="add"
             aria-label="{{ 'products.product.add_to_cart' | t | escape }}"
@@ -212,7 +212,7 @@
       </div>
     </div>
     {% assign prefixes = "us,uk,ca,au,eu,nz" | split: "," %}
-    <button class="data-submit-btn btn btn-primary flex-grow-1 px-2 product-add-cart {% if product.tags contains 'providers' %}disabled{% endif %}"
+    <button class="addtocartbtn data-submit-btn btn btn-primary flex-grow-1 px-2 product-add-cart {% if product.tags contains 'providers' %}disabled{% endif %}"
       type="submit"
       name="add"
       aria-label="{{ 'products.product.add_to_cart' | t | escape }}"

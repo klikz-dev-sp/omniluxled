@@ -119,8 +119,7 @@
       "blocks": {
         "91e63a47-3793-4c06-8bc0-6262e9601d1d": {
           "type": "name",
-          "settings": {
-          }
+          "settings": {}
         },
         "34759ff9-557c-4b32-b07e-3887a3ebc44c": {
           "type": "shopify:\/\/apps\/okendo-product-reviews-ugc\/blocks\/star-rating\/bb689e69-ea70-4661-8fb7-ad24a2e23c29",
@@ -140,8 +139,7 @@
         },
         "3b316236-d91e-4dd0-953a-173c1f40bfcf": {
           "type": "price",
-          "settings": {
-          }
+          "settings": {}
         },
         "8e1316df-f2b1-417b-9d0e-96f8b25e8b7c": {
           "type": "description",
@@ -158,18 +156,15 @@
         },
         "b253ffff-d04d-43a0-9d68-fabdd77b595a": {
           "type": "product_form",
-          "settings": {
-          }
+          "settings": {}
         },
         "3ec0cedf-fb32-4e6f-b392-8ad9d16f7103": {
           "type": "shopify:\/\/apps\/sellup-upsell-add-ons\/blocks\/onpage_offers\/001ec440-29ea-4cbf-9265-4963fa825261",
-          "settings": {
-          }
+          "settings": {}
         },
         "8a51062c-4d9c-422e-b490-fae013f03593": {
           "type": "shopify:\/\/apps\/sellup-upsell-add-ons\/blocks\/onpage_offers\/001ec440-29ea-4cbf-9265-4963fa825261",
-          "settings": {
-          }
+          "settings": {}
         },
         "847ff075-3bf5-4b88-bff7-4982bbafd833": {
           "type": "subtitle",
@@ -239,11 +234,8 @@
         "5ff57fbd-bd1b-4246-8fda-fbffa899311f",
         "b28e74b9-4684-423e-8193-201bae66e281"
       ],
-      "custom_css": [
-
-      ],
+      "custom_css": [],
       "settings": {
-        "product_grid": true,
         "fluid_layout": false,
         "enable_background_tone": false,
         "show_vendor": true,

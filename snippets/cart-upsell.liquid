@@ -43,7 +43,7 @@
                                                 {% endif %}
                                             </div>
                                         </div>
-                                        <div class="cart-item-text d-flex flex-column flex-grow-1 justify-content-between mt-2">
+                                        <div class="card-body cart-item-text d-flex flex-column flex-grow-1 justify-content-between mt-2 p-0">
                                             <div class="w-100">
                                                 <a href="{{ upsellProduct.url }}" style="line-height: 1.25;" class="card-title font-size-md fw-semibold">{{ upsellProduct.title }}</a>
                                                 <div class="d-flex align-items-center justify-content-between d-none {% if upsellProduct.variants.size == 1 %}d-none {% endif %}">
@@ -94,7 +94,7 @@
                                                         {%- endif -%}
                                                     {% endunless %}
                                                 </div>
-                                                <div class="mt-1" style="line-height: 1.2142857143;">
+                                                <div class="price mt-1" style="line-height: 1.2142857143;">
                                                     from {{ upsell_variant.price | money }}
                                                 </div>
                                             </div>

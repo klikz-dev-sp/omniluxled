@@ -22,6 +22,9 @@
         if (pathToPrice == null && aObject.parent().parent().find(catalogPricePath).length > 0) {
             pathToPrice = aObject.parent().parent().find(catalogPricePath);
         }
+        if (pathToPrice == null && aObject.parent().parent().parent().find(catalogPricePath).length > 0) {
+            pathToPrice = aObject.parent().parent().parent().find(catalogPricePath);
+        }
         if (pathToPrice != null) {
             if (pathToPrice.find('.dp_catalog').length > 0 || pathToPrice.hasClass('dp_catalog')) {
                 pathToPrice = null;
@@ -242,6 +245,7 @@
         dpPriceTypeToShow = taxRulesValues.dpPriceTypeToShow;
     
         if ((parseInt(dp_dual_price_for_taxable_products) == 1 && !productVariantIsTaxable) || !dpShowTax) {
+            window.globalVariables.taxPercent = 0;
             jQuery(pathToPrice).addClass('nonTaxableVariant');
             if (type == 'dp_detail' && (jQuery('.dp_detail .firstPrice').length > 0 || jQuery('.dp_detail .secondPrice').length > 0)) {
                 jQuery('.dp_detail').hide();
@@ -264,6 +268,7 @@
                 firstPrice = Shopify.formatMoney(firstPriceNotFormated, dpMoneyFormat);
             }
         }
+        window.globalVariables.taxPercent = taxPercent;
         compareAtPriceBlock = '';
         firstPriceBlock = '';
         secondPriceBlock = '';

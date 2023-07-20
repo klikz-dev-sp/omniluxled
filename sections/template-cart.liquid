@@ -123,7 +123,7 @@
                                                 {% elsif item.price == 0 %}
                                                     <s class="text-muted m-0 p-0">{{ item.original_price | money }}</s>
                                                 {% else %}
-                                                    <span class="m-0 p-0">{{ item.price | money }}</span>
+                                                    <span class="price m-0 p-0">{{ item.price | money }}</span>
                                                 {% endif %}
                                             </div>
                                             <div class="col-6 col-md-4 quantity-box">

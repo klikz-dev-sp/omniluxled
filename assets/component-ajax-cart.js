@@ -173,6 +173,23 @@ class AjaxCart extends HTMLElement {
     }
   }
 
+  _applyTax(element, change) {
+    let priceElement = element.getElementsByClassName("price")[0]    
+    if(priceElement.classList.contains("dp_catalog"))
+      return
+
+    let priceString = priceElement.innerHTML.replace(/\s+/g, '').replace(',', '').replace(change, '')
+    priceString = priceString.slice(1, priceString.length);
+    let price = parseInt(priceString)
+    price = price * (1 + taxPercent / 100);
+    let formatMoney = Shopify.formatMoney(
+      price,        
+      window.globalVariables.money_format
+    );
+    formatMoney += " Including tax"
+    priceElement.innerHTML = formatMoney
+  }
+
   /**
    * Update cart HTML and Trigger Open Drawer event
    *
@@ -245,6 +262,27 @@ class AjaxCart extends HTMLElement {
       });
     });
 
+    if(taxPercent > 0) {
+      let navProductItems = document.querySelectorAll("[data-nav-menu-product-id]");
+      navProductItems.forEach((element) => {
+        this._applyTax(element, '')
+      })  
+
+      let mnavProductItems = document.querySelectorAll("[data-mobile-nav-menu-product-id]");
+      mnavProductItems.forEach((element) => {
+        this._applyTax(element, '')
+      })  
+
+      let productItems = document.querySelectorAll("[data-prod-id]");
+      productItems.forEach((element) => {
+        this._applyTax(element, '')
+      })  
+
+      let upsellProductItems = document.querySelectorAll("[data-upsell-product-id]");
+      upsellProductItems.forEach((element) => {
+        this._applyTax(element, 'from')
+      })  
+    }
     let elements = this.querySelectorAll(
       "[data-checkoutBtns], [data-cartnote], [data-cartupsell]"
     );

@@ -129,7 +129,7 @@
                                                 {% assign current_product = megaMenuBlock[product] %}
                                                 {% assign current_variant = current_product.selected_or_first_available_variant %}
                                                 {% if current_product != null %}
-                                                <div class="container mega_menu_container col-6 mx-0">                                                  
+                                                <div class="container mega_menu_container col-6 mx-0" data-mobile-nav-menu-product-id="{{ current_product.id }}">                                                  
                                                   <a class="card-body" href="{{ current_product.url | within: collection }}">
                                                     <div class="row">
                                                       <div class="col-12 mega_menu_image_container">

@@ -115,7 +115,7 @@
                                                                     {% assign current_variant = current_product.selected_or_first_available_variant %}             
                                                                     {% if current_product != null %}
                                                                     <div class="{% if block.type == 'sub_menu_second' %}mega-menu-item-call-second{% else %}mega-menu-item-call{% endif %}">                                                                                       
-                                                                        <div class="card-body mega_menu_container col-12 p-0">
+                                                                        <div class="card-body mega_menu_container col-12 p-0" data-nav-menu-product-id="{{ current_product.id }}">
                                                                             <div>
                                                                                 <a class="" href="{{ current_product.url | within: collection }}">
                                                                                     <img class="img-fluid" src="{{current_product.featured_image | image_url: width: 850 }}"/>    

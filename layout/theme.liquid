@@ -94,7 +94,7 @@
 <script>(() => {const previewKey = 'docapp-discount-test'; const urlParams = new URLSearchParams(window.location.search); if (urlParams.get(previewKey)) {window.sessionStorage.setItem(previewKey, JSON.stringify({active: true, integrationId: urlParams.get('docapp-discount-inst-test')}));}})();</script>
 </head>
 
-  <body class="template-{{ template.name }} {{ page.handle }} {{ collection.handle }} {{ product.handle }} {% if product.tags contains 'men_product' %}product-men{% endif %}"
+  <body class="template-{{ template.name }} {{ page.handle }} {{ collection.handle }} {{ product.handle }} {% if product.tags contains 'men_product' %}product-men{% endif %} ab-test-cartdrawer"
     data-money-format="{{ shop.money_format }}" data-shop-url="{{ shop.url }}">
     <img src="https://trkn.us/pixel/conv/ppt=22138;g=sitewide;gid=51408;ord={{ 'now' | date: '%s' }}" height="0" width="0" border="0" style="display:none"/>
 
@@ -422,7 +422,6 @@
 </script>
 <!-- END KLAVIYO Back in Stock Snippet -->
   {{ 'custompdp.js' | asset_url | script_tag }}
-  {{ 'convert.com.js' | asset_url | script_tag }}
 </body>
 </html>
 

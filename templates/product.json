@@ -386,7 +386,8 @@
     "9521727a-fc34-433d-b725-458ff43ba5f3": {
       "type": "product-banner-text",
       "custom_css": [
-        "section > div > div > div.col-12.col-md-6.col-lg-5.mt-4.ms-auto.mt-md-0.pt-lg-0.pt-1.order-md-1 > div > div.m-lg-n3.m-n2.my-n2.d-flex.flex-wrap.pt-lg-0 > div:nth-child(2) {display: none;}"
+        "section > div > div > div.col-12.col-md-6.col-lg-5.mt-4.ms-auto.mt-md-0.pt-lg-0.pt-1.order-md-1 > div > div.m-lg-n3.m-n2.my-n2.d-flex.flex-wrap.pt-lg-0 > div:nth-child(2) {display: none;}",
+        ".btn-primary {width: 100%;}"
       ],
       "settings": {
         "display_for_this_product": "{{product.metafields.custom.image_text_enable}}",

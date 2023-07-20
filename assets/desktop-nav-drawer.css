@@ -66,6 +66,9 @@
     color: #000000;
 }
 
+.dualPrice {
+    display: initial !important;
+}
 .mega-menu-item-call {
     width: 16%;
 }

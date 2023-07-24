@@ -123,8 +123,11 @@
   font-style: italic;
   font-weight: 400;
 }
-
 @media (min-width: 992px) {
+  .heading_txt {
+    font-size: 40px;
+    line-height: 42px;
+  }
   .caption_txt {
     font-size: 20px;
     line-height: 1.5;
@@ -135,16 +138,16 @@
   .image-hero .gradient-fair-tone {
     height: 137vh;
     background-image: url("https://cdn.shopify.com/s/files/1/0482/6736/2466/files/Background-Gradient-HD-min.jpg?v=1678788486");
-  }
+  }  
 }
 @media (max-width: 490px) {
   .image-hero-desktop .caption_txt > * {
     display: inline;
   }
-    .heading_txt {
-  font-size: 40px;
-  line-height: 42px;
-}
+  .heading_txt {
+    font-size: 40px;
+    line-height: 42px;
+  }
 }
 
 /**

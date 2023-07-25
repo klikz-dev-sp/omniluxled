@@ -253,6 +253,7 @@
       ],
       "settings": {
         "product_grid": false,
+        "product_tabs_mobile": true,
         "fluid_layout": false,
         "enable_background_tone": false,
         "show_vendor": true,

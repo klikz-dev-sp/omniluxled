@@ -1,7 +1,8 @@
 <link rel="stylesheet" href="{{ 'lead-board-experts-slider.css' | asset_url }}" media="print" onload="this.media='all'">
-
-{% if section.settings.product_grid %}
+{% if section.settings.product_tabs_mobile %}
   {{ 'component-image-tabs.css' | asset_url | stylesheet_tag }}
+{% endif %}
+{% if section.settings.product_grid %}
   {{ 'component-product-images.css' | asset_url | stylesheet_tag }}
 {% endif %}
 {% comment %} TODO Remove later {% endcomment %}
@@ -60,7 +61,7 @@
     <div class="{% if fluid_layout %}container-fluid{% else %}container{% endif %} mt-lg-0 mt-n1">
         <div class="row">
             <div class="col-lg-7">
-                <div data-type="slider" class="product-images-wrapper pr-lg-4 text-center {% if section.settings.product_grid %}product-images--slider{% endif %}">
+                <div data-type="slider" class="product-images-wrapper pr-lg-4 text-center {% if section.settings.product_tabs_mobile %}product-images--slider{% endif %}">
                     <div class="row pdp-img-row {% if product.images.size == 1 %}pdp-one-img{% endif %}">
                     {% if featured_image != blank %}
                         <a class="skip-to-content-link button visually-hidden" href="#ProductInfo-{{ section.id }}">
@@ -110,7 +111,7 @@
                                       {% endif %}
                                     {% endfor %}
                                 </div>
-                                {% if section.settings.product_grid %}
+                                {% if section.settings.product_tabs_mobile %}
                                   {% if product.images.size > 1 %}
                                     <div class="images__tabs">
                                       <div class="images__tab active" id="product">Product</div>
@@ -722,7 +723,12 @@
     {
       "type": "checkbox",
       "id": "product_grid",
-      "label": "Product Grid Layout & Slider Tabs"
+      "label": "Product Grid Layout"
+    },
+    {
+      "type": "checkbox",
+      "id": "product_tabs_mobile",
+      "label": "Slider tabs (Mobile)"
     },
     {
       "type": "checkbox",

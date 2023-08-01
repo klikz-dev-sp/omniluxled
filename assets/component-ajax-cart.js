@@ -186,7 +186,7 @@ class AjaxCart extends HTMLElement {
       price,        
       window.globalVariables.money_format
     );
-    formatMoney += " Including tax"
+    formatMoney += " Incl. tax"
     priceElement.innerHTML = formatMoney
   }
 
@@ -255,7 +255,7 @@ class AjaxCart extends HTMLElement {
           );
 
           if(taxPercent > 0)
-            element.getElementsByClassName("price")[0].innerHTML = formatMoney + " Including tax"
+            element.getElementsByClassName("price")[0].innerHTML = formatMoney + " Incl. tax"
           else
             element.getElementsByClassName("price")[0].innerHTML = formatMoney
         }

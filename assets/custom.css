@@ -312,7 +312,9 @@ body .cart-drawer .docapp-volume-discounts-legacy-promo {
 .cart-drawer .docapp-coupon-input--input {
   margin-bottom: 0 !important;
 }
-
+.cart-drawer .docapp-cart-with-coupon-summary--summary {
+  display: none;
+}
 .cart-total .docapp-cart-with-coupon-summary .docapp-coupon-input--button,
 .cart-total
   .docapp-cart-with-coupon-summary

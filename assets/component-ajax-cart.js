@@ -225,13 +225,23 @@ class AjaxCart extends HTMLElement {
     let cartElement = cartHTML.querySelector("ajax-cart form");
     this.querySelector("form").innerHTML = cartElement.innerHTML;
 
+    if(taxPercent > 0) {
+      let preTaxElement = document.getElementById("preTax");
+      preTaxElement.classList.add("d-flex");  
+    }
+
     let total_price = window.globalVariables.cart.total_price;
+    this.querySelector("[data-preTaxCartTotal]").innerHTML =
+    Shopify.formatMoney(
+      total_price,
+      window.globalVariables.money_format
+    );
 
     if(taxPercent > 0) {
       total_price = total_price * (1 + taxPercent / 100);
     } 
     
-    this.querySelector("[data-carttotal] span.money").innerHTML =
+    this.querySelector("[data-carttotal]").innerHTML =
     Shopify.formatMoney(
       total_price,
       window.globalVariables.money_format

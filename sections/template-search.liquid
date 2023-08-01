@@ -91,9 +91,11 @@
                                 %}
                                 {% unless checkWholesaleProducts == true %}
                                   {% unless item.tags contains productExcludeTag %}
+                                    {% if item.id != 7991999987874 %}
                                   <div class="col-12 col-lg-{{ section.settings.product_per_row }} col-md-4 col-sm-6 mb-5 d-flex align-items-stretch justify-content-around">
                                       {% render 'card-search-item', item: item %}
                                   </div>
+                                    {% endif %}
                                   {% endunless %}
                                   {% endunless %}
                               {% endfor %}

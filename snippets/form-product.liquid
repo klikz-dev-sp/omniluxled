@@ -1,3 +1,4 @@
+
 <product-form class="product-form{% unless product.has_only_default_variant %} disable-swatches{% endunless %}">
 
 {% comment %}theme-check-disable UnusedAssign{% endcomment %}
@@ -109,7 +110,7 @@
 
 <div class="row pb-2{% unless product.has_only_default_variant %} mt-2 pt-1{% else %} mt-lg-0 mt-1{% endunless %}">
     <div class="col-auto pe-0" style="min-width: 134px;max-width: 134px;">
-      <div class="quantity-wrapper mb-0 h-100" data-qty-container>
+      {% unless product.id == 7991999987874 %}<div class="quantity-wrapper mb-0 h-100" data-qty-container>
         <div class="input-group h-100">
           <div class="input-group-prepend">
             <span class="input-group-text cursor-pointer" rel="nofollow" aria-label="{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}" title="{{ 'products.product.quantity.decrease' | t: product: product.title | escape }}" data-for="decrease" data-qty-btn>
@@ -125,11 +126,13 @@
             </span>
           </div>
         </div>
+        
       </div>
+      {% endunless %}
     </div>
     <div class="col-auto d-flex" style="width:calc(100% - 134px);padding-left: 10px;">
         {% assign prefixes = "us,uk,ca,au,eu,nz" | split: "," %}
-        <button class="data-submit-btn btn btn-primary flex-grow-1 px-2 product-add-cart {% if product.tags contains 'providers' %}disabled{% endif %}"
+        {% unless product.id == 7991999987874 %}<button class="addtocartbtn data-submit-btn btn btn-primary flex-grow-1 px-2 product-add-cart {% if product.tags contains 'providers' %}disabled{% endif %}"
             type="submit"
             name="add"
             aria-label="{{ 'products.product.add_to_cart' | t | escape }}"
@@ -160,7 +163,7 @@
                 {{ 'products.product.sold_out' | t }}{%- endif -%}
             </span>
             <span class="spinner"></span>
-        </button>
+        </button>{% endunless %}
 
         {% comment %} Dynamic Checkout Button 
         {% if section.settings.enable_dynamic_checkout %}
@@ -209,7 +212,7 @@
       </div>
     </div>
     {% assign prefixes = "us,uk,ca,au,eu,nz" | split: "," %}
-    <button class="data-submit-btn btn btn-primary flex-grow-1 px-2 product-add-cart {% if product.tags contains 'providers' %}disabled{% endif %}"
+    <button class="addtocartbtn data-submit-btn btn btn-primary flex-grow-1 px-2 product-add-cart {% if product.tags contains 'providers' %}disabled{% endif %}"
       type="submit"
       name="add"
       aria-label="{{ 'products.product.add_to_cart' | t | escape }}"

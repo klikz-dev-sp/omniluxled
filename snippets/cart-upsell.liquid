@@ -94,12 +94,19 @@
                                                         {%- endif -%}
                                                     {% endunless %}
                                                 </div>
-                                                <div class="price mt-1" style="line-height: 1.2142857143;">
-                                                    from {{ upsell_variant.price | money }}
+
+                                                <div class="mt-1" style="line-height: 1.2142857143;">
+                                                    {% if upsell_variant.price < upsell_variant.compare_at_price %}
+                                                        <span class="item__compare-at-price">{{ upsell_variant.compare_at_price | money }}</span>
+                                                    {% endif %}
+                                                    <span {% if upsell_variant.price < upsell_variant.compare_at_price %}class="item__price--sale"{% endif%}>
+                                                    {{ upsell_variant.price | money }}
+                                                    </span>
+
                                                 </div>
                                             </div>
                                             <div class="cart-item-add mt-2">
-                                                <button class="align-items-center btn-link d-flex font-size-md fw-bold ls-1 px-0 text-uppercase" style="line-height: 1.2857142857;"
+                                                <button class="addtocartbtn align-items-center btn-link d-flex font-size-md fw-bold ls-1 px-0 text-uppercase" style="line-height: 1.2857142857;"
                                                     type="submit"
                                                     name="add"
                                                     aria-label="{{ 'products.product.upsell_add' | t | escape }}"

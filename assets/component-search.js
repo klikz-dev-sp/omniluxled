@@ -107,16 +107,18 @@ class SearchModal extends HTMLElement {
               let productImage = product.image;
               if(product.image == null || product.image == '')
                 productImage = window.globalVariables.no_image;
-              let resultUI = `<div class="col-sm-6 p-2"><div class="border h-100"><div class="predictive-search-product align-items-center mx-n2 row h-100">
-                  <div class="col-3 px-2">
-                      <a href="${product.url}"><img src="${productImage}" alt="${product.title}"></a>
-                  </div>
-                  <div class="col-9 p-2 pe-3">
-                      <p class="product-title mb-2"><a href="${product.url}" class="product-title">${product.title}</a></p>
-                      <p class="product-price mb-0">${productPrice}</p>
-                  </div>
-              </div></div></div>`;
-              productsList += resultUI;
+              if(product.id != 7991999987874) {
+                let resultUI = `<div class="col-sm-6 p-2"><div class="border h-100"><div class="predictive-search-product align-items-center mx-n2 row h-100">
+                    <div class="col-3 px-2">
+                        <a href="${product.url}"><img src="${productImage}" alt="${product.title}"></a>
+                    </div>
+                    <div class="col-9 p-2 pe-3">
+                        <p class="product-title mb-2"><a href="${product.url}" class="product-title">${product.title}</a></p>
+                        <p class="product-price mb-0">${productPrice}</p>
+                    </div>
+                </div></div></div>`;
+                productsList += resultUI;
+              }
             }
               
   

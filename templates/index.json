@@ -14,6 +14,23 @@
         "custom_class": ""
       }
     },
+    "6ec0e2ef-40e2-4265-a008-778c56929061": {
+      "type": "image_hero_2",
+      "custom_css": [
+        ".overlay {opacity: 0.3 !important;}",
+        "@media only screen and (max-width: 767px) {.overlay {position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient( to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.6) ) !important; opacity: 0.9 !important; z-index: 1; }}"
+      ],
+      "settings": {
+        "image_desktop": "shopify:\/\/shop_images\/website_35.png",
+        "image_mobile": "shopify:\/\/shop_images\/website_36.png",
+        "title": "Mask on,<br> wrinkles <em class=\"fw-light\">gone. <\/em>",
+        "subtitle": "Noninvasive LED treatments <br>delivering age-defying results.",
+        "btn_text": "Shop Now",
+        "btn_link": "shopify:\/\/collections\/all",
+        "content_position": "2",
+        "custom_class": ""
+      }
+    },
     "b001f34c-2df8-4b58-af50-b86bb7012553": {
       "type": "global-image_hero",
       "custom_css": [
@@ -444,12 +461,6 @@
             "icon_img": "shopify:\/\/shop_images\/wh-skincareawards_1.png"
           }
         },
-        "04c3d875-1879-4037-8b26-4c620295586a": {
-          "type": "content",
-          "settings": {
-            "icon_img": "shopify:\/\/shop_images\/SELFHBA22_Black.png"
-          }
-        },
         "0bfd51a6-46c3-4eb7-9fd4-90acfefc95d0": {
           "type": "content",
           "settings": {
@@ -471,7 +482,6 @@
         "c386a58c-88b3-4795-bf9f-df18ab77ba9e",
         "f5903697-c569-4c64-af15-7ea0e970746b",
         "b6d222dd-da7e-4dd4-a6fe-c434828074e6",
-        "04c3d875-1879-4037-8b26-4c620295586a",
         "0bfd51a6-46c3-4eb7-9fd4-90acfefc95d0",
         "4cc6a7ae-c58d-4385-b414-0a362c07e8b7"
       ],
@@ -611,14 +621,14 @@
           "type": "image-with-text-block",
           "settings": {
             "fullwidth_content": false,
-            "heading_txt": "Newest addition:<br>\nOmnilux Men",
+            "heading_txt": "Newest addition:<br>\nTopical Skincare",
             "max_width": 530,
-            "txt": "<p>Men's skincare just got better. Introducing Omnilux Men: the only LED mask specifically engineered to treat thicker skin, by providing the deepest penetrating wavelength of near-infrared light available for home use.<\/p>",
+            "txt": "<p>Discover a power-packed skincare trio clinically proven to fight signs of aging and optimize Omnilux’s signature LED light therapy treatments.<\/p>",
             "step_heading": "",
             "steps_captions": "",
             "steps_captions_2": "",
             "btn_txt": "Shop now",
-            "btn_link": "shopify:\/\/products\/omnilux-men",
+            "btn_link": "https:\/\/omniluxled.com\/collections\/skin-care",
             "triggerbtn_txt": "",
             "triggerto": "",
             "btn_type": "",
@@ -632,7 +642,7 @@
             "btn_size_watch": "",
             "link_txt": "",
             "link_url": "",
-            "image": "shopify:\/\/shop_images\/WEBSITE_19.png",
+            "image": "shopify:\/\/shop_images\/ss-ok.png",
             "alignment": "text-left",
             "image_alignment": "left"
           }
@@ -775,6 +785,7 @@
   },
   "order": [
     "4650e625-58c1-458d-8bb0-ff104d2e5c72",
+    "6ec0e2ef-40e2-4265-a008-778c56929061",
     "b001f34c-2df8-4b58-af50-b86bb7012553",
     "bbf8e6a0-e133-4b79-8e2e-6a96fec02c25",
     "a714f8c7-f2eb-4a04-8f60-9b9a35650f8a",

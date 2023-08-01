@@ -173,6 +173,23 @@ class AjaxCart extends HTMLElement {
     }
   }
 
+  _applyTax(element, change) {
+    let priceElement = element.getElementsByClassName("price")[0]    
+    if(priceElement.classList.contains("dp_catalog"))
+      return
+
+    let priceString = priceElement.innerHTML.replace(/\s+/g, '').replace(',', '').replace(change, '')
+    priceString = priceString.slice(1, priceString.length);
+    let price = parseInt(priceString)
+    price = price * (1 + taxPercent / 100);
+    let formatMoney = Shopify.formatMoney(
+      price,        
+      window.globalVariables.money_format
+    );
+    formatMoney += " Including tax"
+    priceElement.innerHTML = formatMoney
+  }
+
   /**
    * Update cart HTML and Trigger Open Drawer event
    *
@@ -180,6 +197,12 @@ class AjaxCart extends HTMLElement {
    * @param {string} action Open Drawer as value if need to Open Cart drawer
    */
   _updateCart(response, action) {
+    let taxPercent = window.globalVariables.taxPercent
+    if(isNaN(taxPercent)) {
+      this.getCartData();
+      return
+    }
+
     this.setAttribute("updating", true);
 
     // Convert the HTML string into a document object
@@ -201,12 +224,65 @@ class AjaxCart extends HTMLElement {
 
     let cartElement = cartHTML.querySelector("ajax-cart form");
     this.querySelector("form").innerHTML = cartElement.innerHTML;
-    this.querySelector("[data-carttotal] span.money").innerHTML =
-      Shopify.formatMoney(
-        window.globalVariables.cart.total_price,
-        window.globalVariables.money_format
-      );
 
+    let total_price = window.globalVariables.cart.total_price;
+
+    if(taxPercent > 0) {
+      total_price = total_price * (1 + taxPercent / 100);
+    } 
+    
+    this.querySelector("[data-carttotal] span.money").innerHTML =
+    Shopify.formatMoney(
+      total_price,
+      window.globalVariables.money_format
+    );
+
+    let cartItems = this.querySelectorAll("[data-cart-item]");
+    cartItems.forEach((element) => {
+      let productId = element.getAttribute("data-product-id")
+
+      window.globalVariables.cart.items.forEach((item) => {
+        if (item.product_id == productId) {
+          let itemTotalPrice = item.price * item.quantity;
+
+          if(taxPercent > 0) {
+            itemTotalPrice = itemTotalPrice * (1 + taxPercent / 100);
+          }
+
+          let formatMoney = Shopify.formatMoney(
+            itemTotalPrice,
+            window.globalVariables.money_format
+          );
+
+          if(taxPercent > 0)
+            element.getElementsByClassName("price")[0].innerHTML = formatMoney + " Including tax"
+          else
+            element.getElementsByClassName("price")[0].innerHTML = formatMoney
+        }
+      });
+    });
+
+    if(taxPercent > 0) {
+      let navProductItems = document.querySelectorAll("[data-nav-menu-product-id]");
+      navProductItems.forEach((element) => {
+        this._applyTax(element, '')
+      })  
+
+      let mnavProductItems = document.querySelectorAll("[data-mobile-nav-menu-product-id]");
+      mnavProductItems.forEach((element) => {
+        this._applyTax(element, '')
+      })  
+
+      let productItems = document.querySelectorAll("[data-prod-id]");
+      productItems.forEach((element) => {
+        this._applyTax(element, '')
+      })  
+
+      let upsellProductItems = document.querySelectorAll("[data-upsell-product-id]");
+      upsellProductItems.forEach((element) => {
+        this._applyTax(element, 'from')
+      })  
+    }
     let elements = this.querySelectorAll(
       "[data-checkoutBtns], [data-cartnote], [data-cartupsell]"
     );

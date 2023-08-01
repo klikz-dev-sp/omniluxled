@@ -129,8 +129,8 @@
                                                 {% assign current_product = megaMenuBlock[product] %}
                                                 {% assign current_variant = current_product.selected_or_first_available_variant %}
                                                 {% if current_product != null %}
-                                                <div class="container mega_menu_container col-6 mx-0">                                                  
-                                                  <a href="{{ current_product.url | within: collection }}">
+                                                <div class="container mega_menu_container col-6 mx-0" data-mobile-nav-menu-product-id="{{ current_product.id }}">                                                  
+                                                  <a class="card-body" href="{{ current_product.url | within: collection }}">
                                                     <div class="row">
                                                       <div class="col-12 mega_menu_image_container">
                                                           <img src="{{current_product.featured_image | image_url: width: 850 }}"/>    
@@ -142,13 +142,13 @@
                                                           
                                                           {% capture product_data_attribute %}data-oke-reviews-product-id="shopify-{{ current_product.id }}"{% endcapture %} 
                                                           {% if current_product.metafields.okendo.StarRatingSnippet %}<div data-oke-star-rating {{ product_data_attribute }} style="display:flex">{{ current_product.metafields.okendo.StarRatingSnippet }}</div>{% endif %}
-
-                                                          <span class="product-price" data-currentPrice>
+                                                          
                                                             {% if current_variant and current_variant.compare_at_price > current_variant.price %}
                                                                                   <s class="fs-smal price small m-0 p-0 text-gray-600 me-1 money" data-comparePrice>{{ current_variant.compare_at_price | money }}</s>
                                                                                 {% elsif product.compare_at_price > product.price %}
                                                                                   <s class="fs-smal price small m-0 p-0 text-gray-600 me-1 money" data-comparePrice>{{ product.compare_at_price | money }}</s>
                                                             {% endif %}
+                                                            <span class="price product-price" data-currentPrice>
                                                             {% if current_variant %}
                                                             {{ current_variant.price | money }}
                                                             {% elsif current_product.price_varies %}

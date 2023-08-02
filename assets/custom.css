@@ -959,7 +959,7 @@ li.dropdown a.reviews-results{display:block!important;}
   }
 }
 
-#shopify-section-template--16184566874274__c578fea6-30d9-45c3-a052-ad86f35eb32a {
+#shopify-section-template--16184566874274__c578fea6-30d9-45c3-a052-ad86f35eb32a,#shopify-section-template--16184566120610__b001f34c-2df8-4b58-af50-b86bb7012553 {
   display: none;
 }
 
@@ -969,7 +969,7 @@ html .swiper-button-next:hover::after
     border-color: black !important;
 }
 #shopify-section-template--16184566120610__6ec0e2ef-40e2-4265-a008-778c56929061 {
-  display: none;
+  display: block;
 }
 
 /* Cart Drawer */

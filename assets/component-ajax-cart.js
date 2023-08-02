@@ -18,12 +18,14 @@ class AjaxCart extends HTMLElement {
     );
 
     if (window.globalVariables.template != "cart") {
-      this.addAccessibilityAttributes(this.openeBy);
-      this.getCartData();
+      this.addAccessibilityAttributes(this.openeBy);      
     } else {
       this.style.visibility = "visible";
     }
 
+    this.taxPercent = 0;
+    this.getCartData();
+    
     if (navigator.platform === "iPhone")
       document.documentElement.style.setProperty(
         "--viewport-height",
@@ -178,16 +180,22 @@ class AjaxCart extends HTMLElement {
     if(priceElement.classList.contains("dp_catalog"))
       return
 
-    let priceString = priceElement.innerHTML.replace(/\s+/g, '').replace(',', '').replace(change, '')
-    priceString = priceString.slice(1, priceString.length);
-    let price = parseInt(priceString)
-    price = price * (1 + taxPercent / 100);
+    let price = 0
+    if(priceElement.getAttribute("data-variant-price")) {
+      price = priceElement.getAttribute("data-variant-price")
+    } else {
+      let priceString = priceElement.innerHTML.replace(/\s+/g, '').replace(',', '').replace(change, '')
+      priceString = priceString.slice(1, priceString.length);
+      price = parseInt(priceString)  
+    }
+
+    price = price * (1 + this.taxPercent / 100);
     let formatMoney = Shopify.formatMoney(
       price,        
       window.globalVariables.money_format
     );
     formatMoney += " Incl. tax"
-    priceElement.innerHTML = formatMoney
+    priceElement.innerHTML = formatMoney    
   }
 
   /**
@@ -197,12 +205,18 @@ class AjaxCart extends HTMLElement {
    * @param {string} action Open Drawer as value if need to Open Cart drawer
    */
   _updateCart(response, action) {
-    let taxPercent = window.globalVariables.taxPercent
-    if(isNaN(taxPercent)) {
+    if(window.globalVariables.template == "cart") {
+      this.taxPercent = localStorage.getItem("taxPercent")
+    } else {
+      this.taxPercent = window.globalVariables.taxPercent
+    }
+    
+    if(isNaN(this.taxPercent)) {
+      this.taxPercent = 0;
       this.getCartData();
       return
     }
-
+    
     this.setAttribute("updating", true);
 
     // Convert the HTML string into a document object
@@ -225,20 +239,21 @@ class AjaxCart extends HTMLElement {
     let cartElement = cartHTML.querySelector("ajax-cart form");
     this.querySelector("form").innerHTML = cartElement.innerHTML;
 
-    if(taxPercent > 0) {
+    let total_price = window.globalVariables.cart.total_price;
+
+    if(this.taxPercent > 0) {
       let preTaxElement = document.getElementById("preTax");
       preTaxElement.classList.add("d-flex");  
+            
+      this.querySelector("[data-preTaxCartTotal]").innerHTML =
+      Shopify.formatMoney(
+        total_price,
+        window.globalVariables.money_format
+      );
     }
 
-    let total_price = window.globalVariables.cart.total_price;
-    this.querySelector("[data-preTaxCartTotal]").innerHTML =
-    Shopify.formatMoney(
-      total_price,
-      window.globalVariables.money_format
-    );
-
-    if(taxPercent > 0) {
-      total_price = total_price * (1 + taxPercent / 100);
+    if(this.taxPercent > 0) {
+      total_price = total_price * (1 + this.taxPercent / 100);
     } 
     
     this.querySelector("[data-carttotal]").innerHTML =
@@ -248,15 +263,15 @@ class AjaxCart extends HTMLElement {
     );
 
     let cartItems = this.querySelectorAll("[data-cart-item]");
-    cartItems.forEach((element) => {
+    cartItems.forEach((element) => {      
       let productId = element.getAttribute("data-product-id")
 
       window.globalVariables.cart.items.forEach((item) => {
         if (item.product_id == productId) {
           let itemTotalPrice = item.price * item.quantity;
 
-          if(taxPercent > 0) {
-            itemTotalPrice = itemTotalPrice * (1 + taxPercent / 100);
+          if(this.taxPercent > 0) {
+            itemTotalPrice = itemTotalPrice * (1 + this.taxPercent / 100);
           }
 
           let formatMoney = Shopify.formatMoney(
@@ -264,7 +279,7 @@ class AjaxCart extends HTMLElement {
             window.globalVariables.money_format
           );
 
-          if(taxPercent > 0)
+          if(this.taxPercent > 0)
             element.getElementsByClassName("price")[0].innerHTML = formatMoney + " Incl. tax"
           else
             element.getElementsByClassName("price")[0].innerHTML = formatMoney
@@ -272,7 +287,7 @@ class AjaxCart extends HTMLElement {
       });
     });
 
-    if(taxPercent > 0) {
+    if(this.taxPercent > 0) {
       let navProductItems = document.querySelectorAll("[data-nav-menu-product-id]");
       navProductItems.forEach((element) => {
         this._applyTax(element, '')

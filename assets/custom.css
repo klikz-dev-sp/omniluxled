@@ -312,7 +312,11 @@ body .cart-drawer .docapp-volume-discounts-legacy-promo {
 .cart-drawer .docapp-coupon-input--input {
   margin-bottom: 0 !important;
 }
+.cart-total .docapp-cart-with-coupon-summary--summary, 
 .cart-drawer .docapp-cart-with-coupon-summary--summary {
+  display: none;
+}
+.cart-total #preTax{
   display: none;
 }
 .cart-total .docapp-cart-with-coupon-summary .docapp-coupon-input--button,

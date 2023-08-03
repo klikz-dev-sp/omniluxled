@@ -1,3 +1,4 @@
+<script defer src="https://momentjs.com/downloads/moment.min.js"></script>
 {{ 'return-auth-form-block.css' | asset_url | stylesheet_tag }}
 <section >
   <div class="section-content" data-section-id="{{ section.id }}">
@@ -96,7 +97,8 @@
                 <textarea id="{{ formId }}-message" name="contact[body]" class="form-control" rows="10" placeholder="Description" required></textarea>                      
                 <label for="{{ formId }}-message">Description</label>
               </div>
-              <input type="submit" class="btn btn-primary btn-block" value="Submit">
+              <span class="warning mb-2"></span>
+              <input type="submit" class="btn btn-primary btn-block disabled" value="Submit">
             {% endif %}
           {% endform %}
         </div>

@@ -1,9 +1,11 @@
 document.getElementById("ContactForm-purchase-method-direct").addEventListener('change', function() {
+    validation();
     document.getElementById("orderNumberInput").classList.remove("d-none");
     document.getElementById("businessNameInput").remove();
 });
 
 document.getElementById("ContactForm-purchase-method-nodirect").addEventListener('change', function() {
+    validation();
     document.getElementById("orderNumberInput").classList.add("d-none");
     document.getElementById("orderNumberInput").insertAdjacentHTML("afterend", "<div id='businessNameInput' class='form-group form-floating'><input type='text' id='ContactForm-business-name' name='contact[business_name]' class='form-control' placeholder='Business Name' required><label for='ContactForm-business-name'>Business Name</label></div>");
 });
@@ -18,18 +20,29 @@ document.getElementById("ContactForm-replace-method").addEventListener('click', 
 
 function validation() {
     let purchaseDateEle = document.querySelector("#ContactForm-purchase-date")
-    var warningEle = document.querySelector(".warning")
-    var submitEle = document.querySelector("#ContactForm input[type='submit']");
+    let warningEle = document.querySelector(".warning")
+    let submitEle = document.querySelector("#ContactForm input[type='submit']");
     let productList = document.getElementById("product-list")
+    let purchaseMethodEles = document.querySelectorAll("#ContactForm input[name$='contact[purchase_method]']")
+    var purchaseMethod = 'No';
+
+    purchaseMethodEles.forEach(ele => {
+        if(ele.checked) {
+            purchaseMethod = ele.value
+            return
+        }
+    })
 
     var day = moment(purchaseDateEle.value);
     var now = moment();
     var diff = now.diff(day, 'years', true);
     var valid = false
 
-    if(diff <= 2 && productList.childElementCount > 0) {        
+    if(diff <= 2 && productList.childElementCount > 0 && purchaseMethod == 'Yes') {        
         valid = true
     }
+
+    warningEle.innerHTML = ""
 
     if(valid == false) {          
         if(diff > 2) {
@@ -39,7 +52,6 @@ function validation() {
         warningEle.classList.add("d-flex")
         submitEle.classList.add("disabled")
     } else {
-        warningEle.innerHTML = ""
         warningEle.classList.remove("d-flex")        
         submitEle.classList.remove("disabled")
     }

@@ -148,7 +148,7 @@
                                                                                 {% elsif product.compare_at_price > product.price %}
                                                                                   <s class="fs-smal price small m-0 p-0 text-gray-600 me-1 money" data-comparePrice>{{ product.compare_at_price | money }}</s>
                                                             {% endif %}
-                                                            <span class="price product-price" data-currentPrice>
+                                                            <span class="price product-price" data-currentPrice data-variant-price="{% if current_variant %}{{current_variant.price}}{% else %}{{current_product.price}}{% endif %}">
                                                             {% if current_variant %}
                                                             {{ current_variant.price | money }}
                                                             {% elsif current_product.price_varies %}

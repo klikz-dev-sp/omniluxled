@@ -255,16 +255,7 @@
                   {%- for block in section.blocks -%}
                     {%- case block.type -%}
                     {%- when '@app' -%}
-                     
-                     {% render block %}
-{% for collection in product.collections %}
- {%- comment %}<locksmith:b525>{% endcomment -%}
-   {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection, subject_parent: product, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
- {%- comment %}</locksmith:b525>{% endcomment -%}
- {% if collection.title contains 'All Devices' %}
- 	<div class="trustedbypdp" style="display:none;">|&nbsp;&nbsp;<a href="#shopify-block-db62bf7d-43d4-4e5f-9fbc-bad80cc7e15f">Trusted by 100K+ Customers</a></div>
-  {% endif %}
- {% endfor %}
+                        {% render block %}
                     {%- when 'name' -%}
                         <h1 class="mt-2 h3">{{ product.title }}</h1>
                     {%- when 'subtitle' -%}

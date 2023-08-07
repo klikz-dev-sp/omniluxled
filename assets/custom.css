@@ -1,56 +1,3 @@
-/*trusted by - PDPs*/
-.trustedbypdp{width:200px;left:115px;position:relative;margin-top:-15px;font-size: 12px;font-weight: 400;line-height: 15px;}
-.oke-sr-count.oke-sr-count--brackets{position:relative;font-size: 12px;line-height: 15px;top:2px;}
-.template-product.hyaluronic-acid-serum .trustedbypdp{display:none;}
-@media(max-width:768px){
-  .trustedbypdp{margin-top:-16px;}
-}
-
-/*end trusted by - PDPs*/
-/*trusted by stars*/
-.review-ctr {
-    display: flex;
-}
-  .review-ctr-mbl {
-    display: none;
-}
-.star-img {
-    width: 19px;
-    height: 19px;
-    padding: 1px;
-}
-.rev-txt {
-    color: white;
-    margin-bottom: 0px !important;
-    padding-bottom: 0px !important;
-}
-@media(max-width:767px){
-.review-ctr {
-    display: none;
-}
-  .review-ctr-mbl {
-    display: block;
-    margin-top: 10px;
-}
-  .ds-flx {
-    display: flex;
-    margin: auto;
-    text-align: center;
-    justify-content: center;
-}
-  .star-img-mbl {
-    width: 20px !important;
-    height: 20px !important;
-    padding: 3px !important;
-}
-  .rev-txt-mbl {
-    color: white;
-    margin-bottom: 0px !important;
-    padding-bottom: 0px !important;
-    margin-top: 2px;
-}
-}
-
 /*sidebar form*/
 #sidebarform form.klaviyo-form{background:#fff!important;padding-left:0!important;padding-right:0!important;}
 #sidebarform .klaviyo-form div.kl-private-reset-css-Xuajs1{padding:0!important;row-gap:10px;background:#fff!important;}
@@ -448,16 +395,6 @@ body.ab-test-cartdrawer .cart-drawer .docapp-volume-discounts-legacy-promo {
   top: 4px;
 }
 /*new skincare pages*/
-.template-page.skincare-awareness-1 .image-hero .container-fluid{padding-top:0!important;}
-.btn-outline-primary.btn-dark:before,.btn-outline-primary.btn-dark:after{border:0!important;}
-
-@media (min-width: 768px){
-.template-page.skincare-awareness-1 .tallheight .swiper-slide {
-    height: calc(100vh - 140px)!important;
-  min-height:0px!important;
-}
-}
-
 .skin-care .banner__content .banner__text .fw-normal {
   font-weight: 300 !important;
 }

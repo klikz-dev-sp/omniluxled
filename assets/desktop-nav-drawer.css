@@ -213,8 +213,7 @@ ul.mega-menu__list.page-width.mega-menu__list--condensed {
 }
 
 .custom_megamenu_product.megamenu_product img {
-   /* max-height: 274px; */
-  padding-bottom:10px;
+    max-height: 274px;
 }
 
 .megamenu_with_product .container {

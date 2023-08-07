@@ -20,6 +20,7 @@ class AjaxCart extends HTMLElement {
     if (window.globalVariables.template != "cart") {
       this.addAccessibilityAttributes(this.openeBy);      
     } else {
+      window.location.href = window.location.origin
       this.style.visibility = "visible";
     }
 
@@ -186,7 +187,7 @@ class AjaxCart extends HTMLElement {
     } else {
       let priceString = priceElement.innerHTML.replace(/\s+/g, '').replace(',', '').replace(change, '')
       priceString = priceString.slice(1, priceString.length);
-      price = parseInt(priceString) * 100
+      price = parseInt(priceString)
     }
 
     price = price * (1 + this.taxPercent / 100);

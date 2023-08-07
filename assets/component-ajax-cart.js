@@ -20,6 +20,7 @@ class AjaxCart extends HTMLElement {
     if (window.globalVariables.template != "cart") {
       this.addAccessibilityAttributes(this.openeBy);      
     } else {
+      window.location.href = window.location.origin
       this.style.visibility = "visible";
     }
 

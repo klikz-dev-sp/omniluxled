@@ -1,3 +1,110 @@
+/*trusted by - PDPs*/
+.trustedbypdp{width:200px;left:115px;position:relative;top:-15px;font-size: 12px;font-weight: 400;line-height: 15px;}
+.trustedbypdp:hover{cursor:pointer;}
+.oke-sr-count.oke-sr-count--brackets{position:relative;font-size: 12px;line-height: 15px;top:2px;}
+.template-product.hyaluronic-acid-serum .trustedbypdp{display:none;}
+@media(max-width:768px){
+  .trustedbypdp{top:-16px;}
+  
+}
+
+/*end trusted by - PDPs*/
+
+
+/**
+ * Desktop Reviews Start
+ */
+
+.desktopreviewstitle{padding:25px 60px 25px;margin-bottom:0;margin-top:0px;}
+.desktopreviewstitle h2.title,.desktopreviewstitle p,.desktopreviewstitle .starreviews{width:100%!important;text-align:center!important;}
+.desktopreviewstitle .starreviews{color:#000;font-family: Inter;font-size: 25px;font-weight: 800;line-height: 25px;}
+.desktopreviewstitle h2.title{font-family: var(--bs-font-family-heading);color:#000;font-size: 48px;font-weight: 500;line-height: 59px;letter-spacing: 0em;margin:10px 0 20px 0;}
+.desktopreviewstitle .starreviews{z-index:2;display:flex!important;justify-content:center;align-items:center;}
+.desktopreviewstitle .starreviews div{margin-left:3px;}
+.desktopreviewstitle .starreviews img{max-width:190px;padding:0 7px;position:relative;top:0px;}
+.desktopreviewstitle strong.outof{vertical-align:top;top:7px;color:#666666;position:relative;font-family: var(--bs-font-family-heading);font-size: 16px;font-weight: 700;line-height: 20px;}
+.desktopreviewstitle p{color:#000;margin:30px auto;font-family: var(--bs-font-family-heading);font-size: 25px;font-weight: 400;line-height: 25px;}
+.seeallreviews{padding:0;margin:45px auto 180px;text-align:center;width:100%;display:block;}
+.seeallreviews .seelink{text-decoration:underline;color:#000;font-weight:bold;var(--bs-font-family-heading);font-size: 14px;font-weight: 700;line-height: 17px;}
+.seereviewsbtn:hover{cursor:pointer;}
+.circle-video-menu-wrap.circle-video-desktop{z-index:2;margin-top:-20px;border-top:0;}
+.circle-video-menu-wrap.circle-video-desktop .circle-video-menu-item{/*width:305px;*/width:272px;vertical-align:top;}
+.circle-video-menu-wrap.circle-video-desktop .circle-menu-items{text-align:center;padding-bottom:0;max-width:1380px;margin:0 auto;display:flex;gap:20px;}
+.circle-video-menu-wrap.circle-video-desktop .circle-video-menu-item-image{/*height:400px;*/height:350px;margin: 0 0;}
+.circle-video-menu-wrap.circle-video-desktop .circle-video-menu-item-image img{top: 0;height: 100%;width:100%;object-fit: cover;}
+.circle-video-menu-wrap.circle-video-desktop .circle-menu-item-img,.circle-video-menu-wrap.circle-video-desktop .circle-video-menu-item-image{border-radius:0;}
+.circle-video-menu-wrap.circle-video-desktop .circle-menu-item-label{/*top:-65px;*/ top:-55px;font-size:21px;text-align:left;left:25px;font-family:Nunito, sans-serif;}
+.circle-video-menu-wrap.circle-video-desktop .circle-video-menu-item-image svg{transform: none;
+    left: auto;
+    height: 50px;
+    right: 14px;
+    top: 81.5%;
+    width: 50px;}
+
+.circle-video-menu-wrap.circle-video-desktop .circle-video-menu-item-image::after{display:none;}
+.circle-video-menu-wrap.circle-video-desktop,.desktopreviewstitle,.seeallreviews,.circle-video-menu-wrap.circle-video-desktop .circle-video-menu{display:none!important;}
+
+.template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop,
+.template-product.omnilux-contour-face .desktopreviewstitle,
+.template-product.omnilux-contour-face .seeallreviews,
+.template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop .circle-video-menu{display:none!important;}
+
+@media(max-width:999px){
+.template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop,
+.template-product.omnilux-contour-face .desktopreviewstitle,
+.template-product.omnilux-contour-face .seeallreviews,
+.template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop .circle-video-menu{display:none!important;}
+
+  .template-product.omnilux-contour-face #reviews-slider{display:block;}
+}
+/**
+ * Desktop Reviews End
+ */
+
+/*trusted by stars*/
+.review-ctr {
+    display: flex;
+}
+  .review-ctr-mbl {
+    display: none;
+}
+.star-img {
+    width: 19px;
+    height: 19px;
+    padding: 1px;
+}
+.rev-txt {
+    color: white;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+@media(max-width:767px){
+.review-ctr {
+    display: none;
+}
+  .review-ctr-mbl {
+    display: block;
+    margin-top: 10px;
+}
+  .ds-flx {
+    display: flex;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+  .star-img-mbl {
+    width: 20px !important;
+    height: 20px !important;
+    padding: 3px !important;
+}
+  .rev-txt-mbl {
+    color: white;
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+    margin-top: 2px;
+}
+}
+
 /*sidebar form*/
 #sidebarform form.klaviyo-form{background:#fff!important;padding-left:0!important;padding-right:0!important;}
 #sidebarform .klaviyo-form div.kl-private-reset-css-Xuajs1{padding:0!important;row-gap:10px;background:#fff!important;}
@@ -395,6 +502,16 @@ body.ab-test-cartdrawer .cart-drawer .docapp-volume-discounts-legacy-promo {
   top: 4px;
 }
 /*new skincare pages*/
+.template-page.skincare-awareness-1 .image-hero .container-fluid{padding-top:0!important;}
+.btn-outline-primary.btn-dark:before,.btn-outline-primary.btn-dark:after{border:0!important;}
+
+@media (min-width: 768px){
+.template-page.skincare-awareness-1 .tallheight .swiper-slide {
+    height: calc(100vh - 140px)!important;
+  min-height:0px!important;
+}
+}
+
 .skin-care .banner__content .banner__text .fw-normal {
   font-weight: 300 !important;
 }

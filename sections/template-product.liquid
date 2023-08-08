@@ -255,7 +255,13 @@
                   {%- for block in section.blocks -%}
                     {%- case block.type -%}
                     {%- when '@app' -%}
-                        {% render block %}
+                    
+                   {% render block %}
+{% for collection in product.collections %}
+ {%- comment %}<locksmith:e0d4>{% endcomment -%}
+   {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection, subject_parent: product, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+ {%- comment %}</locksmith:e0d4>{% endcomment -%}
+ {% endfor %}
                     {%- when 'name' -%}
                         <h1 class="mt-2 h3">{{ product.title }}</h1>
                     {%- when 'subtitle' -%}
@@ -270,6 +276,14 @@
                             {% if show_vendor %} <span class="my-0">{{ product.vendor }}</span> {% endif %}
                         </div>
                     {%- when 'price' -%}
+                                            {% for collection in product.collections %}
+ {%- comment %}<locksmith:3eff>{% endcomment -%}
+   {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection, subject_parent: product, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
+ {%- comment %}</locksmith:3eff>{% endcomment -%}
+ {% if collection.title contains 'All Devices' %}
+ 	<div class="trustedbypdp">|&nbsp;&nbsp;Trusted by 100K+ Customers</div>
+  {% endif %}
+ {% endfor %}
                         <div class="price-wrapper mt-2 d-flex align-items-center flex-wrap">
                             {%- if current_variant.compare_at_price > current_variant.price -%}<s class="text-gray-600 me-2 money" data-comparePrice>{{ current_variant.compare_at_price | money }}</s>{%- endif -%}
                             <span class="fw-bold actual-price money me-2" data-currentPrice>{{ current_variant.price | money }}</span>
@@ -371,7 +385,16 @@
 <script type="application/json" data-productMedia>
   {{ product.media | json }}
 </script>
+<script>
+  document.addEventListener("click", function(event) {
+    const trustedButton = document.querySelector(".trustedbypdp");
+    const reviewsSection = document.querySelector(".oke-w");
 
+    if (trustedButton && reviewsSection && event.target === trustedButton) {
+      window.scrollTo(0, reviewsSection.offsetTop);
+    }
+  });
+</script>
 <style>
   #product-form-installment{
     display:none;

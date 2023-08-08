@@ -333,6 +333,79 @@
         "border-bottom": false
       }
     },
+    "4f5f33ca-10a4-41a3-b40c-038b76049541": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\">4.7 <a href=\"#shopify-section-template--16184566874274__1676318184d0f06530\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/6736\/2466\/files\/stars2.png?v=1691457501\"> <strong class=\"outof\">out of 1,000+ Reviews<\/strong><\/a><\/div><\/div>\n<p>We've helped 100,000+ customers achieve their skin goals.<\/p>\n<\/div>"
+      }
+    },
+    "1598637a-3252-49e4-bfcc-d63e53d9c6b6": {
+      "type": "circle-video-menu-desktop",
+      "blocks": {
+        "10e6e883-2fc2-43bf-a56f-3ce24c0149cf": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial.png",
+            "label": "Lizeth’s Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/lizethstory.mp4"
+          }
+        },
+        "c422a032-1e24-42cd-adec-7c9a126fafc4": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy.png",
+            "label": "Deborah's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/test2.mov"
+          }
+        },
+        "19dec470-df8b-4c9f-9194-2029fc26965f": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy_2.png",
+            "label": "Anna's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/Video 3 - IG Scroller.mp4"
+          }
+        },
+        "93b0c54c-0a98-4ab9-964a-07d92c83d255": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy_4.png",
+            "label": "Tanya's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/Video 2 - IG Scroller.mp4"
+          }
+        },
+        "e828c705-b186-4d23-a4ac-48e83bd77a68": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy_3.png",
+            "label": "Lina's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/Testimonial 6.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "10e6e883-2fc2-43bf-a56f-3ce24c0149cf",
+        "c422a032-1e24-42cd-adec-7c9a126fafc4",
+        "19dec470-df8b-4c9f-9194-2029fc26965f",
+        "93b0c54c-0a98-4ab9-964a-07d92c83d255",
+        "e828c705-b186-4d23-a4ac-48e83bd77a68"
+      ],
+      "settings": {
+        "border_color": "#000000",
+        "ignore": true
+      }
+    },
+    "5fc33cbe-b23b-43d7-b393-0425cd94b49e": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"seereviewsbtn\">\n<div class=\"seeallreviews\"><div class=\"container is-flex is-justify-center\"><a class=\"seelink\" href=\"#shopify-section-template--16184566874274__1676318184d0f06530 \">SEE MORE REVIEWS AND RESULTS<\/a><\/div><\/div><\/div>"
+      }
+    },
     "8d4dfa60-174c-4b28-9812-ab31ef599696": {
       "type": "global-reviews-slider",
       "blocks": {
@@ -1054,6 +1127,9 @@
     "d84aa67d-fef0-442d-8364-790f28934d4d",
     "main",
     "8b7008db-ace8-41cc-9cda-be64cf66dd7e",
+    "4f5f33ca-10a4-41a3-b40c-038b76049541",
+    "1598637a-3252-49e4-bfcc-d63e53d9c6b6",
+    "5fc33cbe-b23b-43d7-b393-0425cd94b49e",
     "8d4dfa60-174c-4b28-9812-ab31ef599696",
     "9521727a-fc34-433d-b725-458ff43ba5f3",
     "9954540e-30e3-44b7-ab1d-975166604760",

@@ -58,3 +58,18 @@ class model3d {
 }
 
 typeof model3d !== 'undefined' && new model3d();
+
+window.onload = function(){
+  document.querySelector('#gorgias-chat-container').classList.add("d-none")
+
+  $("#gorgias-chat-start").click(function(){    
+    let chatContainer = document.querySelector('#gorgias-chat-container')
+    if(chatContainer.classList.contains('d-none')) {
+      chatContainer.classList.remove("d-none")
+      $("#chat-button").contents().find('#gorgias-chat-messenger-button').click();  
+    } else {
+      chatContainer.classList.add("d-none")
+      $("#chat-button").contents().find('#gorgias-chat-messenger-button').click();  
+    }
+  })  
+};

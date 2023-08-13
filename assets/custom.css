@@ -1153,3 +1153,15 @@ html .cbb-frequently-bought-selector-label-name .cbb-frequently-bought-this-item
     text-align: center !important;
   }
 }
+
+.section-faq {
+  display: none;
+}
+
+.ab-faq .section-faq {
+  display: block;
+}
+
+.section-faq img{
+  width: 18px;
+}

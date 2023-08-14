@@ -1165,3 +1165,7 @@ html .cbb-frequently-bought-selector-label-name .cbb-frequently-bought-this-item
 .section-faq img{
   width: 18px;
 }
+
+#gorgias-chat-container {
+  display: none;
+}

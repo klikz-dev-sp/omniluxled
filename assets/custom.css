@@ -1162,10 +1162,68 @@ html .cbb-frequently-bought-selector-label-name .cbb-frequently-bought-this-item
   display: block;
 }
 
+.section-faq .title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -1.6px;
+}
+
 .section-faq img{
-  width: 18px;
+  width: 25px;
 }
 
 #gorgias-chat-container {
   display: none;
+}
+
+.section-faq .service .title {
+  color: #000;
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 48px;
+  letter-spacing: -1.6px;
+}
+
+.section-faq .service {
+  border-bottom: 1px solid;
+}
+
+.section-faq .service .startchat {
+  color: #000;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 22.4px;
+  text-decoration-line: underline;
+}
+
+.section-faq .service .font-style {
+  color: #000;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: normal;
+}
+
+@media screen and (max-width: 600px) {
+  .section-faq .title {
+    font-size: 24px;
+    line-height: normal;
+  }
+
+  .section-faq .service {
+    border: 1px solid #000;
+  }
+
+  .section-faq .service .title {
+    font-size: 26px;
+  }  
+
+  .section-faq .service .startchat {
+    font-size: 21px;
+  }
+
+  .section-faq .service .font-style {
+    font-size: 16px;
+  }  
 }

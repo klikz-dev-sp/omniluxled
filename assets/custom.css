@@ -1102,10 +1102,16 @@ html .swiper-button-next:hover::after
 
 /* App - Frequently Bought Together */
 
+html .ab-upsell .cbb-frequently-bought-container {
+  display: block;
+}
+
 html .cbb-frequently-bought-container {
-  padding: 1.5rem !important;
-  background-color: #f9f9f9 !important;
-  border: solid 1px black !important;
+  display: none;
+  padding: 1.5rem 8rem !important;
+  border-color: black !important;
+  border-bottom-width: 1px;
+  max-width: var(--bs-container-width) !important;
 }
 
 html .cbb-frequently-bought-total-price-text, html .cbb-frequently-bought-total-price-regular-price span {
@@ -1148,8 +1154,32 @@ html .cbb-frequently-bought-selector-label-name .cbb-frequently-bought-this-item
   font-weight: bold !important;
 }
 
-@media (max-width: 549px) {
+html .cbb-frequently-bought-title {
+  text-align: center !important;
+  font-size: 2rem !important;
+}
+
+html .cbb-frequently-bought-recommendations-container {
+  display: flex;
+}
+
+html .cbb-frequently-bought-recommendations-wrap {
+  padding-left: 60px;
+  flex: 1;
+}
+
+@media (max-width: 549px) {  
+  html .cbb-frequently-bought-container {
+    padding: 0 !important;
+  }
   html .cbb-frequently-bought-title {
     text-align: center !important;
+    font-size: 1.5rem !important;
+  }
+  html .cbb-frequently-bought-recommendations-container {
+    flex-direction: column;
+  }
+  html .cbb-frequently-bought-recommendations-wrap {
+    padding: 0;
   }
 }

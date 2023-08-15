@@ -58,3 +58,9 @@ class model3d {
 }
 
 typeof model3d !== 'undefined' && new model3d();
+
+window.onload = function(){
+  $('.cbb-frequently-bought-products').after($('<div class="cbb-frequently-bought-recommendations-wrap"></div>'))
+  $('.cbb-frequently-bought-recommendations-wrap').append($('.cbb-frequently-bought-selector-list'))  
+  $('.cbb-frequently-bought-recommendations-wrap').append($('.cbb-frequently-bought-form'))
+};

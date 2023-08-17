@@ -406,7 +406,14 @@ body.template-product:not(.product-men) .index-featured-collectiion > .section-c
 .template-product #chat-button {
     visibility: hidden !important;
 }
-  
+
+@media (max-width:600px)
+{
+    .template-product #chat-button {
+        bottom: 70px !important;
+    }
+}
+
 /* End wishlist */
 .cover-3d-wrap
 {

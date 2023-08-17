@@ -8,7 +8,7 @@
                   </div>
                   <div class="row justify-content-center mt-10">
                     <div class="col-12 col-lg-7 col-md-7 mb-5">
-                      <div data-faq-section>
+                      <div class="col-12 col-lg-10 col-md-10" data-faq-section>
                         <custom-accordion {{ block.shopify_attributes }} data-accordionType="single">
                             {% for block in section.blocks %}
                                 {% if block.settings.title != blank and block.settings.answer != blank %}
@@ -35,7 +35,7 @@
                       </div>
                     </div>
                     <div class="col-12 col-lg-5 col-md-5">
-                      <div class="service col-12 p-4">
+                      <div class="service col-12 col-lg-10 col-md-10">
                         <h3 class="title mb-3">Have Any Questions?</h3>
                         <div class="font-style">Chat with our customer support team.</div>
                         <div class="font-style mb-3">Monday-Sunday 9am to 9pm (PST).</div>

@@ -61,12 +61,15 @@ typeof model3d !== 'undefined' && new model3d();
 
 window.onload = function(){
   $("#gorgias-chat-start").click(function(){    
-    if($('#gorgias-chat-container').css('display') == 'none'){
-      $('#gorgias-chat-container').css('display', 'block')
-    } else {
-      $('#gorgias-chat-container').css('display', 'none')
-    }
-
-    $("#chat-button").contents().find('#gorgias-chat-messenger-button').click();  
-  })  
+    if($('#gorgias-chat-container #chat-window').css('display') == 'none'){      
+      $("#gorgias-chat-container #chat-button").contents().find('#gorgias-chat-messenger-button').click();  
+      $('#gorgias-chat-container #chat-button').attr('style', 'right: 20px;bottom: 20px;visibility: visible !important;width: 70px;height: 70px;');
+    }    
+  }) 
+  
+  $("#gorgias-chat-container #chat-button").contents().find('#gorgias-chat-messenger-button').click(function(){    
+    if($('#gorgias-chat-container #chat-button').css('visibility') == 'visible'){      
+      $('#gorgias-chat-container #chat-button').attr('style', 'visibility: hidden !important');
+    }  
+  })
 };

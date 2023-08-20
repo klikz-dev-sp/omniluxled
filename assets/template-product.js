@@ -60,19 +60,21 @@ class model3d {
 typeof model3d !== 'undefined' && new model3d();
 
 window.onload = function(){
-  $("#gorgias-chat-start").click(function(){   
-    if($('#gorgias-chat-container #chat-window').css('display') == 'none'){      
-      $("#gorgias-chat-container #chat-button").contents().find('button[data-testid="gorgias-chat-messenger-button"]').click();  
-    }
+  if ($("body").hasClass("ab-faq template-product omnilux-contour-face")) {
+    $("#gorgias-chat-start").click(function(){   
+      if($('#gorgias-chat-container #chat-window').css('display') == 'none'){      
+        $("#gorgias-chat-container #chat-button").contents().find('button[data-testid="gorgias-chat-messenger-button"]').click();  
+      }
+      
+      if($('#gorgias-chat-container #chat-button').css('visibility') == 'hidden'){      
+        $('#gorgias-chat-container #chat-button').attr('style', 'right: 20px;bottom: 20px;visibility: visible !important;width: 72px;height: 66px;');
+      }  
+    }) 
     
-    if($('#gorgias-chat-container #chat-button').css('visibility') == 'hidden'){      
-      $('#gorgias-chat-container #chat-button').attr('style', 'right: 20px;bottom: 20px;visibility: visible !important;width: 72px;height: 66px;');
-    }  
-  }) 
-  
-  $("#gorgias-chat-container #chat-button").contents().find('button[data-testid="gorgias-chat-messenger-button"]').click(function(){    
-    if($('#gorgias-chat-container #chat-button').css('visibility') == 'visible'){      
-      $('#gorgias-chat-container #chat-button').attr('style', 'visibility: hidden !important');
-    }  
-  })
+    $("#gorgias-chat-container #chat-button").contents().find('button[data-testid="gorgias-chat-messenger-button"]').click(function(){    
+      if($('#gorgias-chat-container #chat-button').css('visibility') == 'visible'){      
+        $('#gorgias-chat-container #chat-button').attr('style', 'visibility: hidden !important');
+      }  
+    })  
+  }
 };

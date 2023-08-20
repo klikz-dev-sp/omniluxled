@@ -1158,7 +1158,7 @@ html .cbb-frequently-bought-selector-label-name .cbb-frequently-bought-this-item
   display: none;
 }
 
-.ab-faq .section-faq {
+.ab-faq.template-product.omnilux-contour-face .section-faq {
   display: block;
 }
 

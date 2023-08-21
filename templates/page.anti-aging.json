@@ -416,6 +416,14 @@
     "e89b7930-b5f6-4d73-a927-927009449f9c": {
       "type": "global-results-slider",
       "blocks": {
+        "624533e0-d5d6-4df7-a3cc-63b617a3dd81": {
+          "type": "logowidthtext",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Untitled_design_-_2023-08-15T121104.660.png",
+            "brfore_aftertext": false,
+            "contour_text": false
+          }
+        },
         "694d3e56-31bd-4d87-8549-9534bf050238": {
           "type": "logowidthtext",
           "settings": {
@@ -490,6 +498,7 @@
         }
       },
       "block_order": [
+        "624533e0-d5d6-4df7-a3cc-63b617a3dd81",
         "694d3e56-31bd-4d87-8549-9534bf050238",
         "e7d594e3-c4b5-4b64-93aa-dd8c55ea6206",
         "bc4d258a-10f7-4c03-b2cd-ba66bd6ab2e7",

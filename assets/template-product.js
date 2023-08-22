@@ -60,7 +60,7 @@ class model3d {
 typeof model3d !== 'undefined' && new model3d();
 
 window.onload = function(){
-  if ($("body").hasClass("ab-faq template-product omnilux-contour-face")) {
+  if ($("body").hasClass("ab-faq template-product omnilux-contour-face")) {   
     $("#gorgias-chat-start").click(function(){   
       if($('#gorgias-chat-container #chat-window').css('display') == 'none'){      
         $("#gorgias-chat-container #chat-button").contents().find('button[data-testid="gorgias-chat-messenger-button"]').click();  

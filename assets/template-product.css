@@ -407,6 +407,18 @@ body.template-product:not(.product-men) .index-featured-collectiion > .section-c
     visibility: hidden !important;
 }
 
+.template-product #faq_fulllist-new {
+    display: none;
+}
+
+.ab-faq.template-product.omnilux-contour-face #faq-fulllist-original {
+    display: none;
+}
+
+.ab-faq.template-product.omnilux-contour-face #faq_fulllist-new {
+    display: block;
+}
+
 @media (max-width:600px)
 {
     .template-product #chat-button {

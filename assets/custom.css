@@ -44,10 +44,12 @@
 .circle-video-menu-wrap.circle-video-desktop .circle-video-menu-item-image::after{display:none;}
 .circle-video-menu-wrap.circle-video-desktop,.desktopreviewstitle,.seeallreviews,.circle-video-menu-wrap.circle-video-desktop .circle-video-menu{display:none!important;}
 
+.template-product.omnilux-contour-face #reviews-slider{display:none!important;}
+
 .template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop,
 .template-product.omnilux-contour-face .desktopreviewstitle,
 .template-product.omnilux-contour-face .seeallreviews,
-.template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop .circle-video-menu{display:none!important;}
+.template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop .circle-video-menu{display:block!important;}
 
 @media(max-width:999px){
 .template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop,

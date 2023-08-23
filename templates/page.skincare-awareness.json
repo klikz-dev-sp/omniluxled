@@ -16,7 +16,7 @@
         "@media (min-width: 768px) {.col-md-6 {width: 70% !important; }}"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/Untitled-91.png",
+        "image_desktop": "shopify:\/\/shop_images\/Untitled-12.png",
         "title": "Healthy skin goes beyond how we look.",
         "subtitle": "Save up to $175 when you shop & support kids with chronic skin conditions.",
         "btn_text": "SHOP & SUPPORT",
@@ -47,6 +47,7 @@
         "e22ea5c1-2360-47b6-bc2a-7ec901e12b5b"
       ],
       "custom_css": [
+        "p {max-width: 800px; margin: 0 auto;}",
         ".h5 {font-size: var(--bs-h2-font-size); text-align: center;}",
         ".border {border: 0 !important;}",
         ".btn,.btn-dark {margin: 0 auto; background: #000 !important;}",
@@ -223,17 +224,27 @@
         ".h3,.justify-content-lg-between {display: block !important;}",
         ".h3.pe-3 {font-size: 18px !important; padding-right: 0 !important; line-height: 24px !important; margin-bottom: 10px !important;}",
         "@media (max-width: 999px) {.pb-2 {padding-bottom: 3.5rem !important; } .pt-4 {padding-top: 0 !important; }}",
-        "@media (max-width: 600px) {.mb-4.mb-lg-3 {margin-bottom: 0 !important; } .pt-4 {padding-top: 0 !important; margin-bottom: 0 !important; }}"
+        "@media (max-width: 600px) {.pt-1 {padding-top: 0 !important; } .mb-4.mb-lg-3 {margin-bottom: 0 !important; } .pt-4 {padding-top: 0 !important; margin-bottom: 0 !important; }}"
       ],
       "settings": {
         "fluid_layout": false,
         "css_class": "skincareawareness-shopandsupport",
         "heading_txt": "",
         "btn_txt": "Shop and Support",
-        "btn_link": "shopify:\/\/collections",
+        "btn_link": "https:\/\/omniluxled.com\/collections\/all",
         "btn_type": "",
         "btn_variant": "primary",
         "btn_size": "",
+        "btn_txt2": "",
+        "btn_link2": "",
+        "btn_type2": "",
+        "btn_variant2": "dark",
+        "btn_size2": "",
+        "btn_txt3": "",
+        "btn_link3": "",
+        "btn_type3": "",
+        "btn_variant3": "dark",
+        "btn_size3": "",
         "section_bg_color": "rgba(0,0,0,0)",
         "section_text_color": "#000000"
       }
@@ -293,19 +304,46 @@
         ".h3,.justify-content-lg-between {display: block !important; text-shadow: none; color: #000;}",
         ".h3.pe-3 {margin-bottom: 20px !important;}",
         "@media (max-width: 999px) {.heading_txt.pt-4.pb-2 {padding-top: 0 !important; padding-bottom: 1rem !important; }}",
-        "@media (max-width: 600px) {.mb-4.mb-lg-3 {margin-bottom: 0 !important; } .pt-4 {padding-top: 0 !important; margin-bottom: 3.5rem !important; }}"
+        "@media (max-width: 600px) {.mb-4, .mb-4.mb-lg-3 {margin-bottom: 0 !important; } .pt-4 {padding-top: 0 !important; }}"
       ],
       "settings": {
         "fluid_layout": false,
         "css_class": "skincare-getinvolved",
         "heading_txt": "Want to get further involved?",
-        "btn_txt": "Learn More",
-        "btn_link": "shopify:\/\/collections",
+        "btn_txt": "DONATE TO THE AAD",
+        "btn_link": "https:\/\/www.aad.org\/donate",
         "btn_type": "",
         "btn_variant": "primary",
         "btn_size": "btn-lg",
+        "btn_txt2": "CAMP DISCOVERY WEBSITE",
+        "btn_link2": "https:\/\/www.aad.org\/public\/public-health\/camp-discovery\/about-camp-discovery",
+        "btn_type2": "",
+        "btn_variant2": "primary",
+        "btn_size2": "btn-lg",
+        "btn_txt3": "AAD RESOURCES",
+        "btn_link3": "https:\/\/www.aad.org\/public\/everyday-care",
+        "btn_type3": "",
+        "btn_variant3": "primary",
+        "btn_size3": "btn-lg",
         "section_bg_color": "#ffffff",
         "section_text_color": "#000000"
+      }
+    },
+    "ef6b2326-d2f9-46cc-af7d-180d8d94d699": {
+      "type": "info-text",
+      "custom_css": [
+        "p {margin-top: -20px;}",
+        "@media (max-width: 999px) {p {margin-top: 0px; }}"
+      ],
+      "settings": {
+        "fluid_layout": false,
+        "img_text1": "<p>* 1% of every Omnilux sale in September will be donated to the American Academy of Dermatology's Camp Discovery program<\/p>",
+        "pt": 0,
+        "pb": 40,
+        "pts": 0,
+        "pbs": 40,
+        "border-top": false,
+        "border-bottom": false
       }
     }
   },
@@ -318,6 +356,7 @@
     "98ce97d7-15c6-46d0-b111-c869d2a20b0b",
     "42776c1a-5bf9-4c69-870f-bdc44289f71c",
     "473576ad-4bef-4b6a-af7e-fbea447f4426",
-    "890fc315-da7e-4ea3-94f3-0a98469a3f48"
+    "890fc315-da7e-4ea3-94f3-0a98469a3f48",
+    "ef6b2326-d2f9-46cc-af7d-180d8d94d699"
   ]
 }

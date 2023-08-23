@@ -398,14 +398,34 @@ body.template-product:not(.product-men) .index-featured-collectiion > .section-c
     padding: 10px 20px;
     box-shadow: 0 9px 16px 1px #00000070;
 }
-.template-product #chat-button
-{
-    bottom: 70px !important;
-}
 .template-product .acsb-trigger
 {
     bottom: 76px !important;
 }
+
+.ab-faq.template-product.omnilux-contour-face #chat-button {
+    visibility: hidden !important;
+}
+
+.template-product #faq_fulllist-new {
+    display: none;
+}
+
+.ab-faq.template-product.omnilux-contour-face #faq-fulllist-original {
+    display: none;
+}
+
+.ab-faq.template-product.omnilux-contour-face #faq_fulllist-new {
+    display: block;
+}
+
+@media (max-width:600px)
+{
+    .template-product #chat-button {
+        bottom: 70px !important;
+    }
+}
+
 /* End wishlist */
 .cover-3d-wrap
 {

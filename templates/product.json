@@ -77,6 +77,7 @@
     },
     "d84aa67d-fef0-442d-8364-790f28934d4d": {
       "type": "circle-video-menu",
+      "disabled": true,
       "blocks": {
         "6ce22c15-9550-44cf-b290-22e0d69efb10": {
           "type": "circle-link",
@@ -117,7 +118,6 @@
         "90ccee30-cb0b-4eff-b493-24753f4bc1fd",
         "f6c1532d-2a8e-4c7d-901d-cf816d9d28f9"
       ],
-      "disabled": true,
       "settings": {
         "border_color": "#000000",
         "ignore": true
@@ -1062,73 +1062,6 @@
         "include_margins": true
       }
     },
-    "09ff18bd-1440-4c82-b80a-d20f549a71ef": {
-      "type": "template-faq-block",
-      "blocks": {
-        "95a31df1-b677-4886-98f0-4dfccdaba584": {
-          "type": "question",
-          "settings": {
-            "title": "{{product.metafields.custom.faq_question_1}}",
-            "answer": "{{product.metafields.custom.faq_answer_1}}"
-          }
-        },
-        "c31c2cef-d078-4d32-a61c-2276a7617a01": {
-          "type": "question",
-          "settings": {
-            "title": "{{product.metafields.custom.faq_question_2}}",
-            "answer": "{{product.metafields.custom.faq_answer_2}}"
-          }
-        },
-        "b677b6ff-e074-4c5c-b859-b31c9194c1dc": {
-          "type": "question",
-          "settings": {
-            "title": "Does LED light therapy really work?",
-            "answer": "Yes. Omnilux’s technology has been clinically proven to produce medical grade results for nearly 20 years. Omnilux devices have been specifically profiled in over 40 independent peer-reviewed published clinical studies of these studies, with applications ranging from skin rejuvenation, acne, pigmentation, and other common skin conditions.\n\nPlease note: Not all LED masks are created equal! Some brands lack the clinical studies or FDA clearance that demonstrate proven effectiveness."
-          }
-        },
-        "eea571e1-1102-46b1-9e1a-a4904504d0dd": {
-          "type": "question",
-          "settings": {
-            "title": "What is the recommended treatment regimen for Contour?",
-            "answer": "We recommend using the Contour devices 3-5 times per week for 4-6 weeks. After the initial 6 weeks, you should continue routine maintenance treatments as desired based on lifestyle and skincare needs, as everyone skin is different. Consistency is key, so find what works best for you!"
-          }
-        },
-        "7f316ecd-0766-4033-a62e-f3ce649cd779": {
-          "type": "question",
-          "settings": {
-            "title": "Can I use Omnilux Contour with my current skincare products?",
-            "answer": "Omnilux Contour is compatible with most skin care routines. You should always apply your skin care products after treatments. Please review the Contraindications for a list of products and ingredients to avoid using with LED."
-          }
-        },
-        "2619e348-273e-486a-9a43-a2fb00fd78ed": {
-          "type": "question",
-          "settings": {
-            "title": "What are the benefits of red light therapy?",
-            "answer": "Red light reduces inflammation, pigmentation, and redness and helps prompt cellular repair and circulation for a more vibrant complexion."
-          }
-        },
-        "72ab6aea-55ad-471b-9b5a-978debb0a321": {
-          "type": "question",
-          "settings": {
-            "title": "Is the Omnilux Contour line safe to use?",
-            "answer": "With over 40 peer reviewed clinical studies and nearly 20 years of experience, Omnilux technology has proven to be very safe for all skin types, with no adverse side effects, no pain, and no downtime. Omnilux Contour generates no heat or UV light."
-          }
-        }
-      },
-      "block_order": [
-        "95a31df1-b677-4886-98f0-4dfccdaba584",
-        "c31c2cef-d078-4d32-a61c-2276a7617a01",
-        "b677b6ff-e074-4c5c-b859-b31c9194c1dc",
-        "eea571e1-1102-46b1-9e1a-a4904504d0dd",
-        "7f316ecd-0766-4033-a62e-f3ce649cd779",
-        "2619e348-273e-486a-9a43-a2fb00fd78ed",
-        "72ab6aea-55ad-471b-9b5a-978debb0a321"
-      ],
-      "settings": {
-        "enable": true,
-        "heading": "Frequently Asked Questions (FAQ)"
-      }
-    },
     "3b0cd3cc-5517-4d50-b829-9db880165ae6": {
       "type": "glabal-featured-product-list",
       "settings": {
@@ -1209,7 +1142,6 @@
     "6f9dbd95-0f1e-423e-8185-0f80ef755574",
     "eb389eae-606a-437d-9986-2e6235168f36",
     "167152762813570154",
-    "09ff18bd-1440-4c82-b80a-d20f549a71ef",
     "3b0cd3cc-5517-4d50-b829-9db880165ae6",
     "1676318184d0f06530",
     "4f65bf04-3141-4ace-b69f-74d2f7c94563"

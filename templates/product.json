@@ -77,7 +77,6 @@
     },
     "d84aa67d-fef0-442d-8364-790f28934d4d": {
       "type": "circle-video-menu",
-      "disabled": true,
       "blocks": {
         "6ce22c15-9550-44cf-b290-22e0d69efb10": {
           "type": "circle-link",
@@ -118,6 +117,7 @@
         "90ccee30-cb0b-4eff-b493-24753f4bc1fd",
         "f6c1532d-2a8e-4c7d-901d-cf816d9d28f9"
       ],
+      "disabled": true,
       "settings": {
         "border_color": "#000000",
         "ignore": true
@@ -1056,6 +1056,73 @@
         "border-bottom": true
       }
     },
+    "27a0c0a9-9daf-4c71-981d-3e756aa3b3bb": {
+      "type": "template-faq-block",
+      "blocks": {
+        "add65b84-8656-47b5-bcb0-5c2d1ba96bdf": {
+          "type": "question",
+          "settings": {
+            "title": "{{product.metafields.custom.faq_question_1}}",
+            "answer": "{{product.metafields.custom.faq_answer_1}}"
+          }
+        },
+        "f713b42a-7c79-411d-909d-b551ae6cd13d": {
+          "type": "question",
+          "settings": {
+            "title": "{{product.metafields.custom.faq_question_2}}",
+            "answer": "{{product.metafields.custom.faq_answer_2}}"
+          }
+        },
+        "be285a09-16ad-4591-87b0-c41d7c52c55d": {
+          "type": "question",
+          "settings": {
+            "title": "Does LED light therapy really work?",
+            "answer": "Yes. Omnilux’s technology has been clinically proven to produce medical grade results for nearly 20 years. Omnilux devices have been specifically profiled in over 40 independent peer-reviewed published clinical studies of these studies, with applications ranging from skin rejuvenation, acne, pigmentation, and other common skin conditions. Please note: Not all LED masks are created equal! Some brands lack the clinical studies or FDA clearance that demonstrate proven effectiveness."
+          }
+        },
+        "7b84c05b-518b-4ba2-9945-c6f0c41087c1": {
+          "type": "question",
+          "settings": {
+            "title": "What is the recommended treatment regimen for Contour?",
+            "answer": "We recommend using the Contour devices 3-5 times per week for 4-6 weeks. After the initial 6 weeks, you should continue routine maintenance treatments as desired based on lifestyle and skincare needs, as everyone skin is different. Consistency is key, so find what works best for you!"
+          }
+        },
+        "42409df3-b323-4beb-94bc-a4fccb70a465": {
+          "type": "question",
+          "settings": {
+            "title": "Can I use Omnilux Contour with my current skincare products?",
+            "answer": "Omnilux Contour is compatible with most skin care routines. You should always apply your skin care products after treatments. Please review the Contraindications for a list of products and ingredients to avoid using with LED."
+          }
+        },
+        "65c05be4-a39f-489c-a4c3-9e3e396631cc": {
+          "type": "question",
+          "settings": {
+            "title": "What are the benefits of red light therapy?",
+            "answer": "Red light reduces inflammation, pigmentation, and redness and helps prompt cellular repair and circulation for a more vibrant complexion."
+          }
+        },
+        "19109a3e-9aa8-48bc-9bf2-2ee7722ce81f": {
+          "type": "question",
+          "settings": {
+            "title": "Is the Omnilux Contour line safe to use?",
+            "answer": ""
+          }
+        }
+      },
+      "block_order": [
+        "add65b84-8656-47b5-bcb0-5c2d1ba96bdf",
+        "f713b42a-7c79-411d-909d-b551ae6cd13d",
+        "be285a09-16ad-4591-87b0-c41d7c52c55d",
+        "7b84c05b-518b-4ba2-9945-c6f0c41087c1",
+        "42409df3-b323-4beb-94bc-a4fccb70a465",
+        "65c05be4-a39f-489c-a4c3-9e3e396631cc",
+        "19109a3e-9aa8-48bc-9bf2-2ee7722ce81f"
+      ],
+      "settings": {
+        "enable": true,
+        "heading": "Frequently Asked Questions (FAQ)"
+      }
+    },
     "167152762813570154": {
       "type": "apps",
       "settings": {
@@ -1141,6 +1208,7 @@
     "dbd05fbc-dda9-418a-80a7-141ddac090f5",
     "6f9dbd95-0f1e-423e-8185-0f80ef755574",
     "eb389eae-606a-437d-9986-2e6235168f36",
+    "27a0c0a9-9daf-4c71-981d-3e756aa3b3bb",
     "167152762813570154",
     "3b0cd3cc-5517-4d50-b829-9db880165ae6",
     "1676318184d0f06530",

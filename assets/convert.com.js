@@ -6,15 +6,19 @@ let fold =
 
 window.addEventListener('scroll', function (e) {
   if (this.scrollY > fold - window.innerHeight) {
-    if (window.runExperiment != 1) {
-      window.runExperiment = 1;
+    if (window.runExperiment != 'faq') {
+      window.runExperiment = 'faq';
 
       window._conv_q = window._conv_q || [];
       window._conv_q.push(['executeExperiment', '100412969']);
+      _conv_q.push(['executeExperiment', '100412969']);
 
       console.log('Activated FAQs A/B Experiment');
 
+      window._conv_q.push(['triggerConversion', '100411732']);
       _conv_q.push(['triggerConversion', '100411732']);
     }
+
+    console.log(window.runExperiment);
   }
 });

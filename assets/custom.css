@@ -27,6 +27,19 @@
 .seeallreviews{padding:0;margin:45px auto 180px;text-align:center;width:100%;display:block;}
 .seeallreviews .seelink{text-decoration:underline;color:#000;font-weight:bold;var(--bs-font-family-heading);font-size: 14px;font-weight: 700;line-height: 17px;}
 .seereviewsbtn:hover{cursor:pointer;}
+
+.desktopreviewstitle .okeReviews .okeReviews-reviewsSummary.is-okeReviews-clickable{padding-left:185px;}
+.desktopreviewstitle .okeReviews .okeReviews-reviewsSummary-starRating .okeReviews-a11yText{    color: #000!important;
+    font-weight: 700!important;margin-left:-350px!important;top:-5px!important;
+    font-size: 21.6px!important;position:relative!important;clip:initial!important;height:auto!important;width:auto!important;}
+.desktopreviewstitle p{color:#666;margin:0 auto;max-width:580px;font-size:18px;}
+.seeallreviews{padding:0;margin-bottom:50px;}
+.seeallreviews a{padding:20px; border-radius:16px;background:#fff;text-decoration:underline;color:#000;font-size:16px;line-height:122%;font-weight:bold;background:#fff;}
+.bluedivbg{background:url(https://cdn.shopify.com/s/files/1/0079/0206/8836/t/58/assets/blue.jpg?v=1689907975) repeat-x;height:320px;margin-top:-275px;width:100%;z-index:1;}
+
+
+
+
 .circle-video-menu-wrap.circle-video-desktop{z-index:2;margin-top:-20px;border-top:0;}
 .circle-video-menu-wrap.circle-video-desktop .circle-video-menu-item{/*width:305px;*/width:272px;vertical-align:top;}
 .circle-video-menu-wrap.circle-video-desktop .circle-menu-items{text-align:center;padding-bottom:0;max-width:1380px;margin:0 auto;display:flex;gap:20px;}
@@ -1158,6 +1171,7 @@ html .cbb-frequently-bought-selector-label-name .cbb-frequently-bought-this-item
 
 .section-faq {
   display: none;
+  scroll-margin-top: 125px;
 }
 
 .ab-faq.template-product.omnilux-contour-face .section-faq {

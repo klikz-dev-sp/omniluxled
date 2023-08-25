@@ -1,31 +1,46 @@
-/**
- * Opened Cart
- */
+function activateAddToCartGoal() {
+  window.runExperiment = 1;
+
+  window._conv_q = window._conv_q || [];
+  window._conv_q.push(['triggerConversion', '10046163']);
+  _conv_q.push(['triggerConversion', '10046163']);
+}
+
+const targetEl = document.getElementById('cart-drawer');
+
+// create a new observer instance
 const cartObserver = new MutationObserver(function (mutations) {
   mutations.forEach(function (mutation) {
     if (
       mutation.attributeName === 'class' &&
       mutation.target.classList.contains('opened-drawer')
     ) {
-      if (window.runExperiment != 1) {
-        window.runExperiment = 1;
+      activateAddToCartGoal();
+    }
+  });
+});
+
+// pass in the target node, as well as the observer options
+cartObserver.observe(targetEl, { attributes: true });
+
+
+/**
+ * FAQ on PDP - Above the fold
+ */
+const faqObserver = new IntersectionObserver(function (entries) {
+  entries.forEach(function (entry) {
+    if (entry.isIntersecting) {
+      if (window.runExperiment != 2) {
+        window.runExperiment = 2;
 
         window._conv_q = window._conv_q || [];
-        window._conv_q.push(['executeExperiment', '100412269']);
-
-        console.log('Activated New Cart Upsell A/B Experiment');
-
-        // trigger "opened cart drawer" goal
-        _conv_q.push(['triggerConversion', '10046163']);
+        window._conv_q.push(['executeExperiment', '100412969']);
+        // trigger "faq reached" goal
+        window._conv_q.push(["triggerConversion", "100411732"]);
+        console.log('Activated FAQs A/B Experiment');
       }
     }
   });
 });
 
-cartObserver.observe(document.getElementById('cart-drawer'), {
-  attributes: true,
-});
-
-/**
- * FAQ on PDP - Above the fold
- */
+faqObserver.observe(document.getElementById('section-faq'));

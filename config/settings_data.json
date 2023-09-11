@@ -202,6 +202,9 @@
       },
       "footer": {
         "type": "footer",
+        "custom_css": [
+
+        ],
         "settings": {
           "fluid_footer": false,
           "footer_top_bg_color": "rgba(0,0,0,0)",
@@ -1115,5 +1118,12 @@
         }
       }
     }
+  },
+  "platform_customizations": {
+    "custom_css": [
+      "body .accessibility-trigger.aioa-small-icon button {width: 60px !important; height: 60px !important; margin: 7px 10px;}",
+      "body .accessibility-trigger.aioa-small-icon button img {width: 50px !important; height: 50px !important;}",
+      "@media screen and (max-width: 992px) {body .accessibility-trigger.aioa-small-icon button {width: 50px !important; height: 50px !important; }}"
+    ]
   }
 }

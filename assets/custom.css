@@ -1,3 +1,40 @@
+
+/*new landing pages*/
+.featuredproductsingle .row{align-items:center;}
+.rightcolprice .money{font-weight:700;font-size: 20px;}
+.featuredproductsingle .card-product .card-img>a{padding-top:90.279%!important;}
+.featuredproductsingle .free-shipping{position:relative;top:-2px;}
+
+.formatted-list ul.checkmarks li:before {
+  content: "\2713"!important;
+  display: inline-block;
+  width: 1em;
+    top: 11px!important;
+  color: #000;border:0;
+  font-weight: bold;
+  font-size: 1.2em;
+}
+.featuredproductsingle .col-12{padding-right:0!important;}
+.featuredproduct-awards.awards-wrap .container{padding:1em 0 0 0;}
+.featuredproduct-awards.awards-wrap .container img{max-width:90%;margin:0 auto;}
+.featuredproduct-awards.awards-wrap .container .col-md-4{padding-left:5px!important;padding-right:5px!important;}
+
+.template-page.anti-acne2 .section-faq{display:block;}
+
+@media(max-width:768px){
+.section-content.pt-3.featuredproductsingle{padding-top:0!important;} 
+  .featuredproduct-awards.awards-wrap .container .col-md-4{width:25%!important;}
+}
+@media(max-width:600px){
+.featuredproductsingle .formatted-list h3{text-align:left;}
+.template-page.men #ju_bbox{right:-109.313px!important;}
+.featuredproduct-awards{padding-left:5px;padding-right:5px;}
+  .featuredproductsingle .inside-block.pb-8{padding-bottom:0rem!important;}
+.featuredproduct-awards.awards-wrap .container .col-md-4{width:33%!important;}
+}
+
+.image-hero.withreviews h2.h1 {font-weight: 500 !important;text-shadow: none !important;}
+
 /*trusted by - PDPs*/
 .trustedbypdp{width:200px;left:115px;position:relative;top:-15px;font-size: 12px;font-weight: 400;line-height: 15px;}
 .trustedbypdp:hover{cursor:pointer;}
@@ -5,7 +42,15 @@
 .template-product.hyaluronic-acid-serum .trustedbypdp{display:none;}
 @media(max-width:768px){
   .trustedbypdp{top:-16px;}
-  
+}
+
+@media(max-width:600px){
+  .template-page.skincare-awareness .image-hero .container-fluid .tallheight .swiper-slide.align-items-end{align-items:flex-start!important;}
+.template-page.skincare-awareness .image-hero .container-fluid .tallheight .swiper-slide.align-items-end .py-10,.template-index .image-hero .container-fluid .tallheight .swiper-slide.align-items-end .py-10{padding-top:2.2em!important;}
+.template-page.skincare-awareness .image-hero .container-fluid .tallheight .caption_txt.pb-2,.template-index .image-hero .container-fluid .tallheight .caption_txt.pb-2{margin-bottom:0!important;}
+.template-page.skincare-awareness .image-hero h2.h1.px-4{font-size:34px!important;line-height:44px!important;padding-left: .5em!important; padding-right: .5em!important;}
+.template-index .image-hero .container-fluid .tallheight .swiper-slide.align-items-end h2.px-4{padding-left:0!important;padding-right:0!important;}
+
 }
 
 /*end trusted by - PDPs*/
@@ -14,30 +59,29 @@
 /**
  * Desktop Reviews Start
  */
-
 .desktopreviewstitle{padding:25px 60px 25px;margin-bottom:0;margin-top:0px;}
 .desktopreviewstitle h2.title,.desktopreviewstitle p,.desktopreviewstitle .starreviews{width:100%!important;text-align:center!important;}
 .desktopreviewstitle .starreviews{color:#000;font-family: Inter;font-size: 25px;font-weight: 800;line-height: 25px;}
 .desktopreviewstitle h2.title{font-family: var(--bs-font-family-heading);color:#000;font-size: 48px;font-weight: 500;line-height: 59px;letter-spacing: 0em;margin:10px 0 20px 0;}
-.desktopreviewstitle .starreviews{z-index:2;display:flex!important;justify-content:center;align-items:center;}
-.desktopreviewstitle .starreviews div{margin-left:3px;}
+.desktopreviewstitle .starreviews{z-index:2;display:flex!important;justify-content:center;align-items:center;padding-left:223px;}
+
 .desktopreviewstitle .starreviews img{max-width:190px;padding:0 7px;position:relative;top:0px;}
 .desktopreviewstitle strong.outof{vertical-align:top;top:7px;color:#666666;position:relative;font-family: var(--bs-font-family-heading);font-size: 16px;font-weight: 700;line-height: 20px;}
-.desktopreviewstitle p{color:#000;margin:30px auto;font-family: var(--bs-font-family-heading);font-size: 25px;font-weight: 400;line-height: 25px;}
-.seeallreviews{padding:0;margin:45px auto 180px;text-align:center;width:100%;display:block;}
-.seeallreviews .seelink{text-decoration:underline;color:#000;font-weight:bold;var(--bs-font-family-heading);font-size: 14px;font-weight: 700;line-height: 17px;}
-.seereviewsbtn:hover{cursor:pointer;}
+.desktopreviewstitle p{color:#000;margin:5px auto 30px auto;font-family: var(--bs-font-family-heading);font-size: 25px;font-weight: 400;line-height: 25px;}
+.seeallreviews{padding:0;margin:45px auto 80px;text-align:center;width:100%;display:block;}
+.seeallreviews span,.seeallreviews span:hover{cursor:pointer;text-decoration:underline;color:#000;font-weight:bold;font-family:var(--bs-font-family-heading);font-size: 14px;font-weight: 700;line-height: 17px;}
+.desktopreviewstitle .oke-sr-count--brackets:before,.desktopreviewstitle .oke-sr-count--brackets:after{display:none;}
 
-.desktopreviewstitle .okeReviews .okeReviews-reviewsSummary.is-okeReviews-clickable{padding-left:185px;}
-.desktopreviewstitle .okeReviews .okeReviews-reviewsSummary-starRating .okeReviews-a11yText{    color: #000!important;
-    font-weight: 700!important;margin-left:-350px!important;top:-5px!important;
+.desktopreviewstitle .oke-sr-count,.desktopreviewstitle .reviewstxt{font-weight:700;display:inline-block;font-size: 21.6px;color:#666;position:relative;}
+.desktopreviewstitle .reviewstxt{top:-6px;}
+.desktopreviewstitle .oke-stars-background svg,.desktopreviewstitle .oke-stars-foreground svg{height:25px!important;}
+.desktopreviewstitle .oke-stars-foreground{width:100%!important;}
+
+
+.desktopreviewstitle .oke-a11yText{    color: #000!important;
+    font-weight: 700!important;margin-left:-378px!important;top:-21px!important;
     font-size: 21.6px!important;position:relative!important;clip:initial!important;height:auto!important;width:auto!important;}
-.desktopreviewstitle p{color:#666;margin:0 auto;max-width:580px;font-size:18px;}
-.seeallreviews{padding:0;margin-bottom:50px;}
-.seeallreviews a{padding:20px; border-radius:16px;background:#fff;text-decoration:underline;color:#000;font-size:16px;line-height:122%;font-weight:bold;background:#fff;}
-.bluedivbg{background:url(https://cdn.shopify.com/s/files/1/0079/0206/8836/t/58/assets/blue.jpg?v=1689907975) repeat-x;height:320px;margin-top:-275px;width:100%;z-index:1;}
-
-
+.desktopreviewstitle .oke-sr-count.oke-sr-count--brackets{top:-9px;}
 
 
 .circle-video-menu-wrap.circle-video-desktop{z-index:2;margin-top:-20px;border-top:0;}

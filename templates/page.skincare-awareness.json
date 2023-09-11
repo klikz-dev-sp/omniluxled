@@ -9,17 +9,19 @@
     "31736764-28bb-42e2-b7bc-442e2939e3fd": {
       "type": "image_hero_2",
       "custom_css": [
-        "h2.h1 {font-weight: 500 !important; text-shadow: none !important;}",
+        ".overlay {opacity: 0.1 !important;}",
         ".btn {padding-left: 35px !important; padding-right: 35px !important;}",
         "@media (min-width: 1200px) {.col-xl-4.col-md-6 {width: 55% !important; }}",
         "@media (min-width: 992px) {.col-lg-10.py-xl-14 {width: 83.33333% !important; text-align: left !important; padding-top: 0rem !important; padding-bottom: 6.8rem !important; margin-left: 3.9rem !important; }}",
-        "@media (min-width: 768px) {.col-md-6 {width: 70% !important; }}"
+        "@media (min-width: 768px) {.col-md-6 {width: 70% !important; }}",
+        "@media (max-width: 600px) {.overlay {opacity: 0.15 !important; }}"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/Untitled-12.png",
-        "title": "Healthy skin goes beyond how we look.",
-        "subtitle": "Save up to $175 when you shop & support kids with chronic skin conditions.",
-        "btn_text": "SHOP & SUPPORT",
+        "image_desktop": "shopify:\/\/shop_images\/Untitled-12de.png",
+        "image_mobile": "shopify:\/\/shop_images\/Untitled_design_113.png",
+        "title": "Skincare that empowers",
+        "subtitle": " Every purchase this month supports the AAD’s Camp Discovery program, where kids learn that different is beautiful.",
+        "btn_text": "SHOP NOW",
         "btn_link": "https:\/\/omniluxled.com\/collections\/all",
         "content_position": "2",
         "custom_class": ""

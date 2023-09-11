@@ -1,19 +1,5 @@
 {
   "sections": {
-    "4650e625-58c1-458d-8bb0-ff104d2e5c72": {
-      "type": "global-image_hero",
-      "disabled": true,
-      "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/OMNI03_Topicals_28854.jpg",
-        "image_mobile": "shopify:\/\/shop_images\/OMNI03_Topicals_1385.jpg",
-        "title": "New! Topical Skincare",
-        "subtitle": "Formulated to optimize our signature LED light therapy treatments.",
-        "btn_text": "Shop Now",
-        "btn_link": "shopify:\/\/collections\/skin-care",
-        "content_position": "2",
-        "custom_class": ""
-      }
-    },
     "6ec0e2ef-40e2-4265-a008-778c56929061": {
       "type": "image_hero_2",
       "custom_css": [
@@ -23,22 +9,6 @@
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/website_35.png",
         "image_mobile": "shopify:\/\/shop_images\/website_36.png",
-        "title": "Mask on,<br> wrinkles <em class=\"fw-light\">gone. <\/em>",
-        "subtitle": "Noninvasive LED treatments <br>delivering age-defying results.",
-        "btn_text": "Shop Now",
-        "btn_link": "shopify:\/\/collections\/all",
-        "content_position": "2",
-        "custom_class": ""
-      }
-    },
-    "b001f34c-2df8-4b58-af50-b86bb7012553": {
-      "type": "global-image_hero",
-      "custom_css": [
-        ".overlay {opacity: 0.2 !important;}"
-      ],
-      "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/website_35.png",
-        "image_mobile": "shopify:\/\/shop_images\/website_38.png",
         "title": "Mask on,<br> wrinkles <em class=\"fw-light\">gone. <\/em>",
         "subtitle": "Noninvasive LED treatments <br>delivering age-defying results.",
         "btn_text": "Shop Now",
@@ -280,6 +250,47 @@
         "btn_type": "",
         "btn_variant": "primary",
         "btn_size": ""
+      }
+    },
+    "079b1899-462d-4fde-8eef-e249adbae9d0": {
+      "type": "global-text-with-right-video",
+      "custom_css": [
+        ".cta-btn {display: none;}",
+        "@media (max-width: 600px) {.footer-btn-warp a {width: 100%; }}"
+      ],
+      "settings": {
+        "fluid_layout": false,
+        "border_bottom": true,
+        "muted": true,
+        "controls": false,
+        "loop": false,
+        "video_style": "col-lg-6",
+        "video_style_large": "col-xl-5",
+        "content_position": "align-items-center",
+        "title": "<h3 class=\"mb-3 pb-1 pe-xl-3\">Healthy skin goes beyond how we look<\/h3>",
+        "subtitle": "<p> September is Skincare Awareness Month and through our commitment to science, education, innovation—and most of all—healthy skin, we are donating a portion of this month's sales to support kids with chronic skin conditions through the American Academy of Dermatology’s Camp Discovery program.<\/p>",
+        "btn_txt": "LEARN MORE",
+        "btn_link": "shopify:\/\/pages\/skincare-awareness",
+        "btn_type": "",
+        "btn_variant": "primary",
+        "btn_size": "",
+        "poster_type": "",
+        "bg_video": "",
+        "mobile_bg_video": "",
+        "poster_image": "shopify:\/\/shop_images\/Blog_Images_-_New_Site_35.png",
+        "enable_overlay": false,
+        "overlay_bg_color": "#000000",
+        "overlay_opacity": 0.5,
+        "fluid_video_layout": true,
+        "video_type": "local",
+        "placement": "grid",
+        "video_id": "",
+        "mobile_video_id": "",
+        "video_btn_text": "Watch video",
+        "section_bg_color": "#ffffff",
+        "section_text_color": "#000000",
+        "alignment": "text-start",
+        "video_alignment": "justify-content-start"
       }
     },
     "7caf6918-0887-4d78-b125-88468bd9dd86": {
@@ -784,13 +795,12 @@
     }
   },
   "order": [
-    "4650e625-58c1-458d-8bb0-ff104d2e5c72",
     "6ec0e2ef-40e2-4265-a008-778c56929061",
-    "b001f34c-2df8-4b58-af50-b86bb7012553",
     "bbf8e6a0-e133-4b79-8e2e-6a96fec02c25",
     "a714f8c7-f2eb-4a04-8f60-9b9a35650f8a",
     "16270420142c0cafe8",
     "59bdd293-efe7-4fcd-8619-feac003821e6",
+    "079b1899-462d-4fde-8eef-e249adbae9d0",
     "7caf6918-0887-4d78-b125-88468bd9dd86",
     "c552e92a-f090-4e52-8c25-337f36136add",
     "483972b6-05da-4d1a-964a-d5598ce78682",

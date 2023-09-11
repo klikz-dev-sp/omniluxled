@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", function() {
+    var scrollToReviewsSpan = document.getElementById("scrollToReviews");
+    
+    scrollToReviewsSpan.addEventListener("click", function() {
+        var reviewsSection = document.querySelector(".js-oke-widgetSize.oke-is-large");
+        
+        // Scroll smoothly to the reviews section
+        reviewsSection.scrollIntoView({
+            behavior: "smooth"
+        });
+    });
+});
+
+
 const customSelectors = {};
 
 const menuLinks = document.querySelectorAll('.mega_menu_hover_line');

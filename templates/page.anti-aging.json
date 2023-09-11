@@ -420,7 +420,7 @@
           "type": "logowidthtext",
           "settings": {
             "image": "shopify:\/\/shop_images\/Untitled_design_-_2023-08-15T121104.660.png",
-            "brfore_aftertext": false,
+            "brfore_aftertext": true,
             "contour_text": false
           }
         },

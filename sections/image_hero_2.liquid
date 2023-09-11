@@ -19,9 +19,9 @@
           class="swiper-slide d-flex {% if section.settings.content_position != "1" %} align-items-end {% endif %}"
           data-slide-type="image">
           <picture>
-            {%- if mobileImage.width >= 375 -%}<source
-                media="(max-width: 375px)"
-                srcset="{{ mobileImage | image_url: width: 375}}">{%- endif -%}
+            {%- if mobileImage.width >= 390 -%}<source
+                media="(max-width: 390px)"
+                srcset="{{ mobileImage | image_url: width: 390}}">{%- endif -%}
             {%- if mobileImage.width >= 550 -%}<source
                 media="(max-width: 550px)"
                 srcset="{{ mobileImage | image_url: width: 550 }}">{%- endif -%}

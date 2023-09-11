@@ -336,7 +336,7 @@
     "4f5f33ca-10a4-41a3-b40c-038b76049541": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\">4.7 <a href=\"#shopify-section-template--16184566874274__1676318184d0f06530\"><img src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/6736\/2466\/files\/stars2.png?v=1691457501\"> <strong class=\"outof\">out of 1,000+ Reviews<\/strong><\/a><\/div><\/div>\n<p>We've helped 100,000+ customers achieve their skin goals.<\/p>\n<\/div>"
+        "custom_liquid": "<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\"><div data-oke-reviews-product-listing-rating>{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews<\/span>\n<\/div><\/div><\/div>\n<p>We've helped 100,000+ customers achieve their skin goals.<\/p>\n<\/div>"
       }
     },
     "1598637a-3252-49e4-bfcc-d63e53d9c6b6": {
@@ -403,7 +403,7 @@
     "5fc33cbe-b23b-43d7-b393-0425cd94b49e": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"seereviewsbtn\">\n<div class=\"seeallreviews\"><div class=\"container is-flex is-justify-center\"><a class=\"seelink\" href=\"#shopify-section-template--16184566874274__1676318184d0f06530 \">SEE MORE REVIEWS AND RESULTS<\/a><\/div><\/div><\/div>"
+        "custom_liquid": "<div class=\"seereviewsbtn\">\n<div class=\"seeallreviews\"><div class=\"container is-flex is-justify-center\"><span id=\"scrollToReviews\">SEE MORE REVIEWS AND RESULTS<\/a><\/div><\/div><\/div>"
       }
     },
     "8d4dfa60-174c-4b28-9812-ab31ef599696": {

@@ -7,8 +7,8 @@
                       <div class="title mb-0 text-center">{{ section.settings.heading }}</div>
                   </div>
                   <div class="row justify-content-center mt-10">
-                    <div class="col-12 col-lg-7 col-md-7 mb-5">
-                      <div class="col-12 col-lg-10 col-md-10" data-faq-section>
+                    <div class="col-12 col-lg-12 col-md-12 mb-5">
+                      <div class="col-12 col-lg-12 col-md-12" data-faq-section>
                         <custom-accordion {{ block.shopify_attributes }} data-accordionType="single">
                             {% for block in section.blocks %}
                                 {% if block.settings.title != blank and block.settings.answer != blank %}
@@ -34,17 +34,7 @@
                         <a target="_blank" href="https://omniluxled.com/pages/help-center-products" class="fw-bold text-decoration-underline">Click here to see more FAQs</a>
                       </div>
                     </div>
-                    <div class="col-12 col-lg-5 col-md-5 mb-5">
-                      <div class="service col-12 col-lg-10 col-md-10">
-                        <h3 class="title mb-3">Have Any Questions?</h3>
-                        <div class="font-style">Chat with our customer support team.</div>
-                        <div class="font-style mb-3">Monday-Sunday 9am to 9pm (PST).</div>
-                        <div class="d-flex mb-3"><a id="gorgias-chat-start" class="d-flex startchat">Start Chat<img class="ms-2" src="{{ 'rocketchat.svg' | asset_url }}"/></a></div> 
-                        <div class="font-style mb-3">You can also contact us via email or phone:</div>
-                        <div class="d-flex font-style align-items-center"><img src="{{ 'envelope.svg' | asset_url }}"/><a class="ms-4" href="mailto:info@omniluxled.com">info@omniluxled.com</a></div>
-                        <div class="d-flex align-items-start font-style mt-3"><img src="{{ 'phone.svg' | asset_url }}"/><span class="ms-4">US/Canada: +1 707.309.7024<br/>International Toll-Free: +1 866.306.2022</span></div>
-                      </div>
-                    </div>                  
+                           
                   </div>
                 </div>
             </div>  
@@ -89,7 +79,7 @@
   ],
   "presets": [
     {
-      "name": "FAQ Block",
+      "name": "FAQ Block Fullwidth",
       "category": "Content"
     }
   ]

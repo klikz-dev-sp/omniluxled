@@ -7,7 +7,7 @@
   <head>
 {{ locksmith_initializations }}
 <!-- Begin BlackCrow Script Tag: DO NOT MODIFY! -->
-     <script type="text/javascript" async src="https://shopify-init.blackcrow.ai/js/core/getomnilux.js?shopify_app_version=1.0.176&shop=getomnilux.myshopify.com"></script>
+     <script type="text/javascript" async src="https://shopify-init.blackcrow.ai/js/core/getomnilux.js?shopify_app_version=1.0.184&shop=getomnilux.myshopify.com"></script>
 <!-- End BlackCrow Script Tag -->   {% render 'site-speed' %}
   <script src="https://www.googleoptimize.com/optimize.js?id=OPT-KT8DKGH"></script>
 
@@ -89,6 +89,7 @@ i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)
   <!-- Extend -- End Extend code -->
 
      {{ 'custom.css' | asset_url | stylesheet_tag }}
+     {{ 'lead-board-experts-slider.css' | asset_url | stylesheet_tag }}
   
   {% render 'qikify-apps' %}
 
@@ -446,9 +447,7 @@ i=d.getElementsByTagName(t)[0],i.parentNode.insertBefore(n,i)
 <!-- END KLAVIYO Back in Stock Snippet -->
   {{ 'custompdp.js' | asset_url | script_tag }}
 
-    <!-- ACCESSIBILITYSPARK START -->
-    {% render 'accessibility-spark-widget' %}
-    <!-- ACCESSIBILITYSPARK END -->
+    
 
   <script>
     function waitForElement(querySelector, timeout) {

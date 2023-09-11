@@ -279,4 +279,5 @@ body:not(.opened-menu-drawer) #shopify-section-header:not(.shopify-section-heade
  .anti-aging #shopify-section-header, .anti-acne #shopify-section-header, .men #shopify-section-header{
     position: sticky!important;}
   .template-collection.anti-aging #MainContent, .template-collection.anti-acne #MainContent{top:0!important;}
+.template-index .image-hero.withreviews .container-fluid{margin-top:20px;}
 }

@@ -22,6 +22,12 @@
             "icon_img": "shopify:\/\/shop_images\/Best_Light_Mask.png"
           }
         },
+        "fa1efac7-c2e0-4144-8909-47e2fde76405": {
+          "type": "content",
+          "settings": {
+            "icon_img": "shopify:\/\/shop_images\/WHSA.0025_2023_badges_winner_69879564-e1dd-413f-a4ba-f536e6b6e9ba.png"
+          }
+        },
         "588f2e67-1456-41d0-b2db-d555bc261031": {
           "type": "content",
           "settings": {
@@ -49,6 +55,7 @@
       },
       "block_order": [
         "e77916dc-da94-453a-a528-15c6be534c80",
+        "fa1efac7-c2e0-4144-8909-47e2fde76405",
         "588f2e67-1456-41d0-b2db-d555bc261031",
         "41e535f3-35f0-466d-9d27-b4a28de83243",
         "ec2dc5e5-166c-426a-89e1-50bb3aac45ad",
@@ -292,7 +299,7 @@
             "fullwidth_content": false,
             "heading_txt": "Loved by Dermatologists",
             "max_width": 570,
-            "txt": "<p>\"Omnilux Clear is an amazing low level light therapy device that I feel works on everything from acne to breakouts. The blue light neutralizes bacteria on the surface of your skin that is responsible for acne. The red light reduces inflammation and redness and is great at reducing excess oil production in the sebaceous glands. When these two wavelengths are used together, you receive a more effective and efficient acne treatment. This is why I love the Omnilux Clear mask.\"<\/p><p>Dr. Glynis Ablon, MD, FAAD<br\/>Associate Clinical Professor of Dermatology, UCLA<br\/>The Ablon Skin Institute<\/p>",
+            "txt": "<p>\"Omnilux Clear is an amazing low level light therapy device that I feel works on everything from acne to breakouts. The blue light neutralizes bacteria on the surface of your skin that is responsible for acne. The red light reduces inflammation and redness and is great at reducing excess oil production in the sebaceous glands. When these two wavelengths are used together, you receive a more effective and efficient acne treatment. This is why I love the Omnilux Clear mask.\"<\/p><p><strong>Dr. Glynis Ablon, MD, FAAD<\/strong><br\/>Associate Clinical Professor of Dermatology, UCLA<br\/>The Ablon Skin Institute<\/p>",
             "step_heading": "",
             "steps_captions": "",
             "steps_captions_2": "",
@@ -311,7 +318,7 @@
             "btn_size_watch": "",
             "link_txt": "",
             "link_url": "",
-            "image": "shopify:\/\/shop_images\/dr-ablon_headshot-1660844700521.jpg",
+            "image": "shopify:\/\/shop_images\/dr_albon_6.jpg",
             "alignment": "text-left",
             "image_alignment": "right"
           }
@@ -328,54 +335,86 @@
         "section_text_color": "#000000"
       }
     },
-    "98e62ecd-aad0-4be5-9c5d-c32dcd3b2099": {
-      "type": "global-features-grid",
+    "967c77cb-ba82-48fa-9f0e-fe5c36129f30": {
+      "type": "global-title",
+      "custom_css": [
+        ".h3 {text-shadow: none; color: #000; text-align: center; margin: 0 auto;}"
+      ],
+      "settings": {
+        "fluid_layout": true,
+        "css_class": "",
+        "heading_txt": "How it works to clear acne:",
+        "btn_txt": "",
+        "btn_link": "",
+        "btn_type": "",
+        "btn_variant": "dark",
+        "btn_size": "",
+        "btn_txt2": "",
+        "btn_link2": "",
+        "btn_type2": "",
+        "btn_variant2": "dark",
+        "btn_size2": "",
+        "btn_txt3": "",
+        "btn_link3": "",
+        "btn_type3": "",
+        "btn_variant3": "dark",
+        "btn_size3": "",
+        "section_bg_color": "#FFFFFF",
+        "section_text_color": "#000000"
+      }
+    },
+    "875cb50b-8a97-4cbc-8ad1-4bdb25824e96": {
+      "type": "global-accordian-slider",
       "blocks": {
-        "template--16247502504098__98e62ecd-aad0-4be5-9c5d-c32dcd3b2099-content-1": {
-          "type": "content",
+        "1d898110-3cd8-4fe4-a106-3f2687232166": {
+          "type": "clear_image_card",
           "settings": {
-            "icon_img": "",
-            "title": "Step 1",
-            "txt": "<p>Lorem ipsum dolor<\/p>"
+            "clear_skin_image": "shopify:\/\/shop_images\/Image_6_V2.png",
+            "skin_text": "Visible blue & red light is absorbed into the skin and dermis."
           }
         },
-        "e875735a-eff6-4c4e-bef8-98b6e48e7bbb": {
-          "type": "content",
+        "b20f596c-ed92-43e2-ad1c-c784df11c3da": {
+          "type": "clear_image_card",
           "settings": {
-            "icon_img": "",
-            "title": "STEP 2",
-            "txt": "<p>Lorem ipsum dolor<\/p>"
+            "clear_skin_image": "shopify:\/\/shop_images\/Image_7_V2.png",
+            "skin_text": "Blue light penetrates the superficial levels of the skin, eliminating acne causing bacteria called porphyrins (P.acne)."
           }
         },
-        "cfcfde2a-b850-4bb0-9765-ececfba656b7": {
-          "type": "content",
+        "841d0d56-cc83-4007-b9af-66fcb4168315": {
+          "type": "clear_image_card",
           "settings": {
-            "icon_img": "",
-            "title": "STEP 3",
-            "txt": "<p>Lorem ipsum dolor<\/p>"
+            "clear_skin_image": "shopify:\/\/shop_images\/Image_8_V2.png",
+            "skin_text": "Deeper penetrating red light stimulates an anti-inflammatory response, reducing redness and stimulating a healing response."
+          }
+        },
+        "f9e77d32-36ae-4a1a-9f39-598de7b2511f": {
+          "type": "clear_image_card",
+          "settings": {
+            "clear_skin_image": "shopify:\/\/shop_images\/Image_9_V2.png",
+            "skin_text": "A completely non-invasive and natural\ntreatment - Omnilux Clear uses the skin’s natural responses to treat acne, leaving clear and brilliant skin."
           }
         }
       },
       "block_order": [
-        "template--16247502504098__98e62ecd-aad0-4be5-9c5d-c32dcd3b2099-content-1",
-        "e875735a-eff6-4c4e-bef8-98b6e48e7bbb",
-        "cfcfde2a-b850-4bb0-9765-ececfba656b7"
+        "1d898110-3cd8-4fe4-a106-3f2687232166",
+        "b20f596c-ed92-43e2-ad1c-c784df11c3da",
+        "841d0d56-cc83-4007-b9af-66fcb4168315",
+        "f9e77d32-36ae-4a1a-9f39-598de7b2511f"
       ],
       "settings": {
-        "fluid_layout": false,
-        "gradient_tone": true,
-        "icon_layout": false,
-        "grid_size": "4",
-        "heading_txt": "How-to glow up:",
-        "section_bg_color": "#ffffff",
-        "section_txt_color": "#000000",
-        "pt": 80,
-        "pb": 40,
-        "pts": 40,
-        "pbs": 40,
-        "border-top": false,
-        "border-bottom": false,
-        "css_class": ""
+        "heading_txt": "Awesome Heading",
+        "img_text1": "Awesome Sub Heading",
+        "img_text2": "",
+        "img_text3": "",
+        "alignment": "text-left",
+        "image_alignment": "left",
+        "clear_heading_txt1": "",
+        "clear_heading_txt2": "",
+        "clear_heading_txt3": "",
+        "clear_heading_txt4": "",
+        "teatementpara": "",
+        "Clear_image_text1": "",
+        "Clear_image_text2": ""
       }
     },
     "ad12eab5-d111-48ee-803d-a63ff0223d40": {
@@ -399,8 +438,8 @@
             "btn_variant": "primary",
             "btn_size": "",
             "btn_txt_watch": "WATCH JESS' STORY",
-            "watch_video_id": "",
-            "watch_mobile_video_id": "",
+            "watch_video_id": "https:\/\/www.youtube.com\/embed\/iZ3gGDVdRH8?start=0&autoplay=0&loop=0&mute=0&controls=0&enablejsapi=1",
+            "watch_mobile_video_id": "https:\/\/www.youtube.com\/embed\/iZ3gGDVdRH8?start=0&autoplay=0&loop=0&mute=0&controls=0&enablejsapi=1",
             "btn_type_watch": "",
             "btn_variant_watch": "primary",
             "btn_size_watch": "",
@@ -507,9 +546,9 @@
             "max_width": 420,
             "txt": "<p>List out clinical studies:<\/p>",
             "step_heading": "",
-            "steps_captions": "",
+            "steps_captions": "<strong>Journal of Cosmetic Laser Therapy:<\/strong><em> A Study to Determine the Effect of Combination Blue (415 Nm) and Near-Infrared (830 Nm) Light-Emitting Diode (LED) Therapy for Moderate Acne Vulgaris<\/em>\n<strong>Lasers in Surgery and Medicine:<\/strong><em> Blue and Red Light Combination LED Phototherapy for Acne Vulgaris in Patients with Skin Phototype IV<\/em>\n<strong>Journal of Cosmetic and Laser Therapy:<\/strong><em> Light-Emitting Diode 415 nm in the Treatment of Inflammatory Acne<\/em>\n<strong>Journal of Cosmetic and Laser Therapy:<\/strong><em> Combination Blue (415 nm) and Red (633 nm) LED Phototherapy in the Treatment of Mild to Severe Acne Vulgaris<\/em>\n<strong>Journal of Dermatological Treatment:<\/strong><em> An Open Study to Determine the Efficacy of Blue Light in the Treatment of Mild to Moderate Acne<\/em>",
             "steps_captions_2": "",
-            "btn_txt": "OMNILUX CLINICAL BIBLIOGRAPHY",
+            "btn_txt": "READ CLINICAL STUDIES",
             "btn_link": "shopify:\/\/pages\/clinical-bibliography",
             "triggerbtn_txt": "",
             "triggerto": "",
@@ -706,7 +745,8 @@
     "839046eb-ba08-422a-bf0e-7cc84c8fcd1c",
     "main",
     "7d81bab4-7cd3-45cc-a15e-85816015c1b0",
-    "98e62ecd-aad0-4be5-9c5d-c32dcd3b2099",
+    "967c77cb-ba82-48fa-9f0e-fe5c36129f30",
+    "875cb50b-8a97-4cbc-8ad1-4bdb25824e96",
     "ad12eab5-d111-48ee-803d-a63ff0223d40",
     "ec0f761c-9d46-426c-b34e-7536509c5a1b",
     "d1e8d9f9-4e0f-4ef5-af16-8f334ad3b8c9",

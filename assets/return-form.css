@@ -14,7 +14,9 @@
   font-weight: 400;
 }
 
-.globo-form-control:nth-last-child(2) .globo-form-input {
+.globo-form-control:nth-last-child(4) .globo-form-input,
+.globo-form-control:nth-last-child(5) .globo-form-input,
+.globo-form-control:nth-last-child(6) .globo-form-input {
   position: relative;
   display: flex;
   gap: 10px;
@@ -28,12 +30,16 @@
   transition: background 0.2s ease-in-out, border 0.2s ease-in-out;
 }
 
-.globo-form-control:nth-last-child(2) .globo-form-input:hover {
+.globo-form-control:nth-last-child(4) .globo-form-input:hover,
+.globo-form-control:nth-last-child(5) .globo-form-input:hover,
+.globo-form-control:nth-last-child(6) .globo-form-input:hover {
   background: #eee;
   border-color: #111;
 }
 
-.globo-form-control:nth-last-child(2) .globo-form-input input[type='file'] {
+.globo-form-control:nth-last-child(4) .globo-form-input input[type='file'],
+.globo-form-control:nth-last-child(5) .globo-form-input input[type='file'],
+.globo-form-control:nth-last-child(6) .globo-form-input input[type='file'] {
   width: 350px;
   max-width: 100%;
   color: #444;
@@ -44,7 +50,13 @@
   height: 50px;
 }
 
-.globo-form-control:nth-last-child(2)
+.globo-form-control:nth-last-child(4)
+  .globo-form-input
+  input[type='file']::file-selector-button,
+.globo-form-control:nth-last-child(5)
+  .globo-form-input
+  input[type='file']::file-selector-button,
+.globo-form-control:nth-last-child(6)
   .globo-form-input
   input[type='file']::file-selector-button {
   margin-right: 20px;
@@ -58,6 +70,12 @@
 }
 
 .globo-form-control:nth-last-child(4)
+  .globo-form-input
+  input[type='file']::file-selector-button:hover,
+.globo-form-control:nth-last-child(5)
+  .globo-form-input
+  input[type='file']::file-selector-button:hover,
+.globo-form-control:nth-last-child(6)
   .globo-form-input
   input[type='file']::file-selector-button:hover {
   background: #0d45a5;

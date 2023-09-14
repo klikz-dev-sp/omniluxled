@@ -64,6 +64,13 @@ $(document).ready(function () {
       } else {
         $('.alert.topical').parent().hide();
       }
+
+      // Country Code
+      let country_code = $('#country_code').val();
+
+      if (country_code) {
+        $('#hidden-1').val(country_code);
+      }
     }
   );
 });

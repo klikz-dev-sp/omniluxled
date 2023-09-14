@@ -25,7 +25,9 @@ $(document).ready(function () {
       if (method == 'Replace' && direct == 'No') {
         $('.alert.verify-receipt').parent().show();
         $("input[placeholder='Business Name']").parent().parent().show();
+        $("input[placeholder='Business Name']").prop('disabled', false);
         $("input[placeholder='Order Number']").parent().parent().hide();
+        $("input[placeholder='Order Number']").prop('disabled', true);
         $("input[placeholder='Proof of Purchase (for Replacement item)']")
           .parent()
           .parent()
@@ -33,7 +35,9 @@ $(document).ready(function () {
       } else {
         $('.alert.verify-receipt').parent().hide();
         $("input[placeholder='Business Name']").parent().parent().hide();
+        $("input[placeholder='Business Name']").prop('disabled', true);
         $("input[placeholder='Order Number']").parent().parent().show();
+        $("input[placeholder='Order Number']").prop('disabled', false);
         $("input[placeholder='Proof of Purchase (for Replacement item)']")
           .parent()
           .parent()

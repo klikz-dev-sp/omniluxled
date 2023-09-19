@@ -14,6 +14,34 @@ $(document).ready(function () {
       let products = Array.from($("input[name='checkbox-1[]']:checked"));
       let skincare = false;
 
+      if (method == 'Replace') {
+        $("input[value='LED Essentials Bundle']").parent().parent().hide();
+        $("input[value='Enzyme Powder Cleanser']").parent().parent().hide();
+        $("input[value='Hyaluronic Acid Serum']").parent().parent().hide();
+        $("input[value='Peptide Concentrate']").parent().parent().hide();
+        $("input[value='Omnilux Hydrogel Facial Mask']")
+          .parent()
+          .parent()
+          .hide();
+        $("input[value='Omnilux Hydrogel Décolleté Mask']")
+          .parent()
+          .parent()
+          .hide();
+      } else {
+        $("input[value='LED Essentials Bundle']").parent().parent().show();
+        $("input[value='Enzyme Powder Cleanser']").parent().parent().show();
+        $("input[value='Hyaluronic Acid Serum']").parent().parent().show();
+        $("input[value='Peptide Concentrate']").parent().parent().show();
+        $("input[value='Omnilux Hydrogel Facial Mask']")
+          .parent()
+          .parent()
+          .show();
+        $("input[value='Omnilux Hydrogel Décolleté Mask']")
+          .parent()
+          .parent()
+          .show();
+      }
+
       if (method == 'Return' && direct == 'No') {
         $('.alert.no-return').parent().show();
         $('.wizard__submit').prop('disabled', true);

@@ -17,8 +17,8 @@
             "loop": true,
             "logo_image__": "",
             "trustedbytxt": "Trusted by 100K+ Customers",
-            "title": "Advance your routine in just <strong><u>3 steps.<\/u><\/strong>",
-            "subtitle": "<p>Discover a power-packed skincare trio clinically proven to fight signs of aging and optimize Omnilux’s signature LED light therapy treatments.<\/p>",
+            "title": "Meet your Mini",
+            "subtitle": "<p>Ultra-targeted LED treatments tackle blemishes, wrinkles, inflammation, and more.<\/p>",
             "heading__size": false,
             "heading__lg": 60,
             "heading__md": 55,
@@ -143,7 +143,7 @@
             "poster_type": "",
             "bg_video": "",
             "mobile_bg_video": "",
-            "poster_image": "shopify:\/\/shop_images\/1683857591-image_48.jpg",
+            "poster_image": "shopify:\/\/shop_images\/Untitled_design_114.png",
             "enable_overlay": true,
             "overlay_bg_color": "#000000",
             "overlay_opacity": 0.5,
@@ -202,10 +202,10 @@
         "video_style": "col-lg-6",
         "video_style_large": "col-xl-5",
         "content_position": "align-items-center",
-        "title": "Doctor-formulated for results you can’t resist",
+        "title": "Mini devices. Major results.",
         "subtitle": "",
         "txt": "",
-        "htmltxt": "<p>An unmatched glow is 3 steps away. Renew, hydrate, and firm your skin with our professional-grade skincare line that includes the Enzyme Powder Cleanser, Hyaluronic Acid Serum, and Peptide Concentrate.<\/p>\n<p>Pair this dynamic line with your Omnilux LED light therapy treatments to help:<\/p>\n<ul class=\"twocolumns\">\n<li>Brighten complexion<\/li>\n<li>Lock in essential hydration<\/li>\n<li>Even skin’s texture<\/li>\n<li>Restore fatigued skin<\/li>\n<li>Reduce the appearance of fine lines &amp; wrinkles<\/li>\n<li>Soothe redness &amp; inflammation<\/li>\n<\/ul>\n<p>Backed by nearly 20 years of aesthetics medicine expertise, world-renowned specialist Dr. Hany Abi Ghosn helped us carefully develop this 3-piece line with concentrated yet gentle ingredients.<\/p>",
+        "htmltxt": "<p>Good things come in small packages. Skip the clinic and target your skin’s unique problem areas with our Mini LED devices.  <\/p>\n<p>We’ve paired our award-winning LED technology with skincare-infused hydrocolloid patches to help:<\/p>\n<ul class=\"twocolumns\">\n<li>Diminish fine lines + wrinkles<\/li>\n<li>Brighten complexion<\/li>\n<li>Reduce breakouts<\/li>\n<li>Calm redness + inflammation<\/li>\n<li>Lighten the look of age spots<\/li>\n<li>Restore fatigued skin<\/li>\n<\/ul>",
         "btn_txt": "",
         "btn_link": "",
         "btn_type": "outline",
@@ -214,7 +214,7 @@
         "poster_type": "",
         "bg_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/485ffc73300e414b889c36ba9a6a17ff.mp4",
         "mobile_bg_video": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/485ffc73300e414b889c36ba9a6a17ff.mp4",
-        "poster_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/6736\/2466\/files\/1683857591-image_48.jpg?v=1684337840",
+        "poster_image": "https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/6736\/2466\/files\/Untitled_design_114.png?v=1694717706",
         "btn_txt_watch": "LEARN MORE",
         "watch_video_id": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/485ffc73300e414b889c36ba9a6a17ff.mp4",
         "watch_mobile_video_id": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/485ffc73300e414b889c36ba9a6a17ff.mp4",
@@ -229,7 +229,7 @@
         "placement": "popup",
         "video_id": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/485ffc73300e414b889c36ba9a6a17ff.mp4",
         "mobile_video_id": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/485ffc73300e414b889c36ba9a6a17ff.mp4",
-        "video_btn_text": "Watch video",
+        "video_btn_text": "WATCH VIDEO",
         "section_bg_color": "#ffffff",
         "section_text_color": "#000000",
         "alignment": "text-start",
@@ -242,9 +242,9 @@
         "template--16169064104098__98ce97d7-15c6-46d0-b111-c869d2a20b0b-1684638177820ba2bb-0": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Untitled_design_18_copy_1.png",
-            "title": "<p>Enzyme Powder Cleanser <strong>PRE LED TREATMENT<\/strong><\/p>",
-            "txt_info": "<p>Cleanse, brighten, and improve texture with this gently exfoliating cleanser enriched with green tea, rice powder, and enzymes.<\/p>",
+            "image": "shopify:\/\/shop_images\/2_3.png",
+            "title": "<p>Eye Brightener <strong>FOR DARK CIRCLES & WRINKLES<\/strong><\/p>",
+            "txt_info": "<p>Brighten dark circles, diminish under-eye bags, and smooth crow's feet.<\/p><p><em>Includes hydrocolloid patches infused with <\/em><em><strong>amino acid-rich peptides<\/strong><\/em><em> and <\/em><em><strong>niacinamide<\/strong><\/em><em>.<\/em><\/p>",
             "btn_txt": "SHOP NOW",
             "btn_url": "shopify:\/\/products\/enzyme-powder-cleanser"
           }
@@ -252,9 +252,9 @@
         "59a2a5b7-b6f5-4566-8ff2-3c5e06fec563": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_15_1_175b3185-e820-4e61-99b6-4023a8d6d33c.jpg",
-            "title": "<p>Hyaluronic Acid Serum <strong>DURING LED TREATMENT<\/strong><\/p>",
-            "txt_info": "<p>This serum amplifies your LED treatments with hyaluronic acid and niacinamide to hydrate, plump, and calm the skin.<\/p>",
+            "image": "shopify:\/\/shop_images\/3_2.png",
+            "title": "<p>Blemish Eraser <strong>FOR ACNE & BREAKOUTS<\/strong><\/p>",
+            "txt_info": "<p>Fight acne, clear congested skin, and calm redness & inflammation associated with breakouts<br\/><br\/><em>Includes hydrocolloid patches infused with <\/em><em><strong>salicylic acid<\/strong><\/em><em> and <\/em><em><strong>green tea<\/strong><\/em><em>.<\/em><\/p>",
             "btn_txt": "SHOP NOW",
             "btn_url": "https:\/\/omniluxled.com\/products\/hyaluronic-acid-serum"
           }
@@ -262,9 +262,9 @@
         "0771fb05-3ea9-446b-b6e9-deb71688b602": {
           "type": "content",
           "settings": {
-            "image": "shopify:\/\/shop_images\/image_15_2_4f6ca987-3a77-4f83-9d69-336dc837c7dd.jpg",
-            "title": "<p>Peptide Concentrate <strong>POST LED TREATMENT<\/strong><\/p>",
-            "txt_info": "<p>Active peptides Matrixyl and Argireline help diminish fine lines and signs of fatigue, while soothing and firming the skin. <\/p>",
+            "image": "shopify:\/\/shop_images\/1_3.png",
+            "title": "<p>Skin Corrector <strong>FOR FINE LINES & PIGMENTATION<\/strong><\/p>",
+            "txt_info": "<p>Reduce fine lines & inflammation while improving the appearance of age spots.<br\/><br\/><em>Includes hydrocolloid patches infused with <\/em><em><strong>vitamin C<\/strong><\/em><em> and<\/em><em><strong> azelaic acid<\/strong><\/em><em>.<\/em><\/p>",
             "btn_txt": "SHOP NOW",
             "btn_url": "https:\/\/omniluxled.com\/products\/peptide-concentrate"
           }
@@ -278,33 +278,13 @@
       "settings": {
         "fluid_layout": false,
         "anchorid": "exploreline",
-        "heading_txt": "We’re moving skincare forward.",
-        "lead_txt": "Elevate your routine with Omnilux’s clinically proven formulas — right at your fingertips.",
+        "heading_txt": "Your pocket-sized LED heroes",
+        "lead_txt": "Explore 3 mini but mighty LED light therapy treatments that deliver clearer, brighter, and younger-looking skin.",
         "section_bg_color": "",
         "section_txt_color": "#000000",
         "btn_type": "outline",
         "btn_variant": "primary",
         "btn_size": ""
-      }
-    },
-    "42776c1a-5bf9-4c69-870f-bdc44289f71c": {
-      "type": "global-title",
-      "custom_css": [
-        ".h3,.justify-content-lg-between {display: block !important;}",
-        ".h3.pe-3 {font-size: 18px !important; padding-right: 0 !important; line-height: 24px !important; margin-bottom: 10px !important;}",
-        "@media (max-width: 600px) {.mb-4.mb-lg-3 {margin-bottom: 0 !important; } .pt-4 {padding-top: 0 !important; margin-bottom: 3.5rem !important; }}"
-      ],
-      "settings": {
-        "fluid_layout": false,
-        "css_class": "shopledkit",
-        "heading_txt": "Grab the full routine with just one click.",
-        "btn_txt": "SHOP THE LED ESSENTIALS bundle",
-        "btn_link": "shopify:\/\/products\/led-essentials-3-piece-kit",
-        "btn_type": "",
-        "btn_variant": "dark",
-        "btn_size": "",
-        "section_bg_color": "rgba(0,0,0,0)",
-        "section_text_color": "#000000"
       }
     },
     "473576ad-4bef-4b6a-af7e-fbea447f4426": {
@@ -314,12 +294,12 @@
           "type": "image-with-text-block",
           "settings": {
             "fullwidth_content": false,
-            "heading_txt": "Uncover even better skin.",
+            "heading_txt": "Get on our wavelength",
             "max_width": 530,
-            "txt": "<p>Our trusted LED light therapy treatments just scored an upgrade. Pair the 3-step line with your Omnilux Contour or Omnilux Men devices to enhance the firming and brightening benefits that users already love.<\/p>",
-            "step_heading": "Clinical studies from Omnilux Contour users showed that:",
-            "steps_captions": "98% agreed their skin felt <em>firmer<\/em>.\n96% agreed their fine lines appeared <em>less visible<\/em>.\n95% agreed their skin was <em>brighter<\/em> and <em>plumper<\/em>.",
-            "steps_captions_2": "<p><em>* After 3 treatments per week for 4 weeks<\/em><\/p>",
+            "txt": "<p>Our non-invasive Mini LED treatments mirror the clinically-proven red, near-infrared, and blue light technology found in our leading Contour and Clear masks. <br\/><br\/>Power up your Mini with skincare-infused hydrocolloid patches tailored for your specific skin concerns. Benefits include: <\/p>",
+            "step_heading": "",
+            "steps_captions": "Maximizes LED results\nKeeps your Mini right where you want it\nSoothing and safe for all skin types\nCan be used with or without LED",
+            "steps_captions_2": "",
             "btn_txt": "SHOP THE LINE",
             "btn_link": "https:\/\/omniluxled.com\/collections\/skin-care",
             "triggerbtn_txt": "",
@@ -335,7 +315,7 @@
             "btn_size_watch": "",
             "link_txt": "",
             "link_url": "",
-            "image": "shopify:\/\/shop_images\/Untitled_design_110.png",
+            "image": "shopify:\/\/shop_images\/Minis_Photos_for_Website.png",
             "alignment": "text-left",
             "image_alignment": "right"
           }
@@ -364,8 +344,8 @@
         "muted": false,
         "controls": true,
         "loop": false,
-        "title": "Let’s get visible",
-        "subtitle": "We don’t like keeping secrets, especially when it comes to skincare. See why our users are showing it off.",
+        "title": "Powerfully petite LED skincare",
+        "subtitle": "Your new anti-aging and acne-fighting Mini companions are trusted, tested and dermatologist-endorsed.",
         "subtitle2": "",
         "btn_txt_watch": "Watch the video",
         "btn_type_watch": "outline",
@@ -409,7 +389,6 @@
     "23f2fda8-e8a7-4b2d-b176-998ae5de965a",
     "e38be45f-cef3-48f1-88e5-0e9ae227927c",
     "98ce97d7-15c6-46d0-b111-c869d2a20b0b",
-    "42776c1a-5bf9-4c69-870f-bdc44289f71c",
     "473576ad-4bef-4b6a-af7e-fbea447f4426",
     "14b5f872-142c-436c-aa91-9be1f604a443"
   ]

@@ -69,7 +69,7 @@
 .desktopreviewstitle strong.outof{vertical-align:top;top:7px;color:#666666;position:relative;font-family: var(--bs-font-family-heading);font-size: 16px;font-weight: 700;line-height: 20px;}
 .desktopreviewstitle p{color:#000;margin:5px auto 30px auto;font-family: var(--bs-font-family-heading);font-size: 25px;font-weight: 400;line-height: 25px;}
 .seeallreviews{padding:0;margin:45px auto 80px;text-align:center;width:100%;display:block;}
-.seeallreviews span,.seeallreviews span:hover{cursor:pointer;text-decoration:underline;color:#000;font-weight:bold;font-family:var(--bs-font-family-heading);font-size: 14px;font-weight: 700;line-height: 17px;}
+.seeallreviews span,.seeallreviews span:hover,.seeallreviews a{cursor:pointer;text-decoration:underline;color:#000;font-weight:bold;font-family:var(--bs-font-family-heading);font-size: 14px;font-weight: 700;line-height: 17px;}
 .desktopreviewstitle .oke-sr-count--brackets:before,.desktopreviewstitle .oke-sr-count--brackets:after{display:none;}
 
 .desktopreviewstitle .oke-sr-count,.desktopreviewstitle .reviewstxt{font-weight:700;display:inline-block;font-size: 21.6px;color:#666;position:relative;}
@@ -106,16 +106,42 @@
 .template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop,
 .template-product.omnilux-contour-face .desktopreviewstitle,
 .template-product.omnilux-contour-face .seeallreviews,
-.template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop .circle-video-menu{display:block!important;}
+.template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop .circle-video-menu,
+.template-page.anti-acne2 .circle-video-menu-wrap.circle-video-desktop,
+.template-page.anti-acne2 .desktopreviewstitle,
+.template-page.anti-acne2 .seeallreviews,
+.template-page.anti-acne2 .circle-video-menu-wrap.circle-video-desktop .circle-video-menu
+{display:block!important;}
+
+.template-page.anti-acne2 .desktopreviewstitle{padding-top:80px;}
 
 @media(max-width:999px){
 .template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop,
 .template-product.omnilux-contour-face .desktopreviewstitle,
 .template-product.omnilux-contour-face .seeallreviews,
 .template-product.omnilux-contour-face .circle-video-menu-wrap.circle-video-desktop .circle-video-menu{display:none!important;}
-
+  
+.template-page.anti-acne2 .desktopreviewstitle{padding:0;}
+.template-page.anti-acne2 .desktopreviewstitle h2{font-size: var(--bs-h3-font-size-sm);letter-spacing: -.04em;line-height:36px!important;}
+.template-page.anti-acne2 .desktopreviewstitle .oke-a11yText,.template-page.anti-acne2 .desktopreviewstitle .oke-sr-count, 
+  .template-page.anti-acne2 .desktopreviewstitle .reviewstxt{font-size:16px!important;}
+.template-page.anti-acne2 .desktopreviewstitle .oke-stars-background svg, .template-page.anti-acne2 .desktopreviewstitle .oke-stars-foreground svg{height: 16px!important;}
+.template-page.anti-acne2 .desktopreviewstitle .oke-a11yText{margin-left:-270px!important;}
+.template-page.anti-acne2 .desktopreviewstitle .starreviews{padding-left:160px!important;}
+.template-page.anti-acne2 .desktopreviewstitle .oke-stars{width:100px;}
+.template-page.anti-acne2 .desktopreviewstitle .oke-sr-count.oke-sr-count--brackets{top:-5px;}
+.template-page.anti-acne2 .desktopreviewstitle .oke-a11yText{top:-15px!important;}
+.template-page.anti-acne2 .desktopreviewstitle p{font-size:20px;margin:5px auto 20px;}
+  .circle-video-menu-wrap.circle-video-desktop .circle-video-menu-item{width:100%;}
   .template-product.omnilux-contour-face #reviews-slider{display:block;}
+.circle-video-desktop .circle-video-menu-item-image{width:275px!important;}
+.seeallreviews{margin: 25px auto 55px;}
 }
+
+@media(max-width:600px){
+  .template-page.anti-acne2 .desktopreviewstitle .oke-sr-count.oke-sr-count--brackets{top:-6px;}
+}
+
 /**
  * Desktop Reviews End
  */
@@ -563,6 +589,11 @@ body.ab-test-cartdrawer .cart-drawer .docapp-volume-discounts-legacy-promo {
 /*new skincare pages*/
 .template-page.skincare-awareness-1 .image-hero .container-fluid{padding-top:0!important;}
 .btn-outline-primary.btn-dark:before,.btn-outline-primary.btn-dark:after{border:0!important;}
+
+
+.template-login .section-content{padding-top:0;}
+.template-login .account-tabs{padding-top:3rem;}
+
 
 @media (min-width: 768px){
 .template-page.skincare-awareness-1 .tallheight .swiper-slide {
@@ -1284,4 +1315,6 @@ html .cbb-frequently-bought-selector-label-name .cbb-frequently-bought-this-item
   .section-faq .service .font-style {
     font-size: 16px;
   }  
+  .featuredproductsingle .col-12{padding-left:0!important;}
+  .featuredproductsingle .row{max-width:100%;margin:0;}
 }

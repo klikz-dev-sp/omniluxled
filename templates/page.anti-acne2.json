@@ -359,7 +359,7 @@
         "btn_type3": "",
         "btn_variant3": "dark",
         "btn_size3": "",
-        "section_bg_color": "#FFFFFF",
+        "section_bg_color": "#ffffff",
         "section_text_color": "#000000"
       }
     },
@@ -438,8 +438,8 @@
             "btn_variant": "primary",
             "btn_size": "",
             "btn_txt_watch": "WATCH JESS' STORY",
-            "watch_video_id": "https:\/\/www.youtube.com\/embed\/iZ3gGDVdRH8?start=0&autoplay=0&loop=0&mute=0&controls=0&enablejsapi=1",
-            "watch_mobile_video_id": "https:\/\/www.youtube.com\/embed\/iZ3gGDVdRH8?start=0&autoplay=0&loop=0&mute=0&controls=0&enablejsapi=1",
+            "watch_video_id": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/85237b5bbecd480ca13bd969a2859765.mp4",
+            "watch_mobile_video_id": "https:\/\/cdn.shopify.com\/videos\/c\/o\/v\/85237b5bbecd480ca13bd969a2859765.mp4",
             "btn_type_watch": "",
             "btn_variant_watch": "primary",
             "btn_size_watch": "",
@@ -641,6 +641,7 @@
         "4b0e629f-4380-4cc9-8c3c-3011580869fe",
         "162e00e6-e12e-4c47-b151-8b5f093f1a6c"
       ],
+      "disabled": true,
       "custom_css": [
         "h3 {color: #000; text-shadow: none;}"
       ],
@@ -710,6 +711,7 @@
         "dc406bf3-5d88-457b-be62-46cdb596149c",
         "744978f7-82c8-4f71-a276-ef96e137f247"
       ],
+      "disabled": true,
       "custom_css": [
         ".h2 {color: #000; text-shadow: none;}"
       ],
@@ -736,6 +738,79 @@
         "nav_arrows": true,
         "nav_dots": false
       }
+    },
+    "a618eef4-fb94-4608-b62a-a035c206de40": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\"><div data-oke-star-rating data-oke-reviews-product-id=\"shopify-6760463892642\">{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews<\/span>\n<\/div><\/div><\/div>\n<p>We've helped 100,000+ customers achieve their skin goals.<\/p>\n<\/div>"
+      }
+    },
+    "2fc01c3d-fdb9-4eed-9a67-450b2c83d9e3": {
+      "type": "circle-video-menu-desktop",
+      "blocks": {
+        "8a0a74ff-89e2-45b7-9b2c-dca79c541c13": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial.png",
+            "label": "Lizeth’s Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/lizethstory.mp4"
+          }
+        },
+        "7b095eea-f173-4a24-aa62-972756a33c6b": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy.png",
+            "label": "Deborah's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/test2.mov"
+          }
+        },
+        "9afed3dc-0d5d-4a4f-8395-203271279cc7": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy_2.png",
+            "label": "Anna's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/Video 3 - IG Scroller.mp4"
+          }
+        },
+        "fa13efe9-8b23-4bc4-a788-79b668968663": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy_4.png",
+            "label": "Tanya's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/Video 2 - IG Scroller.mp4"
+          }
+        },
+        "34cc8186-9c1d-474b-98c5-aa24e046bb7b": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy_3.png",
+            "label": "Lina's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/Testimonial 6.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "8a0a74ff-89e2-45b7-9b2c-dca79c541c13",
+        "7b095eea-f173-4a24-aa62-972756a33c6b",
+        "9afed3dc-0d5d-4a4f-8395-203271279cc7",
+        "fa13efe9-8b23-4bc4-a788-79b668968663",
+        "34cc8186-9c1d-474b-98c5-aa24e046bb7b"
+      ],
+      "settings": {
+        "border_color": "#000000",
+        "ignore": true
+      }
+    },
+    "db51e2b5-fbe8-4255-be41-9434c6a6c906": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"seereviewsbtn\">\n<div class=\"seeallreviews\"><div class=\"container is-flex is-justify-center\"><a href=\"https:\/\/omniluxled.com\/pages\/reviews-results\">SEE MORE REVIEWS AND RESULTS<\/a><\/div><\/div><\/div>"
+      }
     }
   },
   "order": [
@@ -751,6 +826,9 @@
     "ec0f761c-9d46-426c-b34e-7536509c5a1b",
     "d1e8d9f9-4e0f-4ef5-af16-8f334ad3b8c9",
     "cc65e22a-b26b-40d1-ac1e-c6ff657ff136",
-    "ab62fd12-1370-4dd1-8aca-97e40474aa60"
+    "ab62fd12-1370-4dd1-8aca-97e40474aa60",
+    "a618eef4-fb94-4608-b62a-a035c206de40",
+    "2fc01c3d-fdb9-4eed-9a67-450b2c83d9e3",
+    "db51e2b5-fbe8-4255-be41-9434c6a6c906"
   ]
 }

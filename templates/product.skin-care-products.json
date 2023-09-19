@@ -232,6 +232,7 @@
       ],
       "settings": {
         "product_grid": false,
+        "product_tabs_mobile": false,
         "fluid_layout": false,
         "enable_background_tone": true,
         "show_vendor": true,
@@ -313,7 +314,6 @@
     },
     "8d4dfa60-174c-4b28-9812-ab31ef599696": {
       "type": "global-reviews-slider",
-      "disabled": true,
       "blocks": {
         "b4cbdc09-0aa5-488f-9877-fb7f9789d4bc": {
           "type": "logowidthtext",
@@ -339,6 +339,7 @@
         "0fb9a067-2046-4361-9075-78ba613a0a94",
         "76e7d130-868f-4603-9228-3ce3e820fb17"
       ],
+      "disabled": true,
       "settings": {
         "fluid_layout": false,
         "heading_style": "heading_style_1",
@@ -365,7 +366,6 @@
     },
     "9954540e-30e3-44b7-ab1d-975166604760": {
       "type": "product-comparison",
-      "disabled": true,
       "blocks": {
         "template--16158637228194__9954540e-30e3-44b7-ab1d-975166604760-168370753910924a9b-0": {
           "type": "feature-item-left",
@@ -440,6 +440,7 @@
         "a9b9c97b-f347-4b13-b4f8-6852c00c9768",
         "2e4830fd-2714-4224-b53e-df03409593a8"
       ],
+      "disabled": true,
       "settings": {
         "title": "The beauty of clinical results from home - minus the ‘clinical’ costs",
         "subtitle": "A daily 10 minute session is like going to the beauty clinic five times a week. Minus the on-going costs, the time commitment, the overpromises, the upselling.",
@@ -459,7 +460,6 @@
     },
     "ee32d731-64d8-43e4-a200-3aad66c37be5": {
       "type": "product-results-slider",
-      "disabled": true,
       "blocks": {
         "035acd3d-cf76-4c29-bd3c-4baed3173be8": {
           "type": "logowidthtext",
@@ -528,6 +528,7 @@
         "e0220851-db31-4de2-911f-c185123f1a25",
         "acc38b90-e2e1-4897-b77b-54c8cbe0a5eb"
       ],
+      "disabled": true,
       "settings": {
         "display_for_this_product": "{{ product.metafields['custom']['results_enabled'] }}",
         "fluid_layout": false,
@@ -602,7 +603,7 @@
             "fullwidth_content": false,
             "heading_txt": "{{ product.metafields['custom']['iwt_heading_1'] }}",
             "max_width": 530,
-            "txt": "{{ product.metafields['custom']['iwt_text_1'] }}",
+            "txt": "",
             "step_heading": "",
             "steps_captions": "",
             "steps_captions_2": "{{ product.metafields['custom']['iwt_read_more_text_1'] }}",
@@ -636,56 +637,6 @@
         "border_bottom": false,
         "section_bg_color": "rgba(0,0,0,0)",
         "section_text_color": "#000000"
-      }
-    },
-    "90f4e8ae-86ff-446a-857e-a0d8dbc1d00e": {
-      "type": "global-infoblock-liquid",
-      "blocks": {
-        "template--16163273212066__90f4e8ae-86ff-446a-857e-a0d8dbc1d00e-1684611083daca586d-0": {
-          "type": "content",
-          "settings": {
-            "image": "{{ product.metafields['custom']['featured_threecol_img'] }}",
-            "title": "{{ product.metafields['custom']['featured_threecol_heading'] }}",
-            "txt_info": "{{ product.metafields['custom']['featured_threecol_text'] }}",
-            "btn_txt": "{{ product.metafields['custom']['featured_threecol_btntext'] }}",
-            "btn_url": "{{ product.metafields['custom']['featured_threecol_btnurl'] }}"
-          }
-        },
-        "a22b2918-1508-4582-a1e7-5f77b77a0861": {
-          "type": "content",
-          "settings": {
-            "image": "{{ product.metafields['custom']['featured_threecol_img2'] }}",
-            "title": "{{ product.metafields['custom']['featured_threecol_heading2'] }}",
-            "txt_info": "{{ product.metafields['custom']['featured_threecol_text2'] }}",
-            "btn_txt": "{{ product.metafields['custom']['featured_threecol_btntext2'] }}",
-            "btn_url": "{{ product.metafields['custom']['featured_threecol_btnurl2'] }}"
-          }
-        },
-        "e047742c-76ea-453d-bcae-cbd8fbced664": {
-          "type": "content",
-          "settings": {
-            "image": "{{ product.metafields['custom']['featured_threecol_img3'] }}",
-            "title": "{{ product.metafields['custom']['featured_threecol_heading3'] }}",
-            "txt_info": "{{ product.metafields['custom']['featured_threecol_text3'] }}",
-            "btn_txt": "{{ product.metafields['custom']['featured_threecol_btntext3'] }}",
-            "btn_url": "{{ product.metafields['custom']['featured_threecol_btnurl3'] }}"
-          }
-        }
-      },
-      "block_order": [
-        "template--16163273212066__90f4e8ae-86ff-446a-857e-a0d8dbc1d00e-1684611083daca586d-0",
-        "a22b2918-1508-4582-a1e7-5f77b77a0861",
-        "e047742c-76ea-453d-bcae-cbd8fbced664"
-      ],
-      "settings": {
-        "fluid_layout": true,
-        "heading_txt": "Some things are meant to be together",
-        "lead_txt": "Complete your Omnilux routine for maximum results.",
-        "section_bg_color": "",
-        "section_txt_color": "#000000",
-        "btn_type": "",
-        "btn_variant": "primary",
-        "btn_size": ""
       }
     },
     "e74cca30-9a8e-4f0e-8e87-cac411799484": {
@@ -737,7 +688,6 @@
     },
     "97a2b9bb-60a0-4ea3-9483-40b6b6ca80f1": {
       "type": "product-image-with-table",
-      "disabled": true,
       "blocks": {
         "9855c66d-4fe9-4172-8d5e-51dd980b069e": {
           "type": "content",
@@ -806,6 +756,7 @@
         "14f6e5cf-c71e-4aa0-820c-70378b4c19df",
         "41c32f0d-e415-4065-8c5d-a1e89dc61a46"
       ],
+      "disabled": true,
       "settings": {
         "display_for_this_product": "{{ product.metafields['custom']['table_image_enabled'] }}",
         "fluid_layout": true,
@@ -850,7 +801,6 @@
     },
     "6f9dbd95-0f1e-423e-8185-0f80ef755574": {
       "type": "product-features-grid",
-      "disabled": true,
       "blocks": {
         "template--16049829019810__6f9dbd95-0f1e-423e-8185-0f80ef755574-16718232555ebd91ce-0": {
           "type": "content",
@@ -903,6 +853,7 @@
         "a16384a3-c8e6-4278-90ce-1fb7ccee3bc7",
         "05546c56-3c4c-4ef7-98f7-748698d5ca5d"
       ],
+      "disabled": true,
       "settings": {
         "display_for_product": "{{ product.metafields['custom']['featured_grid_display_2'] }}",
         "fluid_layout": false,
@@ -1022,7 +973,6 @@
     "ee32d731-64d8-43e4-a200-3aad66c37be5",
     "fa9b8a1b-146c-4f3f-8be9-721ab7ff5c69",
     "d98aede5-e4b5-4863-b5ad-7c8b265e3e58",
-    "90f4e8ae-86ff-446a-857e-a0d8dbc1d00e",
     "e74cca30-9a8e-4f0e-8e87-cac411799484",
     "97a2b9bb-60a0-4ea3-9483-40b6b6ca80f1",
     "dbd05fbc-dda9-418a-80a7-141ddac090f5",

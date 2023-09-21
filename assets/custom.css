@@ -282,6 +282,9 @@
   width: 272px;
   vertical-align: top;
 }
+
+.anti-acne2 .circle-video-menu-wrap.circle-video-desktop .circle-menu-items{justify-content:center;}
+
 .circle-video-menu-wrap.circle-video-desktop .circle-menu-items {
   text-align: center;
   padding-bottom: 0;
@@ -426,6 +429,7 @@
     .oke-sr-count.oke-sr-count--brackets {
     top: -6px;
   }
+  .anti-acne2 .circle-video-menu-wrap.circle-video-desktop .circle-menu-items{justify-content:flex-start;}
 }
 
 /**

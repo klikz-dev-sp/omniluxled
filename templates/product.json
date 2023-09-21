@@ -207,7 +207,10 @@
             "btn_link": "{{ product.metafields['custom']['faq_btn_link'] }}",
             "enable_custom_tab_4": "{{product.metafields.custom.enable_tab_4}}",
             "tab_4_title": "{{product.metafields.custom.tab_title_4}}",
-            "tab_4_content": "{{product.metafields.custom.tab_description_4}}"
+            "tab_4_content": "{{product.metafields.custom.tab_description_4}}",
+            "enable_custom_tab_5": "{{product.metafields.custom.enable_tab_5}}",
+            "tab_5_title": "{{product.metafields.custom.tab_title_5}}",
+            "tab_5_content": "{{product.metafields.custom.tab_description_5}}"
           }
         },
         "3fc244f3-9eea-4a61-874a-b551b0227aff": {

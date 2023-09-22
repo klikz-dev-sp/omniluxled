@@ -897,13 +897,6 @@
         "border-bottom": true
       }
     },
-    "167152762813570154": {
-      "type": "apps",
-      "disabled": true,
-      "settings": {
-        "include_margins": true
-      }
-    },
     "3b0cd3cc-5517-4d50-b829-9db880165ae6": {
       "type": "glabal-featured-product-list",
       "disabled": true,
@@ -927,6 +920,73 @@
         "border-top": true,
         "border-bottom": false,
         "slide_per_": false
+      }
+    },
+    "c549a3a4-de45-49b9-9465-365bae9afb8e": {
+      "type": "template-faq-block",
+      "blocks": {
+        "e71d626d-e56f-48a9-820b-4d763c2d5595": {
+          "type": "question",
+          "settings": {
+            "title": "{{product.metafields.custom.faq_question_1}}",
+            "answer": "{{product.metafields.custom.faq_answer_1}}"
+          }
+        },
+        "4ffaf759-3314-47fc-b17e-3aafdcb7532a": {
+          "type": "question",
+          "settings": {
+            "title": "{{product.metafields.custom.faq_question_2}}",
+            "answer": "{{product.metafields.custom.faq_answer_2}}"
+          }
+        },
+        "3d244255-f21c-4616-a214-38c9282f01b8": {
+          "type": "question",
+          "settings": {
+            "title": "{{product.metafields.custom.faq_question_3}}",
+            "answer": "{{product.metafields.custom.faq_answer_3}}"
+          }
+        },
+        "16b66dc2-0b4d-45eb-9225-0a87a3b8a2f2": {
+          "type": "question",
+          "settings": {
+            "title": "Are these products cruelty free?",
+            "answer": "Yes, all of our products are cruelty free."
+          }
+        },
+        "5bd3014b-1003-4474-98d9-af538ca2fbac": {
+          "type": "question",
+          "settings": {
+            "title": "Are these products vegan?",
+            "answer": "Yes, all of our products are vegan."
+          }
+        },
+        "47528763-90be-4d50-b2d9-7cfb45cd70a9": {
+          "type": "question",
+          "settings": {
+            "title": "Are these products gluten free?",
+            "answer": "Yes, all of our products are gluten free."
+          }
+        },
+        "109d7128-d2f9-4b5a-8f69-00660f9c810b": {
+          "type": "question",
+          "settings": {
+            "title": "Are these products natural\/organic?",
+            "answer": "Enzyme Powder Cleanser: 90% organic.\n\nHyaluronic Acid Serum: 94% organic.\n\nPeptide Concentrate: 70% organic"
+          }
+        }
+      },
+      "block_order": [
+        "e71d626d-e56f-48a9-820b-4d763c2d5595",
+        "4ffaf759-3314-47fc-b17e-3aafdcb7532a",
+        "3d244255-f21c-4616-a214-38c9282f01b8",
+        "16b66dc2-0b4d-45eb-9225-0a87a3b8a2f2",
+        "5bd3014b-1003-4474-98d9-af538ca2fbac",
+        "47528763-90be-4d50-b2d9-7cfb45cd70a9",
+        "109d7128-d2f9-4b5a-8f69-00660f9c810b"
+      ],
+      "settings": {
+        "enable": false,
+        "heading": "FAQ"
       }
     },
     "1676318184d0f06530": {
@@ -981,8 +1041,8 @@
     "dbd05fbc-dda9-418a-80a7-141ddac090f5",
     "6f9dbd95-0f1e-423e-8185-0f80ef755574",
     "eb389eae-606a-437d-9986-2e6235168f36",
-    "167152762813570154",
     "3b0cd3cc-5517-4d50-b829-9db880165ae6",
+    "c549a3a4-de45-49b9-9465-365bae9afb8e",
     "1676318184d0f06530",
     "4f65bf04-3141-4ace-b69f-74d2f7c94563"
   ]

@@ -993,57 +993,57 @@
             "answer": "{{product.metafields.custom.faq_answer_1}}"
           }
         },
-        "f713b42a-7c79-411d-909d-b551ae6cd13d": {
+        "c96b84a3-94ee-4911-bbe1-c97bdfc2e593": {
           "type": "question",
           "settings": {
             "title": "{{product.metafields.custom.faq_question_2}}",
             "answer": "{{product.metafields.custom.faq_answer_2}}"
           }
         },
-        "be285a09-16ad-4591-87b0-c41d7c52c55d": {
+        "188907b6-d047-4abd-b718-5fc20a4f839e": {
           "type": "question",
           "settings": {
-            "title": "Does LED light therapy really work?",
-            "answer": "Yes. Omnilux’s technology has been clinically proven to produce medical grade results for nearly 20 years. Omnilux devices have been specifically profiled in over 40 independent peer-reviewed published clinical studies of these studies, with applications ranging from skin rejuvenation, acne, pigmentation, and other common skin conditions. Please note: Not all LED masks are created equal! Some brands lack the clinical studies or FDA clearance that demonstrate proven effectiveness."
+            "title": "{{product.metafields.custom.faq_question_3}}",
+            "answer": "{{product.metafields.custom.faq_answer_3}}"
           }
         },
-        "7b84c05b-518b-4ba2-9945-c6f0c41087c1": {
+        "ba78c095-f012-4ffc-9074-249f820e5618": {
           "type": "question",
           "settings": {
-            "title": "What is the recommended treatment regimen for Contour?",
-            "answer": "We recommend using the Contour devices 3-5 times per week for 4-6 weeks. After the initial 6 weeks, you should continue routine maintenance treatments as desired based on lifestyle and skincare needs, as everyone skin is different. Consistency is key, so find what works best for you!"
+            "title": "{{product.metafields.custom.faq_question_4}}",
+            "answer": "{{product.metafields.custom.faq_answer_4}}"
           }
         },
-        "42409df3-b323-4beb-94bc-a4fccb70a465": {
+        "acb6b084-fa41-4e17-ac3f-c768fdf67323": {
           "type": "question",
           "settings": {
-            "title": "Can I use Omnilux Contour with my current skincare products?",
-            "answer": "Omnilux Contour is compatible with most skin care routines. You should always apply your skin care products after treatments. Please review the Contraindications for a list of products and ingredients to avoid using with LED."
+            "title": "{{product.metafields.custom.faq_question_5}}",
+            "answer": "{{product.metafields.custom.faq_answer_5}}"
           }
         },
-        "65c05be4-a39f-489c-a4c3-9e3e396631cc": {
+        "a71292e9-d0ae-42f3-b82c-edf74659ab22": {
           "type": "question",
           "settings": {
-            "title": "What are the benefits of red light therapy?",
-            "answer": "Red light reduces inflammation, pigmentation, and redness and helps prompt cellular repair and circulation for a more vibrant complexion."
+            "title": "{{product.metafields.custom.faq_question_6}}",
+            "answer": "{{product.metafields.custom.faq_answer_6}}"
           }
         },
-        "19109a3e-9aa8-48bc-9bf2-2ee7722ce81f": {
+        "cfa1ae53-8793-4516-b1cc-e371641b0c35": {
           "type": "question",
           "settings": {
-            "title": "Is the Omnilux Contour line safe to use?",
-            "answer": ""
+            "title": "{{product.metafields.custom.faq_question_7}}",
+            "answer": "{{product.metafields.custom.faq_answer_7}}"
           }
         }
       },
       "block_order": [
         "add65b84-8656-47b5-bcb0-5c2d1ba96bdf",
-        "f713b42a-7c79-411d-909d-b551ae6cd13d",
-        "be285a09-16ad-4591-87b0-c41d7c52c55d",
-        "7b84c05b-518b-4ba2-9945-c6f0c41087c1",
-        "42409df3-b323-4beb-94bc-a4fccb70a465",
-        "65c05be4-a39f-489c-a4c3-9e3e396631cc",
-        "19109a3e-9aa8-48bc-9bf2-2ee7722ce81f"
+        "c96b84a3-94ee-4911-bbe1-c97bdfc2e593",
+        "188907b6-d047-4abd-b718-5fc20a4f839e",
+        "ba78c095-f012-4ffc-9074-249f820e5618",
+        "acb6b084-fa41-4e17-ac3f-c768fdf67323",
+        "a71292e9-d0ae-42f3-b82c-edf74659ab22",
+        "cfa1ae53-8793-4516-b1cc-e371641b0c35"
       ],
       "settings": {
         "enable": true,

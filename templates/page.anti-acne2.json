@@ -5,7 +5,7 @@
       "settings": {
         "image_desktop": "shopify:\/\/shop_images\/Untitled-222_e65c0107-3a4e-4b4d-bade-6fd0644b515c.jpg",
         "image_mobile": "shopify:\/\/shop_images\/Untitled-8.png",
-        "title": "Mask on,acne gone",
+        "title": "Mask on,<br>acne <span>gone.<\/span>",
         "subtitle": "Clinically proven to stop breakouts in their tracks.",
         "btn_text": "SHOP NOW",
         "btn_link": "shopify:\/\/products\/omnilux-clear",
@@ -98,6 +98,62 @@
         "icon_img": "shopify:\/\/shop_images\/medical-grade_5.svg",
         "icon_img2": "shopify:\/\/shop_images\/Natural_treatment_svg.png",
         "icon_img3": "shopify:\/\/shop_images\/medical-grade_4.svg"
+      }
+    },
+    "ccd2af3c-3893-452e-8e9d-e82555f637c3": {
+      "type": "before-after-scroller",
+      "blocks": {
+        "09e51eaf-1740-42e1-bcb7-f1d459351c4c": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_copy_2.jpg",
+            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_percentage": "96%",
+            "percentage_text": "<p><strong>Satisfaction<\/strong> rate among patients<\/p>",
+            "review_title": "Guaranteed Results",
+            "review_description": "<ul><li>Rapid and significant reduction in acne lesions<\/li><li>100% of participants saw improvements within 4 weeks<\/li><\/ul>",
+            "review_author": "Ellen",
+            "review_verified_text": "Verified Buyer",
+            "footer_text": "<p><strong>8 Weeks<\/strong> for complete acne clearance in all patients<\/p>"
+          }
+        },
+        "75f1863e-b4aa-48be-b10c-718f622ed99e": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_copy.jpg",
+            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_percentage": "81%",
+            "percentage_text": "<p><strong>Reduction<\/strong> in acne lesions<\/p>",
+            "review_title": "Painless and Easy",
+            "review_description": "<ul><li>Completely pain- and side-effect-free treatment<\/li><li>Effective in treating both mild to severe acne<\/li><\/ul>",
+            "review_author": "Jess",
+            "review_verified_text": "Verified Buyer",
+            "footer_text": "<p><strong>100% of participants<\/strong> reported a major reduction in acne within 12 weeks<\/p>"
+          }
+        },
+        "671d2e9b-1e2c-425d-91c2-f59384c5d4ba": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify:\/\/shop_images\/Frame_1000003047.jpg",
+            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_percentage": "90%",
+            "percentage_text": "<p><strong>Improvement<\/strong> of facial skin<\/p>",
+            "review_title": "Reduced Acne",
+            "review_description": "<ul><li>Significant reduction in acne lesions within 4 weeks<\/li><li>No side effects reported<\/li><\/ul>",
+            "review_author": "Alana",
+            "review_verified_text": "Verified Buyer",
+            "footer_text": "<p><strong>92% of patients<\/strong> achieved a 90% decrease in acne<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "09e51eaf-1740-42e1-bcb7-f1d459351c4c",
+        "75f1863e-b4aa-48be-b10c-718f622ed99e",
+        "671d2e9b-1e2c-425d-91c2-f59384c5d4ba"
+      ],
+      "settings": {
+        "section_id": "#",
+        "section_title": "Real Stories, Real Impact"
       }
     },
     "839046eb-ba08-422a-bf0e-7cc84c8fcd1c": {
@@ -196,6 +252,7 @@
         "7bfe6cea-38f3-4378-86f3-bb9fb39b0c41",
         "5868438a-6772-408e-aee1-ccb1193742d3"
       ],
+      "disabled": true,
       "settings": {
         "fluid_layout": false,
         "heading_style": "heading_style_2",
@@ -507,11 +564,151 @@
         "heading": "Frequently Asked Questions"
       }
     },
+    "07429a64-3eb5-4663-827f-f01a6fb8f5cd": {
+      "type": "hoox-comparison-table",
+      "blocks": {
+        "71b7c904-ab36-4b4a-b068-36f0f7b8a9ad": {
+          "type": "column-title",
+          "settings": {
+            "first_column_title_one": "FDA Clearance",
+            "first_column_title_two": "Brand Specific Clinical Studies",
+            "first_column_title_three": "One Time Purchase",
+            "first_column_title_four": "100% Natural Treatment",
+            "first_column_title_five": "No Harsh Side Effects",
+            "first_column_title_six": ""
+          }
+        },
+        "307e3e5c-9116-49da-923d-71a7c96e64b1": {
+          "type": "column-content",
+          "settings": {
+            "compare_highlight_column_color": "#b67d5b",
+            "table_column_highlight": true,
+            "table_column_title_one": "",
+            "table_column_tick_one_true": false,
+            "table_column_tick_one_false": false,
+            "table_column_one_img": "shopify:\/\/shop_images\/OmniluxClear-Logo.png",
+            "table_column_title_two": "",
+            "table_column_tick_two_true": true,
+            "table_column_tick_two_false": false,
+            "table_column_title_three": "",
+            "table_column_tick_three_true": true,
+            "table_column_tick_three_false": false,
+            "table_column_title_four": "",
+            "table_column_tick_four_true": true,
+            "table_column_tick_four_false": false,
+            "table_column_title_five": "",
+            "table_column_tick_five_true": true,
+            "table_column_tick_five_false": false,
+            "table_column_title_six": "",
+            "table_column_tick_six_true": true,
+            "table_column_tick_six_false": false,
+            "table_column_title_seven": "",
+            "table_column_tick_seven_true": false,
+            "table_column_tick_seven_false": false
+          }
+        },
+        "6d2b4072-820f-4f33-b7cc-bd5cd15f6c51": {
+          "type": "column-content",
+          "settings": {
+            "compare_highlight_column_color": "",
+            "table_column_highlight": false,
+            "table_column_title_one": "Other LED Devices",
+            "table_column_tick_one_true": false,
+            "table_column_tick_one_false": false,
+            "table_column_title_two": "",
+            "table_column_tick_two_true": false,
+            "table_column_tick_two_false": true,
+            "table_column_title_three": "",
+            "table_column_tick_three_true": false,
+            "table_column_tick_three_false": true,
+            "table_column_title_four": "",
+            "table_column_tick_four_true": true,
+            "table_column_tick_four_false": false,
+            "table_column_title_five": "",
+            "table_column_tick_five_true": true,
+            "table_column_tick_five_false": false,
+            "table_column_title_six": "",
+            "table_column_tick_six_true": true,
+            "table_column_tick_six_false": false,
+            "table_column_title_seven": "",
+            "table_column_tick_seven_true": false,
+            "table_column_tick_seven_false": false
+          }
+        },
+        "010e10bf-864c-4f9c-ab9e-6f46786192cb": {
+          "type": "column-content",
+          "settings": {
+            "compare_highlight_column_color": "",
+            "table_column_highlight": false,
+            "table_column_title_one": "OTC Topicals",
+            "table_column_tick_one_true": false,
+            "table_column_tick_one_false": false,
+            "table_column_title_two": "Some",
+            "table_column_tick_two_true": false,
+            "table_column_tick_two_false": false,
+            "table_column_title_three": "Some",
+            "table_column_tick_three_true": false,
+            "table_column_tick_three_false": false,
+            "table_column_title_four": "",
+            "table_column_tick_four_true": false,
+            "table_column_tick_four_false": true,
+            "table_column_title_five": "",
+            "table_column_tick_five_true": false,
+            "table_column_tick_five_false": true,
+            "table_column_title_six": "",
+            "table_column_tick_six_true": false,
+            "table_column_tick_six_false": true,
+            "table_column_title_seven": "",
+            "table_column_tick_seven_true": false,
+            "table_column_tick_seven_false": false
+          }
+        },
+        "0d52dc97-7e65-4976-ace4-5daeea9f1e43": {
+          "type": "column-content",
+          "settings": {
+            "compare_highlight_column_color": "",
+            "table_column_highlight": false,
+            "table_column_title_one": "Prescription Products",
+            "table_column_tick_one_true": false,
+            "table_column_tick_one_false": false,
+            "table_column_title_two": "",
+            "table_column_tick_two_true": true,
+            "table_column_tick_two_false": false,
+            "table_column_title_three": "",
+            "table_column_tick_three_true": true,
+            "table_column_tick_three_false": false,
+            "table_column_title_four": "",
+            "table_column_tick_four_true": false,
+            "table_column_tick_four_false": true,
+            "table_column_title_five": "",
+            "table_column_tick_five_true": false,
+            "table_column_tick_five_false": true,
+            "table_column_title_six": "",
+            "table_column_tick_six_true": false,
+            "table_column_tick_six_false": true,
+            "table_column_title_seven": "",
+            "table_column_tick_seven_true": false,
+            "table_column_tick_seven_false": false
+          }
+        }
+      },
+      "block_order": [
+        "71b7c904-ab36-4b4a-b068-36f0f7b8a9ad",
+        "307e3e5c-9116-49da-923d-71a7c96e64b1",
+        "6d2b4072-820f-4f33-b7cc-bd5cd15f6c51",
+        "010e10bf-864c-4f9c-ab9e-6f46786192cb",
+        "0d52dc97-7e65-4976-ace4-5daeea9f1e43"
+      ],
+      "settings": {
+        "compare_headline": "Why Omnilux"
+      }
+    },
     "d1e8d9f9-4e0f-4ef5-af16-8f334ad3b8c9": {
       "type": "global-image-with-text",
       "blocks": {
         "703b5f98-b80c-4f4e-bded-6e03143c3c1c": {
           "type": "image-with-text-block",
+          "disabled": true,
           "settings": {
             "fullwidth_content": false,
             "heading_txt": "Why Omnilux",
@@ -811,6 +1008,7 @@
     "46303bd3-da3b-4cc4-9804-394607ef3f06",
     "a1064ed2-44b7-4aff-801b-b9497008532a",
     "654dfb70-8515-4329-b35a-c595a1c866e6",
+    "ccd2af3c-3893-452e-8e9d-e82555f637c3",
     "839046eb-ba08-422a-bf0e-7cc84c8fcd1c",
     "main",
     "7d81bab4-7cd3-45cc-a15e-85816015c1b0",
@@ -818,6 +1016,7 @@
     "875cb50b-8a97-4cbc-8ad1-4bdb25824e96",
     "ad12eab5-d111-48ee-803d-a63ff0223d40",
     "ec0f761c-9d46-426c-b34e-7536509c5a1b",
+    "07429a64-3eb5-4663-827f-f01a6fb8f5cd",
     "d1e8d9f9-4e0f-4ef5-af16-8f334ad3b8c9",
     "cc65e22a-b26b-40d1-ac1e-c6ff657ff136",
     "ab62fd12-1370-4dd1-8aca-97e40474aa60",

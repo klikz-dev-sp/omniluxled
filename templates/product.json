@@ -336,10 +336,125 @@
         "border-bottom": false
       }
     },
+    "7b2b9667-4273-4675-9fde-6a3aec94d801": {
+      "type": "before-after-scroller",
+      "blocks": {
+        "f6a0c3c4-ae37-4254-a29d-2ffb434f8994": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_copy_1d055af3-5189-4df9-b9fc-b5a22244e5a7.jpg",
+            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_percentage": "95%",
+            "percentage_text": "<p><strong>Firmer and Smoother<\/strong> facial skin<\/p>",
+            "review_title": "Firmer & Plumper Skin",
+            "review_description": "<ul><li>Witnessed a considerable improvement in skin firmness and fullness.<\/li><li>Noticed skin appearing plumper and more vibrant after just 4 weeks.<\/li><\/ul>",
+            "review_author": "Cynthia",
+            "review_verified_text": "Verified buyer",
+            "footer_text": "<p><strong>23 out of 25 participants<\/strong> reported their skin felt firmer after 3 treatments per week for 4 weeks<\/p>"
+          }
+        },
+        "290dd027-7a41-4ffe-ad02-5c84e59de005": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_e73a18ba-99e0-4c52-b514-2442578d3b8b.jpg",
+            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_percentage": "96%",
+            "percentage_text": "<p><strong>Smoother<\/strong> facial wrinkle and fine lines<\/p>",
+            "review_title": "Reduced Fine Lines",
+            "review_description": "<ul><li>Experienced brighter, more vibrant skin after just 4 weeks.<\/li><li>Felt complexion improved, achieving a more youthful, radiant glow.<\/li><\/ul>",
+            "review_author": "Caitlin",
+            "review_verified_text": "Verified buyer",
+            "footer_text": "<p><strong>24 out of 25 participants<\/strong> reported that their skin felt softer and smoother after 3 treatments per week for 4 weeks<\/p>"
+          }
+        },
+        "cb5608c2-b1a2-44d9-a405-e8723930350e": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_copy_2_d6de62b5-0101-4a0f-aab0-ebc607dc06d8.jpg",
+            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_percentage": "98%",
+            "percentage_text": "<p><strong>Brighter and plumper<\/strong> facial skin<\/p>",
+            "review_title": "Reduced Redness",
+            "review_description": "<ul><li>Calms redness and promotes a healthy, glowing complexion.<\/li><li>Experienced the soothing, anti-inflammatory benefits of Omnilux light therapy.<\/li><\/ul>",
+            "review_author": "Emma",
+            "review_verified_text": "Verified buyer",
+            "footer_text": "<p><strong>25 out of 25 participants<\/strong> reported that their skin felt plumper, brighter, and more hydrated after 3 treatments per week for 4 weeks<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "f6a0c3c4-ae37-4254-a29d-2ffb434f8994",
+        "290dd027-7a41-4ffe-ad02-5c84e59de005",
+        "cb5608c2-b1a2-44d9-a405-e8723930350e"
+      ],
+      "settings": {
+        "section_id": "#beforeafter",
+        "section_title": "Real users, real results"
+      }
+    },
+    "1012647f-8fc2-4238-8ef1-51aef396d8d1": {
+      "type": "before-after-scroller-contour",
+      "blocks": {
+        "cb3770a8-91d8-45ce-8248-2b62a8864c6e": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_copy_2_d6de62b5-0101-4a0f-aab0-ebc607dc06d8.jpg",
+            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_percentage": "98%",
+            "percentage_text": "<p><strong>Brighter and plumper<\/strong> facial skin<\/p>",
+            "review_title": "In clinical studies, users experienced:",
+            "review_description": "<ul><li>Calms redness and promotes a healthy, glowing complexion.<\/li><li>Experienced the soothing, anti-inflammatory benefits of Omnilux light therapy.<\/li><\/ul>",
+            "review_author": "Emma",
+            "author_quote": "",
+            "review_verified_text": "Verified buyer",
+            "footer_text": "<p><strong>25 out of 25 participants<\/strong> reported that their skin felt plumper, brighter, and more hydrated after 3 treatments per week for 4 weeks<\/p>"
+          }
+        },
+        "2bcaf647-14b0-4037-8ae3-cd56658f49b4": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_copy_1d055af3-5189-4df9-b9fc-b5a22244e5a7.jpg",
+            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_percentage": "95%",
+            "percentage_text": "<p><strong>Firmer and Smoother<\/strong> facial skin<\/p>",
+            "review_title": "In clinical studies, users experienced:",
+            "review_description": "<ul><li>Witnessed a considerable improvement in skin firmness and fullness.<\/li><li>Noticed skin appearing plumper and more vibrant after just 4 weeks.<\/li><\/ul>",
+            "review_author": "Cynthia",
+            "author_quote": "",
+            "review_verified_text": "Verified buyer",
+            "footer_text": "<p><strong>23 out of 25 participants<\/strong> reported their skin felt firmer after 3 treatments per week for 4 weeks.<\/p>"
+          }
+        },
+        "7979fdba-e6ce-4ff0-91c2-f0c569c9fffd": {
+          "type": "review",
+          "settings": {
+            "review_image": "shopify:\/\/shop_images\/Frame_1000003047_e73a18ba-99e0-4c52-b514-2442578d3b8b.jpg",
+            "review_country": "shopify:\/\/shop_images\/usa.svg",
+            "review_percentage": "96%",
+            "percentage_text": "<p><strong>Smoother<\/strong> facial wrinkle and fine lines<\/p>",
+            "review_title": "In clinical studies, users experienced:",
+            "review_description": "<ul><li>Experienced brighter, more vibrant skin after just 4 weeks.<\/li><li>Felt complexion improved, achieving a more youthful, radiant glow.<\/li><\/ul>",
+            "review_author": "Caitlin",
+            "author_quote": "",
+            "review_verified_text": "Verified buyer",
+            "footer_text": "<p><strong>24 out of 25 participants<\/strong> reported that their skin felt softer and smoother after 3 treatments per week for 4 weeks<\/p>"
+          }
+        }
+      },
+      "block_order": [
+        "cb3770a8-91d8-45ce-8248-2b62a8864c6e",
+        "2bcaf647-14b0-4037-8ae3-cd56658f49b4",
+        "7979fdba-e6ce-4ff0-91c2-f0c569c9fffd"
+      ],
+      "settings": {
+        "section_id": "#beforeafter",
+        "section_title": "Real users, real results"
+      }
+    },
     "4f5f33ca-10a4-41a3-b40c-038b76049541": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\"><div data-oke-reviews-product-listing-rating>{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews<\/span>\n<\/div><\/div><\/div>\n<p>We've helped 100,000+ customers achieve their skin goals.<\/p>\n<\/div>"
+        "custom_liquid": "<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\"><div data-oke-reviews-product-listing-rating>{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews<\/span>\n<\/div><\/div><\/div>\n<p>We've helped 100,000+ customers achieve their skin goals.<\/p>\n<\/div>\n\n<div class=\"clearpdp\">\n<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\"><div data-oke-star-rating data-oke-reviews-product-id=\"shopify-6760463892642\">{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews<\/span>\n<\/div><\/div><\/div>\n<p>We've helped 100,000+ customers achieve their skin goals.<\/p>\n<\/div><\/div>"
       }
     },
     "1598637a-3252-49e4-bfcc-d63e53d9c6b6": {
@@ -400,6 +515,59 @@
       ],
       "settings": {
         "border_color": "#000000",
+        "div_id": "",
+        "ignore": true
+      }
+    },
+    "1598637a-3252-49e4-bfcc-d63e53d9c6b61": {
+      "type": "circle-video-menu-desktop",
+      "blocks": {
+        "5e3b736c-3b1c-4c18-b1d0-61ead0e0b5f0": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/ariana.png",
+            "label": "Ariana's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/OmniLux CLEAR_ Ariana's Story.mp4"
+          }
+        },
+        "c7297638-eac3-4d36-9152-471ba21228db": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/jess.png",
+            "label": "Jess's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/Omnilux CLEAR_ Jess' Story.mp4"
+          }
+        },
+        "c258c722-53d6-454c-9fda-07f5b7e0f916": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial_0ade517f-a55c-4c60-b8ab-a3a81fe10ba2.png",
+            "label": "Sophie's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/OmniLux CLEAR_ Sophie's Story.mp4"
+          }
+        },
+        "1861f051-aea6-4057-b328-f041be4f2c58": {
+          "type": "circle-link",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Video_Testimonial_copy_b6bc44ea-a3d5-4fa7-84bd-6e0883900c6f.png",
+            "label": "Alana's Story",
+            "excerpt": "",
+            "video": "shopify:\/\/files\/videos\/Omnilux CLEAR_ Alana's Story.mp4"
+          }
+        }
+      },
+      "block_order": [
+        "5e3b736c-3b1c-4c18-b1d0-61ead0e0b5f0",
+        "c7297638-eac3-4d36-9152-471ba21228db",
+        "c258c722-53d6-454c-9fda-07f5b7e0f916",
+        "1861f051-aea6-4057-b328-f041be4f2c58"
+      ],
+      "settings": {
+        "border_color": "#000000",
+        "div_id": "clearpdp",
         "ignore": true
       }
     },
@@ -1121,8 +1289,11 @@
     "d84aa67d-fef0-442d-8364-790f28934d4d",
     "main",
     "8b7008db-ace8-41cc-9cda-be64cf66dd7e",
+    "7b2b9667-4273-4675-9fde-6a3aec94d801",
+    "1012647f-8fc2-4238-8ef1-51aef396d8d1",
     "4f5f33ca-10a4-41a3-b40c-038b76049541",
     "1598637a-3252-49e4-bfcc-d63e53d9c6b6",
+    "1598637a-3252-49e4-bfcc-d63e53d9c6b61",
     "5fc33cbe-b23b-43d7-b393-0425cd94b49e",
     "8d4dfa60-174c-4b28-9812-ab31ef599696",
     "9521727a-fc34-433d-b725-458ff43ba5f3",

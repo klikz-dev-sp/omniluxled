@@ -985,7 +985,7 @@
         "109d7128-d2f9-4b5a-8f69-00660f9c810b"
       ],
       "settings": {
-        "enable": false,
+        "enable": true,
         "heading": "FAQ"
       }
     },

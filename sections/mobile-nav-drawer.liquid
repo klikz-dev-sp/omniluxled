@@ -15,7 +15,7 @@
         {%- if settings.enable_search -%}
         <search-modal class="header__search d-block position-static">
             <div class="searchform">
-              <div class="search-modal modal__content bg-white" role="dialog" aria-modal="true" aria-label="{{ 'general.search.placeholder' | t }}">
+              <div class="search-modal modal__content bg-white" aria-label="{{ 'general.search.placeholder' | t }}">
                 
                   <div class="search-modal__content" tabindex="-1">
                     <form action="{{ routes.search_url }}" method="get" role="search" class="search search-modal__form">

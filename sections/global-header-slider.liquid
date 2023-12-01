@@ -122,7 +122,7 @@
                               {% endif %}
 
                               {% if block.settings.enable_overlay %}
-                                  <div class="overlay" style="background-color: {{ block.settings.overlay_bg_color }}!important; opacity: {{ block.settings.overlay_opacity }}!important; mix-blend-mode: multiply !important; "></div>
+                                  <div class="overlay" style="background-color: {{ block.settings.overlay_bg_color }}; opacity: {{ block.settings.overlay_opacity }} !important; mix-blend-mode: multiply; "></div>
                               {% endif %}
                               {% if block.settings.heading__size %}
                               <style>
@@ -219,7 +219,7 @@
                                   {%- endif -%}
                               </custom-video>
                               <div class="position-absolute full-video-caption text-center media-text-wrap">
-                                  <div class="inside-block container px-md-0 px-3 col-12 col-md-11 col-lg-10 pb-xl-13 py-lg-10 mb-xl-2 py-md-5 py-10 {{ block.settings.alignment }} d-flex {{ block.settings.video_alignment }}" style="color:{{ block.settings.section_text_color }};opacity: 0;">
+                                  <div class="inside-block container px-md-0 px-3 col-12 col-md-11 col-lg-10 pb-xl-13 py-lg-10 mb-xl-2 py-md-5 py-10 {{ block.settings.alignment }} d-flex {{ block.settings.video_alignment }}" style="color:{{ block.settings.section_text_color }};">
                                       <div class="px-md-0 pe-0 mx-md-0 mx-auto {% if template.name == 'page' %}col-xl-6 col-md-8 lp-page-m{% else %}col-md-12{% endif %} ">
                                         
                         {% if block.settings.trustedbytxt != blank %}
@@ -241,7 +241,7 @@
                                               <h2 class="mb-3 h1">{{ block.settings.title }}</h2>
                                           {% endif %}
                                           {% if block.settings.subtitle != blank %}
-                                              <div class="caption_txt fw-normal mb-1 pb-2">{{ block.settings.subtitle }}</div>
+                                              <div class="col-xl-8 col-md-10 caption_txt fw-normal mb-1 pb-2">{{ block.settings.subtitle }}</div>
                                           {% endif %}
                                           <div>
                                               {% if block.settings.play_btn %}
@@ -275,7 +275,7 @@
                                   </div>
                               </div>
                               {% if block.settings.enable_overlay %}
-                                  <div class="overlay" style="background-color: {{ block.settings.overlay_bg_color }}!important; opacity: {{ block.settings.overlay_opacity }}!important; mix-blend-mode: multiply!important; "></div>
+                                  <div class="overlay" style="background-color: {{ block.settings.overlay_bg_color }}; opacity: {{ block.settings.overlay_opacity }} !important; mix-blend-mode: multiply; "></div>
                               {% endif %}
                           </div>
                           {% if block.settings.heading__size %}
@@ -440,7 +440,7 @@
                                 {% endif %}
 
                                 {% if block.settings.enable_overlay %}
-                                    <div class="overlay" style="background-color: {{ block.settings.overlay_bg_color }}!important; opacity: {{ block.settings.overlay_opacity }}!important; mix-blend-mode: multiply !important; "></div>
+                                    <div class="overlay" style="background-color: {{ block.settings.overlay_bg_color }}; opacity: {{ block.settings.overlay_opacity }} !important; mix-blend-mode: multiply; "></div>
                                 {% endif %}
                                 {% if block.settings.heading__size %}
                                 <style>
@@ -595,7 +595,7 @@
                                     </div>
                                 </div>
                                 {% if block.settings.enable_overlay %}
-                                    <div class="overlay" style="background-color: {{ block.settings.overlay_bg_color }}!important; opacity: {{ block.settings.overlay_opacity }}!important; mix-blend-mode: multiply!important; "></div>
+                                    <div class="overlay" style="background-color: {{ block.settings.overlay_bg_color }}; opacity: {{ block.settings.overlay_opacity }} !important; mix-blend-mode: multiply; "></div>
                                 {% endif %}
                                 {% if block.settings.heading__size %}
                                 <style>

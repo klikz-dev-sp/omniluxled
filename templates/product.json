@@ -72,6 +72,7 @@
       ],
       "settings": {
         "border_color": "#000000",
+        "div_id": "contourpdp",
         "ignore": true
       }
     },
@@ -117,9 +118,9 @@
         "90ccee30-cb0b-4eff-b493-24753f4bc1fd",
         "f6c1532d-2a8e-4c7d-901d-cf816d9d28f9"
       ],
-      "disabled": true,
       "settings": {
         "border_color": "#000000",
+        "div_id": "clearpdp",
         "ignore": true
       }
     },
@@ -180,6 +181,12 @@
           "settings": {
           }
         },
+        "ca347699-3f52-4af0-801c-1e7f4098829d": {
+          "type": "subscription-info",
+          "settings": {
+            "info": "<ul><li>Auto-shipped every 4, 6, or 8 weeks so you never run out<\/li><li>15% off every subscription order<\/li><li>Free shipping on every subscription order<\/li><li>First access to new product offerings<\/li><li>Flexible subscription plan options<\/li><\/ul>"
+          }
+        },
         "847ff075-3bf5-4b88-bff7-4982bbafd833": {
           "type": "subtitle",
           "settings": {
@@ -210,7 +217,10 @@
             "tab_4_content": "{{product.metafields.custom.tab_description_4}}",
             "enable_custom_tab_5": "{{product.metafields.custom.enable_tab_5}}",
             "tab_5_title": "{{product.metafields.custom.tab_title_5}}",
-            "tab_5_content": "{{product.metafields.custom.tab_description_5}}"
+            "tab_5_content": "{{product.metafields.custom.tab_description_5}}",
+            "enable_custom_tab_6": "",
+            "tab_6_title": "Tab Title 6",
+            "tab_6_content": ""
           }
         },
         "3fc244f3-9eea-4a61-874a-b551b0227aff": {
@@ -245,6 +255,7 @@
         "b253ffff-d04d-43a0-9d68-fabdd77b595a",
         "3ec0cedf-fb32-4e6f-b392-8ad9d16f7103",
         "8a51062c-4d9c-422e-b490-fae013f03593",
+        "ca347699-3f52-4af0-801c-1e7f4098829d",
         "847ff075-3bf5-4b88-bff7-4982bbafd833",
         "product-tabs",
         "3fc244f3-9eea-4a61-874a-b551b0227aff",
@@ -387,7 +398,9 @@
         "290dd027-7a41-4ffe-ad02-5c84e59de005",
         "cb5608c2-b1a2-44d9-a405-e8723930350e"
       ],
+      "disabled": true,
       "settings": {
+        "class_names": "",
         "section_id": "#beforeafter",
         "section_title": "Real users, real results"
       }
@@ -447,6 +460,7 @@
         "7979fdba-e6ce-4ff0-91c2-f0c569c9fffd"
       ],
       "settings": {
+        "class_names": "before-after-scroller-contour",
         "section_id": "#beforeafter",
         "section_title": "Real users, real results"
       }
@@ -454,7 +468,7 @@
     "4f5f33ca-10a4-41a3-b40c-038b76049541": {
       "type": "custom-liquid",
       "settings": {
-        "custom_liquid": "<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\"><div data-oke-reviews-product-listing-rating>{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews<\/span>\n<\/div><\/div><\/div>\n<p>We've helped 100,000+ customers achieve their skin goals.<\/p>\n<\/div>\n\n<div class=\"clearpdp\">\n<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\"><div data-oke-star-rating data-oke-reviews-product-id=\"shopify-6760463892642\">{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews<\/span>\n<\/div><\/div><\/div>\n<p>We've helped 100,000+ customers achieve their skin goals.<\/p>\n<\/div><\/div>"
+        "custom_liquid": "<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\"><div data-oke-reviews-product-listing-rating>{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews<\/span>\n<\/div><\/div><\/div>\n<p>We've helped 125,000+ customers achieve their skin goals.<\/p>\n<\/div>\n\n<div class=\"clearpdp\">\n<div class=\"desktopreviewstitle\"><div class=\"container is-flex is-justify-center seereviewsbtn\">\n<h2 class=\"title\">Unveil Your Glow with Omnilux<\/h2>\n<div class=\"starreviews\"><div data-oke-star-rating data-oke-reviews-product-id=\"shopify-6760463892642\">{{ product.metafields.okendo.StarRatingSnippet }} <span class=\"reviewstxt\">Reviews<\/span>\n<\/div><\/div><\/div>\n<p>We've helped 125,000+ customers achieve their skin goals.<\/p>\n<\/div><\/div>"
       }
     },
     "1598637a-3252-49e4-bfcc-d63e53d9c6b6": {
@@ -884,6 +898,7 @@
         "73526de1-867e-4ce0-bd1e-38bdc6597686",
         "6440ac7b-d573-4efe-8883-8186c0085937"
       ],
+      "disabled": true,
       "settings": {
         "fluid_layout": false,
         "gradient_tone": false,
@@ -1061,6 +1076,7 @@
     "dbd05fbc-dda9-418a-80a7-141ddac090f5": {
       "type": "product-image-buy-now",
       "settings": {
+        "info": "",
         "display_for_this_product": "{{ product.metafields['custom']['image_prod_enable'] }}",
         "fluid_layout": false,
         "heading_txt": "{{ product.metafields['custom']['image_prod_heading'] }}",
@@ -1215,7 +1231,8 @@
       ],
       "settings": {
         "enable": true,
-        "heading": "Frequently Asked Questions"
+        "heading": "Frequently Asked Questions",
+        "tab": "minis"
       }
     },
     "167152762813570154": {

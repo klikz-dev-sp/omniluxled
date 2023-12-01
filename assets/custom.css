@@ -1,9 +1,70 @@
+/*hide mini faq*/
+/* .help-center-products #custom-tab-btn-7{display:none;} */
+
+
+.vendorname{    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 12px;}
+
+
+
+/*new header height*/
+.image-hero.shortbanner .tallheight .swiper-slide {height: calc(80vh - 140px);min-height: 0vw!important;}
+
+.image-hero.withreviews.shortbanner h2.h1{text-shadow:0px 4px 4px rgba(0,0,0,.25)!important;}
+.template-page.home .badges{background:#FEEFDF!important;padding-top:20px!important;border:0;}
+.template-page.home .badges .gradient-fair-tone{display:none;}
+.template-page.home .badges .mb-lg-5{margin-bottom:20px!important;}
+
+.image-hero.shortbanner.withreviews .container-fluid{padding:0 0 0!important;}
+
+.template-page.home .index-featured-collectiion{max-width:1350px;margin:0 auto;}
+.template-page.home .index-featured-collectiion .border-bottom{border-bottom:0!important;}
+.template-page.home .text-with-right-video .footer-btn-warp{margin-top: 26px!important;}
+@media(min-width:1800px){
+.image-hero.shortbanner .tallheight .swiper-slide {height: calc(85vh - 140px);min-height: 0vw!important;}
+}
+
+@media(min-width:999px){
+.image-hero.shortbanner .media-wrap{object-position: top center;}
+}
+@media(max-width:999px){
+.template-page.home .badges .mb-lg-5{margin-bottom:0!important;}
+.template-page.home .badges{padding-bottom:15px!important;}
+.template-page.home .navbar{background:#fff;}
+}
+
+@media(max-width:600px){
+.image-hero.shortbanner .align-items-end{align-items: flex-start!important;}
+.image-hero.shortbanner.withreviews .container-fluid{padding:0 0 0!important;}
+  .image-hero.shortbanner.withreviews .overlay{display:none!important;}
+.image-hero.withreviews.shortbanner h2.h1{text-shadow:none!important;color:#000;font-size:40px;line-height:45px;}
+.image-hero.withreviews.shortbanner h2.h1.mb-3{margin-bottom:10px!important;}
+.template-page.home .review-ctr-mbl p,.template-page.home .caption_txt{color:#000!important;padding-bottom:0!important;}
+.image-hero.shortbanner .container-fluid .tallheight .swiper-slide.align-items-end .py-10{padding-top:1em!important;}
+.template-page.home .review-ctr-mbl p{font-size: 13px; line-height: 15px;}
+.image-hero.shortbanner .btn-white.px-10{margin-top:10px!important;}
+.template-page.home .review-ctr-mbl{margin-top:5px!important;}
+.template-page.home .badges .col-4:nth-child(5){display: none;}
+.template-page.home .badges .col-4{width:25%;padding:0 9px!important;}
+.template-page.home .video-with-text.text-with-right-video.skincare{border-top:0!important;background:#fff!important;}
+.template-page.home .shortbanner .btn-white{background:#000;color:#fff;border:0;}
+.template-page.home .badges{padding:10px 0 5px!important;}
+.image-hero.shortbanner .tallheight .swiper-slide{height: calc(75vh - 140px);}
+}
+
+@media(max-width:375px){
+.image-hero.shortbanner .tallheight .swiper-slide{height: calc(95vh - 140px);}
+}
+
 /*clear videos*/
 .clearpdp,
 .template-product.omnilux-clear  .circle-video-menu-wrap.circle-video-desktop.clearpdp,
 .clearpdp .desktopreviewstitle, 
 .template-product.omnilux-clear .seeallreviews, 
-.template-product.omnilux-clear .circle-video-menu-wrap.circle-video-desktop.clearpdp .circle-video-menu{display:block!important;}
+.template-product.omnilux-clear .circle-video-menu-wrap.circle-video-desktop.clearpdp .circle-video-menu{
+  display:block!important;
+}
 
 .template-product.omnilux-clear .circle-video-menu-wrap.circle-video-desktop .circle-menu-items {
     justify-content: center;
@@ -42,7 +103,7 @@
   padding-right: 0 !important;
 }
 .featuredproduct-awards.awards-wrap .container {
-  padding: 1em 0 0 0;
+  padding: 1em 0 0 10px;
 }
 .featuredproduct-awards.awards-wrap .container img {
   max-width: 90%;
@@ -53,8 +114,16 @@
   padding-right: 5px !important;
 }
 
-.template-page.anti-acne2 .section-faq {
+.template-page.anti-acne .section-faq {
   display: block;
+}
+
+.template-page.minis .section-faq {
+  display: block;
+}
+
+@media(min-width:999px){
+.overlay{opacity:1!important;background: linear-gradient(88deg, rgba(0, 0, 0, 0.70) 10.13%, rgba(0, 0, 0, 0.00) 56.88%), lightgray -2.534px -61.736px / 110.957% 183.346% no-repeat!important;}
 }
 
 @media (max-width: 768px) {
@@ -64,6 +133,7 @@
   .featuredproduct-awards.awards-wrap .container .col-md-4 {
     width: 25% !important;
   }
+  .featuredproduct-awards.awards-wrap .container{padding-left:0;}
 }
 @media (max-width: 600px) {
   .featuredproductsingle .formatted-list h3 {
@@ -91,6 +161,7 @@
 
 /*trusted by - PDPs*/
 .trustedbypdp {
+  display: none;
   width: 200px;
   left: 115px;
   position: relative;
@@ -196,6 +267,7 @@
   letter-spacing: 0em;
   margin: 10px 0 20px 0;
 }
+
 .desktopreviewstitle .starreviews {
   z-index: 2;
   display: flex !important;
@@ -297,7 +369,8 @@
   vertical-align: top;
 }
 
-.anti-acne2 .circle-video-menu-wrap.circle-video-desktop .circle-menu-items{justify-content:center;}
+.template-index .circle-video-menu-wrap.circle-video-desktop .circle-menu-items,
+.anti-acne .circle-video-menu-wrap.circle-video-desktop .circle-menu-items{justify-content:center;}
 
 .circle-video-menu-wrap.circle-video-desktop .circle-menu-items {
   text-align: center;
@@ -361,29 +434,73 @@
 .template-product.omnilux-contour-face
   .circle-video-menu-wrap.circle-video-desktop
   .circle-video-menu,
-.template-page.anti-acne2 .circle-video-menu-wrap.circle-video-desktop,
-.template-page.anti-acne2 .desktopreviewstitle,
-.template-page.anti-acne2 .seeallreviews,
-.template-page.anti-acne2
+.template-page.anti-acne .circle-video-menu-wrap.circle-video-desktop,
+.template-index .desktopreviewstitle,
+.template-index .circle-video-menu-wrap.circle-video-desktop,
+.template-index .seeallreviews,
+.template-page.anti-acne .desktopreviewstitle,
+.template-page.minis .desktopreviewstitle,
+.template-page.anti-acne .seeallreviews,
+.template-page.anti-acne,
   .circle-video-menu-wrap.circle-video-desktop
   .circle-video-menu {
   display: block !important;
 }
 
+.template-page.minis .circle-video-menu-wrap.circle-video-desktop .circle-video-menu {
+  display: flex !important;
+  width: 100%;
+}
+
+.template-page.minis .circle-video-menu-wrap.circle-video-desktop {
+  display: flex !important;
+  justify-content: center !important;
+}
 
 .template-product.omnilux-contour-face
   .circle-video-menu-wrap.circle-video-desktop.clearpdp,
 .template-product.omnilux-contour-face .clearpdp .desktopreviewstitle,
+.template-product.omnilux-men .clearpdp .desktopreviewstitle,
+.template-product.omnilux-contour-neck-decollete .clearpdp .desktopreviewstitle,
+.template-product.omnilux-contour-glove .clearpdp .desktopreviewstitle,
 .template-product.omnilux-contour-face .clearpdp .seeallreviews,
 .template-product.omnilux-contour-face .clearpdp
   .circle-video-menu-wrap.circle-video-desktop
   .circle-video-menu{display:none!important;}
 
-.template-page.anti-acne2 .desktopreviewstitle {
+.template-page.anti-acne .desktopreviewstitle {
   padding-top: 80px;
 }
 
-@media (max-width: 999px) {
+@media (max-width: 999px) {  
+  .desktopreviewstitle {
+    padding: 25px;
+  }
+  .desktopreviewstitle h2.title {
+    font-size: 40px;
+    line-height: 39px;
+  }
+  .desktopreviewstitle p {
+    font-size: 17px;
+  }
+  .desktopreviewstitle .oke-stars-background svg,
+  .desktopreviewstitle .oke-stars-foreground svg {
+    height: 15px;
+  }
+  .desktopreviewstitle .oke-sr-count.oke-sr-count--brackets {
+    top: -6px;
+  }
+  .desktopreviewstitle .starreviews {
+    padding-left: 150px;
+  }
+  .desktopreviewstitle .oke-sr-count, .desktopreviewstitle .reviewstxt {
+    font-size: 15px;
+  }
+  .desktopreviewstitle .oke-a11yText {
+    margin-left: -248px !important;
+    top: -14px !important;
+    font-size: 15px !important;
+  }
   .template-product.omnilux-contour-face
     .circle-video-menu-wrap.circle-video-desktop,
   .template-product.omnilux-contour-face .desktopreviewstitle,
@@ -394,43 +511,43 @@
     display: none !important;
   }
 
-  .template-page.anti-acne2 .desktopreviewstitle,
+  .template-page.anti-acne .desktopreviewstitle,
   .template-product.omnilux-clear .desktopreviewstitle{
     padding: 0;
   }
-  .template-page.anti-acne2 .desktopreviewstitle h2,
+  .template-page.anti-acne .desktopreviewstitle h2,
   .template-product.omnilux-clear .desktopreviewstitle h2{
     font-size: var(--bs-h3-font-size-sm);
     letter-spacing: -0.04em;
     line-height: 36px !important;
   }
-  .template-page.anti-acne2 .desktopreviewstitle .oke-a11yText,
-  .template-page.anti-acne2 .desktopreviewstitle .oke-sr-count,
-  .template-page.anti-acne2 .desktopreviewstitle .reviewstxt,
+  .template-page.anti-acne .desktopreviewstitle .oke-a11yText,
+  .template-page.anti-acne .desktopreviewstitle .oke-sr-count,
+  .template-page.anti-acne .desktopreviewstitle .reviewstxt,
   .template-product.omnilux-clear .desktopreviewstitle .oke-a11yText,
   .template-product.omnilux-clear .desktopreviewstitle .oke-sr-count,
   .template-product.omnilux-clear .desktopreviewstitle .reviewstxt {
     font-size: 16px !important;
   }
-  .template-page.anti-acne2 .desktopreviewstitle .oke-stars-background svg,
-  .template-page.anti-acne2 .desktopreviewstitle .oke-stars-foreground svg,
+  .template-page.anti-acne .desktopreviewstitle .oke-stars-background svg,
+  .template-page.anti-acne .desktopreviewstitle .oke-stars-foreground svg,
 .template-product.omnilux-clear .desktopreviewstitle .oke-stars-background svg, 
 .template-product.omnilux-clear .desktopreviewstitle .oke-stars-foreground svg{
     height: 16px !important;
   }
-  .template-page.anti-acne2 .desktopreviewstitle .oke-a11yText,
+  .template-page.anti-acne .desktopreviewstitle .oke-a11yText,
   .template-product.omnilux-clear .desktopreviewstitle .oke-a11yText{
     margin-left: -270px !important;
   }
-  .template-page.anti-acne2 .desktopreviewstitle .starreviews,
+  .template-page.anti-acne .desktopreviewstitle .starreviews,
   .template-product.omnilux-clear .desktopreviewstitle .starreviews {
     padding-left: 160px !important;
   }
-  .template-page.anti-acne2 .desktopreviewstitle .oke-stars,
+  .template-page.anti-acne .desktopreviewstitle .oke-stars,
   .template-product.omnilux-clear .desktopreviewstitle .oke-stars{
     width: 100px;
   }
-  .template-page.anti-acne2
+  .template-page.anti-acne
     .desktopreviewstitle
     .oke-sr-count.oke-sr-count--brackets,
    .template-product.omnilux-clear
@@ -438,11 +555,11 @@
     .oke-sr-count.oke-sr-count--brackets{
     top: -5px;
   }
-  .template-page.anti-acne2 .desktopreviewstitle .oke-a11yText,
+  .template-page.anti-acne .desktopreviewstitle .oke-a11yText,
   .template-product.omnilux-clear .desktopreviewstitle .oke-a11yText{
     top: -15px !important;
   }
-  .template-page.anti-acne2 .desktopreviewstitle p,
+  .template-page.anti-acne .desktopreviewstitle p,
   .template-product.omnilux-clear .desktopreviewstitle p{
     font-size: 20px;
     margin: 5px auto 20px;
@@ -459,16 +576,18 @@
   .seeallreviews {
     margin: 25px auto 55px;
   }
+  .row{margin-left:0;margin-right:0;}
 }
 
 @media (max-width: 600px) {
-  .template-page.anti-acne2
+  .template-page.anti-acne
     .desktopreviewstitle
     .oke-sr-count.oke-sr-count--brackets {
     top: -6px;
   }
-  .anti-acne2 .circle-video-menu-wrap.circle-video-desktop .circle-menu-items,
-  .template-product.omnilux-clear .circle-video-menu-wrap.circle-video-desktop.clearpdp .circle-menu-items
+  .anti-acne .circle-video-menu-wrap.circle-video-desktop .circle-menu-items,
+  .template-product.omnilux-clear .circle-video-menu-wrap.circle-video-desktop .circle-menu-items,
+  .template-index .circle-video-menu-wrap.circle-video-desktop .circle-menu-items
   {justify-content:flex-start;}
 }
 
@@ -633,10 +752,10 @@
 
 /*sidebar form end*/
 
-.template-page.anti-acne #result-slider {
+.template-page.anti-acne-old#result-slider {
   scroll-margin-top: 100px;
 }
-.template-page.anti-acne #result-slider.overflow-hidden {
+.template-page.anti-acne-old#result-slider.overflow-hidden {
   overflow: clip !important;
 }
 
@@ -1145,9 +1264,6 @@ li.dropdown a.reviews-results{display:block!important;}
   display: none;
   background: var(--background_color);
 }
-.circle-video-menu-wrap {
-  border-top: 1px solid #000;
-}
 .circle-menu-items {
   overflow-x: auto;
   white-space: nowrap;
@@ -1462,6 +1578,16 @@ li.dropdown a.reviews-results{display:block!important;}
   .circle-video-menu {
     display: block !important;
   }
+  .circle-video-menu-wrap {
+  border-top: 1px solid #000;
+}
+.circle-video-menu-wrap.contourpdp,.circle-video-menu-wrap.clearpdp{display:none!important;}
+.template-product.omnilux-contour-face .circle-video-menu-wrap.contourpdp{display:block!important;}
+.template-product.omnilux-clear .circle-video-menu-wrap.clearpdp{display:block!important;}
+.clearpdp, .template-product.omnilux-clear .circle-video-menu-wrap.circle-video-desktop.clearpdp,
+.clearpdp .desktopreviewstitle, .template-product.omnilux-clear .seeallreviews, 
+ .template-product.omnilux-clear .circle-video-menu-wrap.circle-video-desktop.clearpdp .circle-video-menu{display:none!important;}
+  
   #twocolbtns {
     display: block;
   }
@@ -1571,20 +1697,25 @@ html .swiper-button-next:hover::after {
 
 /* App - Frequently Bought Together */
 
-html .cbb-frequently-bought-container {
-  padding: 1.5rem !important;
-  background-color: #f9f9f9 !important;
-  border: solid 1px black !important;
+/* .ab-fbt .cbb-frequently-bought-container {  
+  display: block !important;
+} */
+
+html .cbb-frequently-bought-container {  
+  display: none;
+  padding: 1.5rem 8rem;
+  border-color: black !important;
+  border-bottom-width: 1px;
+  max-width: var(--bs-container-width) !important;
 }
 
-html .cbb-frequently-bought-total-price-text,
-html .cbb-frequently-bought-total-price-regular-price span {
+html .cbb-frequently-bought-total-price-text, html .cbb-frequently-bought-total-price-regular-price span {
+  font-size: 18px !important;
   font-weight: bold !important;
 }
 
-html .cbb-frequently-bought-total-price-regular-price span,
-html .cbb-frequently-bought-total-price-sale-price .money {
-  font-size: 20px !important;
+html .cbb-frequently-bought-total-price-regular-price span, html .cbb-frequently-bought-total-price-sale-price .money {
+  font-size: 18px !important;
 }
 
 html .cbb-frequently-bought-selector-link {
@@ -1600,30 +1731,92 @@ html .cbb-frequently-bought-plus-icon {
 }
 
 html .cbb-frequently-bought-add-button {
-  background-color: transparent !important;
+  transition: all .2s ease-in-out;
   border: solid 1px black !important;
-  color: black !important;
-  transition: all 0.2s ease-in-out;
+  padding: 10px 13.69px !important;
 }
 
 html .cbb-frequently-bought-add-button:hover {
-  background-color: black !important;
-  color: white !important;
+  background-color: white !important;
+  color: black !important;
 }
 
 html .cbb-frequently-bought-selector-label-name span {
   font-weight: normal !important;
 }
 
-html
-  .cbb-frequently-bought-selector-label-name
-  .cbb-frequently-bought-this-item-label {
+html .cbb-frequently-bought-selector-label-name .cbb-frequently-bought-this-item-label {
   font-weight: bold !important;
 }
 
-@media (max-width: 549px) {
+html .cbb-frequently-bought-title {
+  text-align: center !important;
+  font-size: 2rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+html .cbb-frequently-bought-recommendations-container {
+  display: flex;
+}
+
+html .cbb-frequently-bought-products {
+  display: flex !important;
+  justify-content: flex-end;
+  align-items: center;
+  flex: 1;
+  margin: 0 !important;
+}
+
+html .cbb-frequently-bought-recommendations-wrap {
+  padding-left: 60px;
+  flex: 1;
+}
+
+.cbb-frequently-bought-form {
+  margin: 0 !important;
+}
+
+.cbb-frequently-bought-selector-list {
+  margin-bottom: 10px !important;
+}
+
+@media (max-width: 1400px) {  
+  .cbb-frequently-bought-container {
+    padding: 1rem !important
+  }
+}
+
+@media (max-width: 1100px) {  
+  html .cbb-frequently-bought-products {
+    justify-content: center;
+  }
+
+  html .cbb-frequently-bought-container {
+    padding: 0 !important;
+  }
   html .cbb-frequently-bought-title {
     text-align: center !important;
+    font-size: 1.5rem !important;
+  }
+  html .cbb-frequently-bought-recommendations-container {
+    flex-direction: column;
+  }
+  html .cbb-frequently-bought-recommendations-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    margin-top: 10px;
+  }
+  .cbb-frequently-bought-form {
+    text-align: center;
+  }
+  .cbb-frequently-bought-add-button {
+    width: auto !important;
+    padding: 13.69px !important;
+  }  
+  .cbb-frequently-bought-selector-list {
+    padding: 0 10px !important;
   }
 }
 
@@ -1705,4 +1898,36 @@ html
     max-width: 100%;
     margin: 0;
   }
+}
+
+/* .upsell-test-variant {
+  display: none !important;
+} */
+
+.upsell-test-control {
+  display: none !important;
+}
+
+.before-after-scroller-contour {
+  display: none;
+}
+
+
+#__next {
+  margin-bottom: 100px;
+  margin-top: 10px;
+}
+
+.subscription-info {
+  margin-bottom: 1rem;
+  display: none;
+}
+
+.subscription-info.show {
+  display: block;
+}
+
+.subscription-info ul {
+  padding-left: 1rem;
+  list-style: square
 }

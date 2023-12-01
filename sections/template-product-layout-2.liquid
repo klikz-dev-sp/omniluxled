@@ -156,11 +156,8 @@
                     {%- when '@app' -%}
            {% render block %}
 {% for collection in product.collections %}
- {%- comment %}<locksmith:542f>{% endcomment -%}
-   {%- capture var %}{% render 'locksmith-variables', scope: 'subject', subject: collection, subject_parent: product, variable: 'transparent' %}{% endcapture %}{% if var == "true" %}{% else %}{% continue %}{% endif -%}
- {%- comment %}</locksmith:542f>{% endcomment -%}
  {% if collection.title contains 'All Devices' %}
- 	<div class="trustedbypdp">|&nbsp;&nbsp;Trusted by 100K+ Customers</div>
+ 	<div class="trustedbypdp">|&nbsp;&nbsp;Trusted by 125K+ Customers</div>
   {% endif %}
  {% endfor %}
                     {%- when 'name' -%}
@@ -174,7 +171,7 @@
                     {%- when 'vendor' -%}
                         {% assign show_vendor = block.settings.show_vendor %}
                         <div class="align-items-center">
-                            {% if show_vendor %} <span class="my-0">{{ product.vendor }}</span> {% endif %}
+                            {% if show_vendor %} <span class="my-0 vendorname">{{ product.vendor }}</span> {% endif %}
                         </div>
                     {%- when 'price' -%}
                         <div class="price-wrapper mt-2 d-flex align-items-center flex-wrap">
@@ -193,6 +190,7 @@
                             </div>
                         {% endif %}
                     {%- when 'product-tabs' -%}
+                      iciiiiiiiiiiiii
                       {%- liquid
                         if block.settings.enable_product_tabs and section.settings.product_tabs_placement == 'beside_slider'
                           render 'block-product-tabs', block: block

@@ -1,7 +1,7 @@
 <link rel="stylesheet" href="{{ 'global-video-with-text.css' | asset_url }}" media="print" onload="this.media='all'">
 <noscript>{{ 'global-video-with-text.css' | asset_url | stylesheet_tag }}</noscript>
 
-<section id="aadvideo" class="video-with-text text-with-right-video skincare {% if section.settings.border_bottom %}border-bottom{% endif %}" data-section-id="{{ section.id }}">
+<section id="{{ section.settings.sectionid }}" class="video-with-text text-with-right-video skincare {% if section.settings.border_bottom %}border-bottom{% endif %}" data-section-id="{{ section.id }}">
     <div class="{% if section.settings.fluid_layout %}container-fluid{% else %}container{% endif %}">
 
               {% if section.settings.title != blank %}
@@ -158,6 +158,11 @@
       "id": "loop",
       "label": "Loop Video",
       "default": true
+    },
+    {
+      "type": "text",
+      "id": "sectionid",
+      "label": "Section ID"
     },
     {
       "type": "select",

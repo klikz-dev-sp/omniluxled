@@ -1,5 +1,6 @@
 {
   "current": {
+    "enable_skio": true,
     "link_hover_color": "#000000",
     "color_border": "#000000",
     "color_primary": "#000000",
@@ -102,6 +103,14 @@
     "account_disable": "Account disabled.",
     "account_invited": "Account Invited.",
     "account_declined": "Account declined.",
+    "shop_newsletter_checkbox": false,
+    "shop_product_newsletter_text": "Sign up for exclusive skincare offers.",
+    "shop_product_newsletter_heading": "Want TO SAVE 10% TODAY?",
+    "shop_product_newsletter_success_heading": "You’re in!",
+    "email_placeholder": "Enter your email",
+    "shop_product_newsletter_disclaimer": "*Applies to first-time customers*",
+    "newsletter_success_msg": "<span>Use Code: <strong>WELCOME10<\/strong> for <strong>10% OFF<\/strong><\/span>",
+    "newsletter_error_msg": "You have entered an invalid email address. Please try again.",
     "checkout_logo_image": "shopify:\/\/shop_images\/OmniLux_Logo.png",
     "checkout_accent_color": "#000000",
     "checkout_button_color": "#000000",
@@ -150,7 +159,10 @@
               "sub_menu_product_2": "omnilux-men",
               "sub_menu_product_3": "omnilux-clear",
               "sub_menu_product_4": "omnilux-contour-neck-decollete",
-              "sub_menu_product_5": "omnilux-contour-glove"
+              "sub_menu_product_5": "omnilux-contour-glove",
+              "sub_menu_product_6": "blemish-eraser",
+              "sub_menu_product_7": "eye-brightener",
+              "sub_menu_product_8": "skin-corrector"
             }
           },
           "b4cda1f0-5efa-4d22-88b3-49faf8b1439c": {
@@ -162,7 +174,10 @@
               "sub_menu_product_3": "hyaluronic-acid-serum",
               "sub_menu_product_4": "peptide-concentrate",
               "sub_menu_product_5": "omnilux-hydrogel-face-mask",
-              "sub_menu_product_6": "omnilux-contour-hydrogel-neck-decollete"
+              "sub_menu_product_6": "omnilux-contour-hydrogel-neck-decollete",
+              "sub_menu_product_7": "hydrocolloid-refill-patch-2",
+              "sub_menu_product_8": "hydrocolloid-refill-patch",
+              "sub_menu_product_9": "hydrocolloid-refill-patch-3"
             }
           }
         },
@@ -178,7 +193,7 @@
           "page_url": "shopify:\/\/collections\/all",
           "topbar_text2": "2-Year Device Warranty",
           "page_url2": "shopify:\/\/collections\/all",
-          "topbar_text3": "<div class=\"ds-flx\">\n                    <img class=\"star-img-tb\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/6736\/2466\/files\/Frame_1000002770.svg?v=1689375982\">\n                                  <div class=\"txt-mbl\">  Trusted By 100k+ Customers<\/div>\n<\/div>",
+          "topbar_text3": "<div class=\"ds-flx\">\n                    <img class=\"star-img-tb\" src=\"https:\/\/cdn.shopify.com\/s\/files\/1\/0482\/6736\/2466\/files\/Frame_1000002770.svg?v=1689375982\">\n                                  <div class=\"txt-mbl\">  Trusted By 125k+ Customers<\/div>\n<\/div>",
           "page_url3": "shopify:\/\/collections\/all",
           "topbar_text4": "",
           "page_url4": "",
@@ -974,7 +989,16 @@
               "sub_title_10": "",
               "product_6": "",
               "sub_title_11": "",
-              "sub_title_12": ""
+              "sub_title_12": "",
+              "product_7": "",
+              "sub_title_13": "",
+              "sub_title_14": "",
+              "product_8": "",
+              "sub_title_15": "",
+              "sub_title_16": "",
+              "product_9": "",
+              "sub_title_17": "",
+              "sub_title_18": ""
             }
           },
           "cd3da660-92fd-494e-bcd6-0defe0f12c3a": {
@@ -1014,9 +1038,18 @@
               "product_5": "omnilux-contour-glove",
               "sub_title_9": "Anti-Aging",
               "sub_title_10": "Reduces pigmentation & sunspots",
-              "product_6": "",
+              "product_6": "blemish-eraser",
               "sub_title_11": "",
-              "sub_title_12": ""
+              "sub_title_12": "",
+              "product_7": "eye-brightener",
+              "sub_title_13": "",
+              "sub_title_14": "",
+              "product_8": "skin-corrector",
+              "sub_title_15": "",
+              "sub_title_16": "",
+              "product_9": "",
+              "sub_title_17": "",
+              "sub_title_18": ""
             }
           },
           "cc6911fa-6b79-413d-9dd0-c8f538475c04": {
@@ -1044,7 +1077,16 @@
               "sub_title_10": "Boosts Contour Face results",
               "product_6": "omnilux-contour-hydrogel-neck-decollete",
               "sub_title_11": "",
-              "sub_title_12": ""
+              "sub_title_12": "",
+              "product_7": "hydrocolloid-refill-patch-2",
+              "sub_title_13": "",
+              "sub_title_14": "",
+              "product_8": "hydrocolloid-refill-patch",
+              "sub_title_15": "",
+              "sub_title_16": "",
+              "product_9": "hydrocolloid-refill-patch-3",
+              "sub_title_17": "",
+              "sub_title_18": ""
             }
           }
         },
@@ -1055,7 +1097,7 @@
           "cc6911fa-6b79-413d-9dd0-c8f538475c04"
         ],
         "settings": {
-          "main_menu_linklist": "mega_menu",
+          "main_menu_linklist": "mega_menu_new",
           "secondary_menu_linklist": "praella-test-secondary",
           "mobile_nav_show_social_links": true,
           "social_icon_instagram": true,
@@ -1066,6 +1108,20 @@
       },
       "search-layer": {
         "type": "search-layer",
+        "settings": {
+        }
+      },
+      "hoox-promo-bar": {
+        "type": "hoox-promo-bar",
+        "custom_css": [
+
+        ],
+        "settings": {
+          "promo_text": "BLACK FRIDAY SALE! $50 OFF 1 DEVICE: GIFT1, $120 OFF 2 DEVICES: GIFT2, $240 OFF 3+ DEVICES: GIFT3"
+        }
+      },
+      "cart-drawer": {
+        "type": "cart-drawer",
         "settings": {
         }
       }
@@ -1113,7 +1169,7 @@
       },
       "11724500921838622758": {
         "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
-        "disabled": true,
+        "disabled": false,
         "settings": {
         }
       }

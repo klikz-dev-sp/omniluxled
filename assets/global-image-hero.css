@@ -32,6 +32,7 @@
 .image-hero .container-fluid .tallheight .swiper-slide {
   transition: 0.3s;
   overflow: hidden;
+  min-height: 500px !important;
 }
 
 .image-hero .container-fluid {
@@ -78,9 +79,9 @@
   display: block !important;
   width: 100%;
   height: 100%;
-  background-color: #000000 !important;
-  opacity: 0.4 !important;
-  mix-blend-mode: multiply !important;
+  background-color: #000000;
+  opacity: 0.4;
+  mix-blend-mode: multiply;
 }
 .image-hero .swiper-button-next,
 .image-hero .swiper-button-prev {
@@ -105,7 +106,7 @@
   height: 169vh;
   background-image: url('https://cdn.shopify.com/s/files/1/0482/6736/2466/files/Background-Gradient-HM-min.jpg?v=1678788486');
 }
-.anti-aging .image-hero .gradient-fair-tone {
+.anti-aging-old .image-hero .gradient-fair-tone {
   height: 138vh;
   background-image: url('https://cdn.shopify.com/s/files/1/0482/6736/2466/files/Background-Gradient-HM-min.jpg?v=1678788486');
 }
@@ -125,6 +126,12 @@
 .heading_txt span {
   font-style: italic;
   font-weight: 400;
+}
+
+@media (min-width: 770px) and (max-width: 1309px) {
+  .image-hero-desktop.tallheight .col-xl-4.col-lg-6.col-md-6.col-12.pe-0.ps-0 {
+    width: 50%;
+  } 
 }
 
 @media (min-width: 992px) {
@@ -147,17 +154,22 @@
 .template-index .image-hero.withreviews .container-fluid {
   padding-top:80px!important;
 }
+.anti-acne .image-hero .media-wrap{object-position: 80% 0!important;}
+
 }
+
   
 
 @media (max-width: 600px) {
   .image-hero-desktop .caption_txt > * {
     display: inline;
   }
-  .heading_txt {
-font-size: 50px;
-    line-height:60px;
+  .image-hero-swiper .heading_txt {
+    font-size: 40px !important;
+    line-height: 45px !important;
+    letter-spacing: -.04em !important;
   }
+  .anti-acne .image-hero .media-wrap{object-position: top center!important;}
 }
 
 /**

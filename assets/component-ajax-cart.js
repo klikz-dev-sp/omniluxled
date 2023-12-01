@@ -120,6 +120,72 @@ class AjaxCart extends HTMLElement {
     );
   }
 
+  addEventListenerUpsells() {
+    const upsells = document.querySelectorAll(".cart-upsell");
+  
+    upsells.forEach((upsell) => {
+      const form = upsell.querySelector(".cart-upsell-form");
+      const productsToRemove = upsell.getAttribute("data-products-remove").split(",");
+
+      // remove the last element of the array if it's empty
+      if (productsToRemove[productsToRemove.length - 1] === "") {
+        productsToRemove.pop();
+      }
+
+      form.addEventListener("submit", (event) => {
+        productsToRemove.forEach((variantId) => {
+          setTimeout(() => {
+            fetch('/cart/change.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                id: variantId,
+                quantity: 0
+              })
+            }).then((response) => {
+              if (response.ok) {
+                this.getCartData();
+              }
+            })
+          }, 500)
+        })
+      })
+    })
+  
+  }
+
+  renderUpsells() {
+    // Do not include "shopify-section" in the selector, it will break the render
+    // Use "?sections={section-id}" to render several sections
+
+    // Fetch a Shopify section. shopify-section only if static section rendered with section tag
+    fetch(window.Shopify.routes.root + "?section_id=cart-drawer")
+    .then(response => response.text())
+    .then(responseText => {
+        const html = new DOMParser().parseFromString(responseText, 'text/html');
+        const source = html.querySelector('.swiper-container.upsell-test-variant .swiper-wrapper')
+        const destination = document.querySelector('.swiper-container.upsell-test-variant .swiper-wrapper')
+
+        const sourceTitle = html.querySelector('.cart-upsell-title.upsell-test-variant')
+        const destinationTitle = document.querySelector('.cart-upsell-title.upsell-test-variant')
+
+        destinationTitle.innerHTML = sourceTitle.innerHTML;
+        destination.innerHTML = source.innerHTML;
+
+
+        if (source.children.length == 0) {
+          document.querySelector(".cart-upsell-title.upsell-test-variant").style.display = "none";
+        } else {
+          document.querySelector(".cart-upsell-title.upsell-test-variant").style.display = "block";
+        }
+
+        this.addEventListenerUpsells()
+    })
+    .catch(error => console.error(error));
+  }
+
   /**
    * Open Cart drawer and add focus to drawer container
    *
@@ -147,11 +213,23 @@ class AjaxCart extends HTMLElement {
     let closeBtn = this.querySelector(".close-ajax--cart");
     Utility.trapFocus(this, closeBtn);
 
+    this.renderUpsells()
+
+    if (document.querySelectorAll(".cart-items").length > 0) this.activateExperimentUpsell();
+
     if (event) {
       event.preventDefault();
       let openBy = event.currentTarget;
       openBy.setAttribute("aria-expanded", true);
     }
+  }
+
+  activateExperimentUpsell() {
+    if (window.runExperiment100432544) return;
+    window.runExperiment100432544 = 1;
+    window._conv_q = window._conv_q || [];
+    window._conv_q.push(["executeExperiment", "100432544"]);
+    console.log("Cart upsell experience activated");
   }
 
   /**
@@ -236,12 +314,41 @@ class AjaxCart extends HTMLElement {
     if (cartJSONEle != undefined && cartJSONEle != null) {
       window.globalVariables.cart = JSON.parse(cartJSONEle.textContent);
     }
-
+    
     let cartElement = cartHTML.querySelector("ajax-cart form");
     this.querySelector("form").innerHTML = cartElement.innerHTML;
 
-    let total_price = window.globalVariables.cart.total_price;
+    let total_price = 0;
+    let cartItems = this.querySelectorAll("[data-cart-item]");
+    cartItems.forEach((element) => {      
+      let productId = element.getAttribute("data-product-id")
 
+      window.globalVariables.cart.items.forEach((item) => {
+        if (item.product_id == productId) {
+          let variantJSONEle = document.querySelector(".variantsJSON-" + productId);
+          if (variantJSONEle != undefined && variantJSONEle != null) {
+            let variantJSON = JSON.parse(variantJSONEle.textContent);
+            let itemTotalPrice = variantJSON[0].price * item.quantity;
+            total_price += itemTotalPrice;
+
+            if(this.taxPercent > 0) {
+              itemTotalPrice = itemTotalPrice * (1 + this.taxPercent / 100);
+            }
+  
+            let formatMoney = Shopify.formatMoney(
+              itemTotalPrice,
+              window.globalVariables.money_format
+            );
+  
+            // if(this.taxPercent > 0)
+            //   element.getElementsByClassName("price")[0].innerHTML = formatMoney + " Incl. tax"
+            // else
+            //   element.getElementsByClassName("price")[0].innerHTML = formatMoney
+          }          
+        }
+      });
+    });
+   
     if(this.taxPercent > 0) {
       let preTaxElement = document.getElementById("preTax");
       preTaxElement.classList.add("d-flex");  
@@ -262,31 +369,6 @@ class AjaxCart extends HTMLElement {
       total_price,
       window.globalVariables.money_format
     );
-
-    let cartItems = this.querySelectorAll("[data-cart-item]");
-    cartItems.forEach((element) => {      
-      let productId = element.getAttribute("data-product-id")
-
-      window.globalVariables.cart.items.forEach((item) => {
-        if (item.product_id == productId) {
-          let itemTotalPrice = item.price * item.quantity;
-
-          if(this.taxPercent > 0) {
-            itemTotalPrice = itemTotalPrice * (1 + this.taxPercent / 100);
-          }
-
-          let formatMoney = Shopify.formatMoney(
-            itemTotalPrice,
-            window.globalVariables.money_format
-          );
-
-          if(this.taxPercent > 0)
-            element.getElementsByClassName("price")[0].innerHTML = formatMoney + " Incl. tax"
-          else
-            element.getElementsByClassName("price")[0].innerHTML = formatMoney
-        }
-      });
-    });
 
     if(this.taxPercent > 0) {
       let navProductItems = document.querySelectorAll("[data-nav-menu-product-id]");
@@ -348,7 +430,7 @@ class AjaxCart extends HTMLElement {
       let upsellTitleEle = document.querySelector(".cart-upsell-title");
   
       if (deviceOnlyShow) {
-        upsellTitleEle.innerHTML = "Supercharge your results 👇️";
+        // upsellTitleEle.innerHTML = "Supercharge your results 👇️";
   
         const devices = [
           5764128866466, 7210762666146, 7919965569186, 7924737736866,
@@ -378,7 +460,7 @@ class AjaxCart extends HTMLElement {
           }
         });
       } else {
-        upsellTitleEle.innerHTML = "You might also like";
+        // upsellTitleEle.innerHTML = "You might also like";
   
         upsellElements.forEach((element) => {
           let exist = false;
@@ -401,9 +483,9 @@ class AjaxCart extends HTMLElement {
       "text/html"
     );
     let cartIcon = headerHTML.getElementById("cart-icon-desktop");
-    if (drawerSelectors.cartIconDesktop)
+    if (drawerSelectors.cartIconDesktop && cartIcon)
       drawerSelectors.cartIconDesktop.innerHTML = cartIcon.innerHTML;
-    if (drawerSelectors.cartIconMobile)
+    if (drawerSelectors.cartIconMobile && cartIcon)
       drawerSelectors.cartIconMobile.innerHTML = cartIcon.innerHTML;
     if (window.globalVariables.cart.item_count > 0) {
       if (headerHTML.querySelector("#cart-icon-desktop .cart-count")) {
@@ -512,6 +594,9 @@ class AjaxCart extends HTMLElement {
     if (itemIndex != null) {
       this.updateItemQty(itemIndex, 0);
     }
+    setTimeout(() => {
+      this.renderUpsells()
+    }, 500)
   }
 
   /**

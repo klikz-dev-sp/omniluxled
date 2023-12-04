@@ -100,7 +100,7 @@
     "free_shipping_txt": "Congratulations! You've earned free shipping.",
     "free_shipping_left": "You are ${addMoreForFreeShip} away from free shipping!",
     "is_gwpc_enabled": true,
-    "gwp_collection1": "all-devices",
+    "gwp_collection1": "eligible-for-free-gift",
     "gwp_gift": "enzyme-powder-cleanser-1",
     "is_gwpp_enabled": false,
     "gwpp_product": "omnilux-contour-face",

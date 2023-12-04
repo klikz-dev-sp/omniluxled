@@ -214,14 +214,14 @@
                     -%}
 
 
-                    {% if gwpCollectionFlag == true %}
-                      {% if gwpCollection1 != blank or gwpCollection2 != blank or gwpCollection3 != blank %}
-                        {% for itemCollection in item.product.collections %}
-                          {% if gwpCollection1.handle == itemCollection.handle or gwpCollection2.handle == itemCollection.handle or gwpCollection3.handle == itemCollection.handle %}
-                            {% assign gwpcProductFlag = true %}
-                            {% break %}
-                          {% endif %}
-                        {% endfor %}
+                    {% assign freeGiftProducts = 'Omnilux Men,Omnilux Contour Face,Omnilux Clear,Omnilux Contour Neck & Décolleté,Omnilux Contour Glove' | split: ',' %}
+                    {% assign gwpcProductFlag = false %}
+
+                    {% if settings.enable_gift_tag == true %}
+                      {% if settings.is_gwpc_enabled == true %}
+                        {% if freeGiftProducts contains item.product.title %}
+                          {% assign gwpcProductFlag = true %}
+                        {% endif %}
                       {% endif %}
                     {% endif %}
 
@@ -432,16 +432,16 @@
                         </span>
                         <!-- + add accident protection for $27.99 -->
                         {%- comment -%} 
-                          <div class="col-4 col-md-2 text-md-center cart-price"> 
-                          {% if item.properties['promo_product'] or item.original_price == 0 %} 
-                          <span class="m-0 p-0">{{ 'templates.cart.free' | t }}</span> 
-                          {% elsif item.price == 0 %} 
-                          <s class="text-muted m-0 p-0">{{ item.original_price | money }}</s> 
-                          {% else %} 
-                          <span class="m-0 p-0">{{ item.price | money }}</span> 
-                          {% endif %}
-                          </div> 
-                        {%- endcomment -%}
+                                                    <div class="col-4 col-md-2 text-md-center cart-price"> 
+                                                    {% if item.properties['promo_product'] or item.original_price == 0 %} 
+                                                    <span class="m-0 p-0">{{ 'templates.cart.free' | t }}</span> 
+                                                    {% elsif item.price == 0 %} 
+                                                    <s class="text-muted m-0 p-0">{{ item.original_price | money }}</s> 
+                                                    {% else %} 
+                                                    <span class="m-0 p-0">{{ item.price | money }}</span> 
+                                                    {% endif %}
+                                                    </div> 
+                                                {%- endcomment -%}
                         {%- if varStatus == 'sold_out' -%}
                           <p class="text-danger">
                             {{ 'templates.cart.update_cart_message.sold_out' | t }}</p>

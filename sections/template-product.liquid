@@ -302,6 +302,11 @@
                     {%- when 'subtitle' -%}
                       {% if block.settings.subtitle != '' %}
                         <div class="align-items-center mt-2 mb-lg-3 mb-2 py-1 formatted-list fw-normal">
+                            <ul>
+                              <li class="fw-bold" style="color: red; padding-bottom: 12px;">
+                                Holiday orders must be placed by 12/13 if using standard shipping and 12/17 if using express shipping.
+                              </li>
+                            </ul>
                             {{ block.settings.subtitle }}
                         </div>
                         {% endif %}

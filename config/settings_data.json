@@ -101,7 +101,7 @@
     "free_shipping_left": "You are ${addMoreForFreeShip} away from free shipping!",
     "is_gwpc_enabled": true,
     "gwp_collection1": "eligible-for-free-gift",
-    "gwp_gift": "enzyme-powder-cleanser-1",
+    "gwp_gift": "omnilux-hydrogel-facial-mask",
     "is_gwpp_enabled": false,
     "gwpp_product": "omnilux-contour-face",
     "gwpp_gift": "omnilux-contour-glove",
@@ -1195,6 +1195,12 @@
       },
       "11724500921838622758": {
         "type": "shopify:\/\/apps\/frequently-bought-together\/blocks\/app-embed-block\/b1a8cbea-c844-4842-9529-7c62dbab1b1f",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "6279071938380501511": {
+        "type": "shopify:\/\/apps\/powerful-form-builder\/blocks\/app-embed\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
         "disabled": false,
         "settings": {
         }

@@ -160,7 +160,7 @@
 
       // Add 'active' class to the next slide
       var nextSlide = document.getElementById('slide' + nextSlideId);
-      nextSlide.classList.add('active');
+      if (nextSlide) nextSlide.classList.add('active');
 
       // Call the function again to continue the loop
       alternateSlides();

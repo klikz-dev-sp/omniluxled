@@ -237,7 +237,7 @@ class AjaxCart extends HTMLElement {
 
     let cartElement = cartHTML.querySelector('ajax-cart form')
     this.querySelector('form').innerHTML = cartElement.innerHTML
-    this.querySelector('[data-carttotal] span.money').innerHTML =
+    this.querySelector('[data-carttotal]').innerHTML =
       Shopify.formatMoney(
         window.globalVariables.cart.total_price,
         window.globalVariables.money_format

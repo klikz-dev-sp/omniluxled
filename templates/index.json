@@ -6,11 +6,11 @@
         ".overlay {opacity: 0.175 !important;}"
       ],
       "settings": {
-        "image_desktop": "shopify:\/\/shop_images\/Untitled.png",
-        "image_mobile": "shopify:\/\/shop_images\/Untitled-5.png",
-        "title": "<em class=\"fw-light\">Free<\/em> gift <br> with LED",
-        "subtitle": "Free 3-pack of Hydrogel Facial Masks <br> with any full-size LED device!",
-        "btn_text": "Shop Now",
+        "image_desktop": "shopify:\/\/shop_images\/HERO_4.png",
+        "image_mobile": "shopify:\/\/shop_images\/Untitled_design_-_2023-11-29T125753.556.png",
+        "title": "Let's face it:<br>you deserve it.",
+        "subtitle": "Tackle wrinkles, acne, redness & more<br>with unlimited LED treatments from home.",
+        "btn_text": "TRANSFORM MY SKIN",
         "btn_link": "shopify:\/\/collections\/all",
         "content_position": "2",
         "custom_class": ""

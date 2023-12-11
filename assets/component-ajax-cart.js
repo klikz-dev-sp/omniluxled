@@ -132,6 +132,71 @@ class AjaxCart extends HTMLElement {
     console.log('binddd')
   }
 
+  addEventListenerUpsells() {
+    const upsells = document.querySelectorAll(".cart-upsell");
+  
+    upsells.forEach((upsell) => {
+      const form = upsell.querySelector(".cart-upsell-form");
+      const productsToRemove = upsell.getAttribute("data-products-remove").split(",");
+
+      // remove the last element of the array if it's empty
+      if (productsToRemove[productsToRemove.length - 1] === "") {
+        productsToRemove.pop();
+      }
+
+      form.addEventListener("submit", (event) => {
+        productsToRemove.forEach((variantId) => {
+          setTimeout(() => {
+            fetch('/cart/change.js', {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json'
+              },
+              body: JSON.stringify({
+                id: variantId,
+                quantity: 0
+              })
+            }).then((response) => {
+              if (response.ok) {
+                this.getCartData();
+              }
+            })
+          }, 500)
+        })
+      })
+    })
+  
+  }
+
+  renderUpsells() {
+    // Do not include "shopify-section" in the selector, it will break the render
+    // Use "?sections={section-id}" to render several sections
+
+    // Fetch a Shopify section. shopify-section only if static section rendered with section tag
+    fetch(window.Shopify.routes.root + "?section_id=cart-drawer")
+    .then(response => response.text())
+    .then(responseText => {
+        const html = new DOMParser().parseFromString(responseText, 'text/html');
+        const source = html.querySelector('.swiper-container.upsell-test-variant .swiper-wrapper')
+        const destination = document.querySelector('.swiper-container.upsell-test-variant .swiper-wrapper')
+
+        const sourceTitle = html.querySelector('.cart-upsell-title.upsell-test-variant')
+        const destinationTitle = document.querySelector('.cart-upsell-title.upsell-test-variant')
+
+        destinationTitle.innerHTML = sourceTitle.innerHTML;
+        destination.innerHTML = source.innerHTML;
+
+
+        if (source.children.length == 0) {
+          document.querySelector(".cart-upsell-title.upsell-test-variant").style.display = "none";
+        } else {
+          document.querySelector(".cart-upsell-title.upsell-test-variant").style.display = "block";
+        }
+
+        this.addEventListenerUpsells()
+    })
+    .catch(error => console.error(error));
+  }
   /**
    * Open Cart drawer and add focus to drawer container
    *
@@ -158,6 +223,8 @@ class AjaxCart extends HTMLElement {
     Utility.forceFocus(this.querySelector('.cart-title'))
     let closeBtn = this.querySelector('.close-ajax--cart')
     Utility.trapFocus(this, closeBtn)
+
+    this.renderUpsells()
 
     if (event) {
       event.preventDefault()

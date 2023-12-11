@@ -115,11 +115,6 @@
                                                   <a class="card-body" href="{{ current_product.url | within: collection }}">
                                                     <div class="row">
                                                       <div class="col-12 mega_menu_image_container">
-                                                          {% if current_product.title == 'Omnilux Men' or  current_product.title == 'Omnilux Contour Face' or  current_product.title == 'Omnilux Clear' or  current_product.title == 'Omnilux Contour Neck & Décolleté' or  current_product.title == 'Omnilux Contour Glove' %}
-                                                             <span class="badge-3 text-white bg-black" >
-                                                               {{ settings.gift_tag_text }}
-                                                             </span>
-                                                          {% endif %}
                                                           <img src="{{current_product.featured_image | image_url: width: 850 }}"/>    
                                                       </div>
                                                       <div class="col-12">

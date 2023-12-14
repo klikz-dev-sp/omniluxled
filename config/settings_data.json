@@ -215,7 +215,7 @@
         ],
         "settings": {
           "topbar_enabled": true,
-          "topbar_text": "<strong> ORDER BY DEC 13 FOR CHRISTMAS DELIVERY!<\/strong>",
+          "topbar_text": "<strong>FINAL HOURS! ORDER BY DEC 13 FOR CHRISTMAS DELIVERY<\/strong>",
           "page_url": "",
           "topbar_text2": "",
           "page_url2": "",
@@ -1201,6 +1201,12 @@
       },
       "6279071938380501511": {
         "type": "shopify:\/\/apps\/powerful-form-builder\/blocks\/app-embed\/e4bcb1eb-35b2-42e6-bc37-bfe0e1542c9d",
+        "disabled": false,
+        "settings": {
+        }
+      },
+      "qikify-mobilemenu-1702437136": {
+        "type": "shopify:\/\/apps\/qikify-mobile-menu-navigation\/blocks\/app-embed\/8e0d172b-7f05-43c9-a50d-bc2bff0a5f0a",
         "disabled": false,
         "settings": {
         }

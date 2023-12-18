@@ -215,7 +215,7 @@
         ],
         "settings": {
           "topbar_enabled": true,
-          "topbar_text": "<strong>FINAL HOURS! ORDER BY DEC 13 FOR CHRISTMAS DELIVERY<\/strong>",
+          "topbar_text": "<strong>FREE SHIPPING ON ORDERS $100+<\/strong>",
           "page_url": "",
           "topbar_text2": "",
           "page_url2": "",
@@ -227,7 +227,7 @@
           "page_url5": "",
           "topbar_link_title": "",
           "topbar_link": "",
-          "topbar_bg_color": "#8e1212",
+          "topbar_bg_color": "#000000",
           "topbar_text_color": "#ffffff",
           "topbar_height": 40,
           "topbar_font_size": "14px",

@@ -128,8 +128,6 @@ class AjaxCart extends HTMLElement {
     this.querySelectorAll('[data-gwp-multi-tier]').forEach((button) =>
       button.addEventListener('click', this.openPopup.bind(this))
     )
-
-    console.log('binddd')
   }
 
   addEventListenerUpsells() {

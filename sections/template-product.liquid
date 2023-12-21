@@ -17,6 +17,11 @@
     visibility: hidden;
     opacity: 0;
   }
+  @media only screen and (max-width: 375px) {
+    .swiper-slide.carousel-cell.d-flex.align-items-center.product--media.custom-slide-card {
+      padding: 0 5px !important;
+    }
+  }
 </style>
 {% unless product.id == 5702727631010 %}
   <style>
@@ -112,7 +117,7 @@
                       {% for media in product.media %}
                         {% if media.media_type == 'image' %}
                           {% assign image = media %}
-                          <div class="swiper-slide carousel-cell d-flex align-items-center product--media" data-mediaID="{{ image.id }}">
+                          <div class="swiper-slide carousel-cell d-flex align-items-center product--media custom-slide-card" data-mediaID="{{ image.id }}">
                             <div class="square-card position-relative w-100">
                               <img
                                 class="img-fluid position-absolute top-0 start-0 object-cover w-100 h-100"
